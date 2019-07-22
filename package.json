@@ -1,0 +1,42 @@
+{
+  "name": "@marinda/styled-buttons",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf .cache/ dist/",
+    "predev": "npm run clean",
+    "dev": "parcel src/index.js",
+    "build": "parcel build src/index.js",
+    "storybook": "start-storybook",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "marinda s",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-a11y": "^5.1.9",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "babel-loader": "^8.0.6",
+    "eslint-config-prettier": "^6.0.0",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.18.2",
+    "react-dom": "^16.8.6"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "react": "^16.8.6"
+  },
+  "prettier": {}
+}
