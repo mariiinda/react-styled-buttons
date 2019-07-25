@@ -7,10 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf .cache/ dist/",
     "prestart": "npm run clean",
-    "start": "parcel src/index.js",
+    "start": "parcel src/index.html",
     "build": "parcel build src/index.js",
     "storybook": "start-storybook",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "lint": "eslint \"**/*.{js,jsx}\" --quiet"
   },
   "author": "marinda s",
   "license": "ISC",
@@ -22,8 +23,14 @@
     "@storybook/addon-a11y": "^5.1.9",
     "@storybook/addon-knobs": "^5.1.9",
     "@storybook/react": "^5.1.9",
+    "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
+    "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.6.1",
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2",
     "react-dom": "^16.8.6"
@@ -38,5 +45,8 @@
     "@emotion/core": "^10.0.14",
     "react": "^16.8.6"
   },
-  "prettier": {}
+  "prettier": {},
+  "browserslist": [
+    "defaults"
+  ]
 }
