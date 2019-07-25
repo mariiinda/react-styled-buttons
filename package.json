@@ -11,7 +11,7 @@
     "build": "parcel build src/index.js",
     "storybook": "start-storybook",
     "prepublishOnly": "npm run build",
-    "lint": "eslint \"**/*.{js,jsx}\" --quiet"
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "author": "marinda s",
   "license": "ISC",
