@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf .cache/ dist/",
-    "predev": "npm run clean",
-    "dev": "parcel src/index.js",
+    "prestart": "npm run clean",
+    "start": "parcel src/index.js",
     "build": "parcel build src/index.js",
     "storybook": "start-storybook",
     "prepublishOnly": "npm run build"

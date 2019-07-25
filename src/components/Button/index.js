@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { jsx, css } from '@emotion/core'
+import { jsx, css } from "@emotion/core";
 
-export default function Button({ children, disabled=false }) {
+export default function Button({ children, disabled = false }) {
   return (
     <button
       type="button"
@@ -10,7 +10,7 @@ export default function Button({ children, disabled=false }) {
         background: red;
 
         &:disabled {
-          background: blue;
+          opacity: 0;
         }
       `}
       disabled={disabled}
