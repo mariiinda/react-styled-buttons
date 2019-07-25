@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import { jsx, css } from "@emotion/core";
+import React from "react";
+import { css } from "@emotion/core";
 
 export default function Button({ children, disabled = false }) {
   return (
