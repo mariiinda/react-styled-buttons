@@ -9,7 +9,7 @@ addDecorator(withKnobs);
 const req = require.context("../src/components", true, /\.stories\.js$/);
 
 function loadStories() {
-  require("../src/components/Button/Button.stories");
+  req.keys().forEach(req);
 }
 
 configure(loadStories, module);
