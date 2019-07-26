@@ -65,21 +65,26 @@ const globalStyle = css`
 `;
 
 const gridStyle = ({ backgroundColor, foregroundColor }) => css`
-  background: ${backgroundColor};
-  color: ${foregroundColor};
-  width: 100%;
-  height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr 1fr;
   grid-template-areas: ${`
   'header header header'
-  '. buttons .'
+  '. buttons buttons'
   '. . .'`};
+  background: ${backgroundColor};
+  color: ${foregroundColor};
+  width: 100%;
+  height: 100%;
+  transition: 0.2s ease;
+  section {
+    position: relative;
+  }
 
   h2 {
-    position: relative;
-    top: -10px;
+    position: absolute;
+    top: 0px;
+    left: 0;
     text-transform: uppercase;
   }
 `;
@@ -96,21 +101,17 @@ const headerStyle = css`
 
     button {
       border: none;
-      margin: 0;
-      padding: 0;
+      margin: 0 4px;
+      padding: 4px 10px;
       width: auto;
       overflow: visible;
-
-      background: transparent;
-
-      color: inherit;
+      color: white;
+      background: #333;
       font: inherit;
-
+      font-size: 14px;
       line-height: normal;
-
       -webkit-font-smoothing: inherit;
       -moz-osx-font-smoothing: inherit;
-
       -webkit-appearance: none;
     }
   }
@@ -120,6 +121,15 @@ const buttonWrapperStyle = css`
   grid-area: buttons;
   padding: 30px;
   border-bottom: 1px solid currentColor;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+  > button {
+    flex: 0 1 calc(50% - 20px);
+    margin-top: 20px;
+  }
 `;
 
 function App() {
@@ -144,6 +154,14 @@ function App() {
         <section css={buttonWrapperStyle}>
           <h2>Buttons</h2>
           <ButtonWithTheme>Default Button</ButtonWithTheme>
+          <ButtonWithTheme variant="secondary">
+            Secondary Button
+          </ButtonWithTheme>
+          <ButtonWithTheme variant="accent1">Accent1 Button</ButtonWithTheme>
+          <ButtonWithTheme variant="accent2">Accent2 Button</ButtonWithTheme>
+          <ButtonWithTheme variant="accent3">Accent3 Button</ButtonWithTheme>
+          <ButtonWithTheme size="medium">Medium Button</ButtonWithTheme>
+          <ButtonWithTheme size="small">Small Button</ButtonWithTheme>
         </section>
       </div>
     </ThemeProvider>
