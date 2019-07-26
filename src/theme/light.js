@@ -1,3 +1,6 @@
+import oc from "open-color";
+console.log({ oc });
+
 export default {
   id: "light",
   backgroundColor: "#fff",

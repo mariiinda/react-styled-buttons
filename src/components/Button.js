@@ -14,15 +14,10 @@ const ButtonStyle = ({ theme }) => css`
   text-align: center;
   display: inline-block;
   border: none;
-
-  cursor: pointer;
-
-  border-radius: ${theme.borderRadius || "6px"};
+  border-radius: 6px;
   background: ${theme.primaryColor};
-
-  font: 500 1.6rem/1 Arial, Helvetica, sans-serif;
   color: ${theme.foregroundColor};
-
+  font: 500 1.6rem/1 Arial, Helvetica, sans-serif;
   transform: translate3d(0, 0, 0);
   transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
 
