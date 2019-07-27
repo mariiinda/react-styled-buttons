@@ -35,5 +35,11 @@ export default {
   accent3Shade2: oc.red[3],
   accent3Shade3: oc.red[2],
   accent3Shade4: oc.red[1],
-  accent3Shade5: oc.red[5]
+  accent3Shade5: oc.red[5],
+  neutralColor: oc.gray[3],
+  neutralColor1: oc.gray[3],
+  neutralColor2: oc.gray[6],
+  neutralColor3: oc.gray[5],
+  neutralColor4: oc.gray[2],
+  neutralColor5: oc.gray[4]
 };

@@ -100,6 +100,20 @@ const Accent3ButtonStyle = theme => css`
   }
 `;
 
+const NeutralButtonStyle = theme => css`
+  background: ${theme.neutralColor};
+  color: ${theme.backgroundColor};
+
+  &:active {
+    background: ${theme.neutralColor5};
+  }
+
+  &:focus {
+    box-shadow: 0 0px 8px ${theme.neutralColor4},
+      0 0px 8px ${theme.neutralColor4};
+  }
+`;
+
 const SmallButtonStyle = css`
   padding: 4px 12px;
   font-size: 14px;
@@ -108,6 +122,28 @@ const SmallButtonStyle = css`
 const MediumButtonStyle = css`
   padding: 10px;
 `;
+
+const composeStyles = ({ themeObject, variant, size }) => {
+  const cssStyles = [ButtonStyle(themeObject)];
+  const variantCases = {
+    secondary: () => cssStyles.push(SecondaryButtonStyle(themeObject)),
+    accent1: () => cssStyles.push(Accent1ButtonStyle(themeObject)),
+    accent2: () => cssStyles.push(Accent2ButtonStyle(themeObject)),
+    accent3: () => cssStyles.push(Accent3ButtonStyle(themeObject)),
+    neutral: () => cssStyles.push(NeutralButtonStyle(themeObject))
+  };
+  if (variantCases[variant]) {
+    variantCases[variant]();
+  }
+  const sizeCases = {
+    small: () => cssStyles.push(SmallButtonStyle),
+    medium: () => cssStyles.push(MediumButtonStyle)
+  };
+  if (sizeCases[size]) {
+    sizeCases[size]();
+  }
+  return cssStyles;
+};
 
 function Button({
   as: Element,
@@ -120,6 +156,7 @@ function Button({
   ...props
 }) {
   const [themeObject, setThemeObject] = useState(theme);
+  const composedStyles = composeStyles({ themeObject, variant, size });
 
   useEffect(() => {
     if (themeVariant === "light" || themeVariant === "dark") {
@@ -129,28 +166,14 @@ function Button({
 
   const type = Element === "button" && !props.type ? "button" : null;
 
-  const cssStyles = [ButtonStyle(themeObject)];
-  if (variant === "secondary") {
-    cssStyles.push(SecondaryButtonStyle(themeObject));
-  }
-  if (variant === "accent1") {
-    cssStyles.push(Accent1ButtonStyle(themeObject));
-  }
-  if (variant === "accent2") {
-    cssStyles.push(Accent2ButtonStyle(themeObject));
-  }
-  if (variant === "accent3") {
-    cssStyles.push(Accent3ButtonStyle(themeObject));
-  }
-  if (size === "small") {
-    cssStyles.push(SmallButtonStyle);
-  }
-  if (size === "medium") {
-    cssStyles.push(MediumButtonStyle);
-  }
-
   return (
-    <Element css={cssStyles} id={id} onClick={onClick} type={type} {...props}>
+    <Element
+      css={composedStyles}
+      id={id}
+      onClick={onClick}
+      type={type}
+      {...props}
+    >
       <span>{props.children}</span>
     </Element>
   );
@@ -168,9 +191,9 @@ Button.defaultProps = {
   size: "large"
 };
 
-// variant: ["primary", "secondary", "accent1", "accent2", "accent3"]
+// variant: ["primary", "secondary", "accent1", "accent2", "accent3", "neutral"]
 // size: ["large", "medium", "small"]
-// themeVariant: ["light", "dark", "neutral"]
+// themeVariant: ["light", "dark"]
 
 export default Button;
 

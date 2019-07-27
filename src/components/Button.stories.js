@@ -82,4 +82,14 @@ stories
     >
       Accent3 Button
     </Button>
+  ))
+  .add("neutral", () => (
+    <Button
+      disabled={boolean("Disabled", false)}
+      variant="neutral"
+      size={sizeOptions()}
+      themeVariant={themeOptions()}
+    >
+      Neutral Button
+    </Button>
   ));
