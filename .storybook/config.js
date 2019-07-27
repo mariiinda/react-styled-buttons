@@ -6,7 +6,7 @@ addDecorator(withA11y);
 addDecorator(withKnobs);
 
 // import dynamically
-const req = require.context("../src/components", true, /\.stories\.js$/);
+const req = require.context("../src", true, /\.stories\.js$/);
 
 function loadStories() {
   req.keys().forEach(req);

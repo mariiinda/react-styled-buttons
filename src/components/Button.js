@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { css } from "@emotion/core";
 
 import themes from "../theme/themes";
 
 // CSS
-const ButtonStyle = ({ theme }) => css`
+const ButtonStyle = theme => css`
   position: relative;
   cursor: pointer;
   outline: none;
@@ -45,7 +45,7 @@ const ButtonStyle = ({ theme }) => css`
   }
 `;
 
-const SecondaryButtonStyle = ({ theme }) => css`
+const SecondaryButtonStyle = theme => css`
   background: ${theme.secondaryColor};
   color: ${theme.backgroundColor};
 
@@ -59,7 +59,7 @@ const SecondaryButtonStyle = ({ theme }) => css`
   }
 `;
 
-const Accent1ButtonStyle = ({ theme }) => css`
+const Accent1ButtonStyle = theme => css`
   background: ${theme.accentColor};
   color: ${theme.backgroundColor};
 
@@ -72,7 +72,7 @@ const Accent1ButtonStyle = ({ theme }) => css`
   }
 `;
 
-const Accent2ButtonStyle = ({ theme }) => css`
+const Accent2ButtonStyle = theme => css`
   background: ${theme.accent2Color};
   color: ${theme.backgroundColor};
 
@@ -86,7 +86,7 @@ const Accent2ButtonStyle = ({ theme }) => css`
   }
 `;
 
-const Accent3ButtonStyle = ({ theme }) => css`
+const Accent3ButtonStyle = theme => css`
   background: ${theme.accent3Color};
   color: ${theme.backgroundColor};
 
@@ -109,20 +109,38 @@ const MediumButtonStyle = css`
   padding: 10px;
 `;
 
-function Button({ as: Element, id, onClick, variant, size, ...props }) {
+function Button({
+  as: Element,
+  id,
+  onClick,
+  variant,
+  size,
+  theme,
+  themeVariant,
+  ...props
+}) {
+  const [themeObject, setThemeObject] = useState(theme);
+
+  useEffect(() => {
+    if (themeVariant === "light" || themeVariant === "dark") {
+      setThemeObject(themes[themeVariant]);
+    }
+  }, [theme, themeVariant]);
+
   const type = Element === "button" && !props.type ? "button" : null;
-  const cssStyles = [ButtonStyle(props)];
+
+  const cssStyles = [ButtonStyle(themeObject)];
   if (variant === "secondary") {
-    cssStyles.push(SecondaryButtonStyle(props));
+    cssStyles.push(SecondaryButtonStyle(themeObject));
   }
   if (variant === "accent1") {
-    cssStyles.push(Accent1ButtonStyle(props));
+    cssStyles.push(Accent1ButtonStyle(themeObject));
   }
   if (variant === "accent2") {
-    cssStyles.push(Accent2ButtonStyle(props));
+    cssStyles.push(Accent2ButtonStyle(themeObject));
   }
   if (variant === "accent3") {
-    cssStyles.push(Accent3ButtonStyle(props));
+    cssStyles.push(Accent3ButtonStyle(themeObject));
   }
   if (size === "small") {
     cssStyles.push(SmallButtonStyle);
@@ -130,6 +148,7 @@ function Button({ as: Element, id, onClick, variant, size, ...props }) {
   if (size === "medium") {
     cssStyles.push(MediumButtonStyle);
   }
+
   return (
     <Element css={cssStyles} id={id} onClick={onClick} type={type} {...props}>
       <span>{props.children}</span>
@@ -143,13 +162,15 @@ Button.defaultProps = {
   children: null,
   disabled: false,
   onClick: () => {},
-  theme: themes["light"],
+  theme: themes.light,
+  themeVariant: "light",
   variant: "primary",
   size: "large"
 };
 
 // variant: ["primary", "secondary", "accent1", "accent2", "accent3"]
 // size: ["large", "medium", "small"]
+// themeVariant: ["light", "dark", "neutral"]
 
 export default Button;
 

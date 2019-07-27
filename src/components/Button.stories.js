@@ -1,15 +1,46 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { boolean, text } from "@storybook/addon-knobs";
+import { boolean, text, optionsKnob as options } from "@storybook/addon-knobs";
 
 import Button from "./Button";
 import themes from "../theme/themes";
 
-const stories = storiesOf("Button", module);
+const stories = storiesOf("Components|Button", module);
+
+// size knob
+const sizeLabel = "Size";
+const sizeValuesObj = {
+  small: "small",
+  medium: "medium",
+  large: "large"
+};
+const sizeDefaultValue = "large";
+const sizeOptionsObj = {
+  display: "inline-radio"
+};
+const sizeOptions = () =>
+  options(sizeLabel, sizeValuesObj, sizeDefaultValue, sizeOptionsObj);
+
+// theme knob
+const themeLabel = "themeVariant";
+const themeValuesObj = {
+  light: "light",
+  dark: "dark"
+};
+const themeDefaultValue = "light";
+const themeOptionsObj = {
+  display: "inline-radio"
+};
+const themeOptions = () =>
+  options(themeLabel, themeValuesObj, themeDefaultValue, themeOptionsObj);
 
 stories
   .add("primary", () => (
-    <Button disabled={boolean("Disabled", false)} size={text("Size", "large")}>
+    <Button
+      disabled={boolean("Disabled", false)}
+      size={sizeOptions()}
+      themeVariant={themeOptions()}
+    >
       Primary Button
     </Button>
   ))
@@ -17,7 +48,7 @@ stories
     <Button
       disabled={boolean("Disabled", false)}
       variant="secondary"
-      size={text("Size", "large")}
+      size={sizeOptions()}
     >
       Secondary Button
     </Button>
@@ -26,7 +57,7 @@ stories
     <Button
       disabled={boolean("Disabled", false)}
       variant="accent1"
-      size={text("Size", "large")}
+      size={sizeOptions()}
     >
       Accent1 Button
     </Button>
@@ -35,7 +66,7 @@ stories
     <Button
       disabled={boolean("Disabled", false)}
       variant="accent2"
-      size={text("Size", "large")}
+      size={sizeOptions()}
     >
       Accent2 Button
     </Button>
@@ -44,56 +75,8 @@ stories
     <Button
       disabled={boolean("Disabled", false)}
       variant="accent3"
-      size={text("Size", "large")}
+      size={sizeOptions()}
     >
       Accent3 Button
-    </Button>
-  ))
-  .add("dark primary", () => (
-    <Button
-      disabled={boolean("Disabled", false)}
-      theme={themes.dark}
-      size={text("Size", "large")}
-    >
-      Primary Button Dark
-    </Button>
-  ))
-  .add("dark secondary", () => (
-    <Button
-      disabled={boolean("Disabled", false)}
-      theme={themes.dark}
-      variant="secondary"
-      size={text("Size", "large")}
-    >
-      Secondary Button Dark
-    </Button>
-  ))
-  .add("dark accent1", () => (
-    <Button
-      disabled={boolean("Disabled", false)}
-      theme={themes.dark}
-      variant="accent1"
-      size={text("Size", "large")}
-    >
-      Accent1 Button Dark
-    </Button>
-  ))
-  .add("dark accent2", () => (
-    <Button
-      disabled={boolean("Disabled", false)}
-      theme={themes.dark}
-      variant="accent2"
-    >
-      Accent2 Button Dark
-    </Button>
-  ))
-  .add("dark accent3", () => (
-    <Button
-      disabled={boolean("Disabled", false)}
-      theme={themes.dark}
-      variant="accent3"
-      size={text("Size", "large")}
-    >
-      Accent3 Button Dark
     </Button>
   ));
