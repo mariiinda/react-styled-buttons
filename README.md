@@ -1,5 +1,7 @@
 # React Styled Buttons
 
+[![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://marinda.me/react-styled-buttons/?path=/story/components-button--primary)
+
 React button component comes with WCAG 2 AA contrast ratio tested colors, light and dark theme options. Flexible & easily customized.
 
 ## Getting Started
