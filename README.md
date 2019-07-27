@@ -19,7 +19,7 @@ import Button from '@marinda/react-styled-buttons';
 Add Button to your render function.
 
 ```js
-import Button from '@marinda/react-styled-buttons';
+<Button>Click Me!</Button>
 ```
 
 [Storybook](https://marinda.me/react-styled-buttons/?path=/story/components-button--primary). Explore all the button themes, styles and sizes.
