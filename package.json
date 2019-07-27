@@ -10,6 +10,7 @@
     "start": "parcel src/index.html",
     "build": "parcel build src/index.js",
     "storybook": "start-storybook",
+    "build-storybook": "build-storybook -c .storybook -o docs",
     "prepublishOnly": "npm run build",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
