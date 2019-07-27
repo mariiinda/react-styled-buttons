@@ -1,6 +1,20 @@
 # React Styled Buttons
 
-[![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://marinda.me/react-styled-buttons/?path=/story/components-button--primary)
+<p align="center">
+  <a href="https://www.npmjs.com/package/@marinda/react-styled-buttons" target="_blank">
+    <img src="https://badgen.net/npm/v/@marinda/react-styled-buttons" alt="">
+  </>
+  <a href="LICENSE.md" target="_blank">
+    <img src="https://badgen.net/badge/license/ISC/blue" alt="">
+  </a>
+  <a href="https://www.npmjs.com/package/@marinda/react-styled-buttons" target="_blank">
+    <img src="https://badgen.net/npm/dt/@marinda/react-styled-buttons" alt="">
+  </a>
+  <a href="https://marinda.me/react-styled-buttons/?path=/story/components-button--primary" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg" alt="">
+  </a>
+</p>
+
 
 React button component comes with WCAG 2 AA contrast ratio tested colors, light and dark theme options. Flexible & easily customized.
 
