@@ -14,27 +14,47 @@ stories
     </Button>
   ))
   .add("secondary", () => (
-    <Button disabled={boolean("Disabled", false)} variant="secondary">
+    <Button
+      disabled={boolean("Disabled", false)}
+      variant="secondary"
+      size={text("Size", "large")}
+    >
       Secondary Button
     </Button>
   ))
   .add("accent1", () => (
-    <Button disabled={boolean("Disabled", false)} variant="accent1">
+    <Button
+      disabled={boolean("Disabled", false)}
+      variant="accent1"
+      size={text("Size", "large")}
+    >
       Accent1 Button
     </Button>
   ))
   .add("accent2", () => (
-    <Button disabled={boolean("Disabled", false)} variant="accent2">
+    <Button
+      disabled={boolean("Disabled", false)}
+      variant="accent2"
+      size={text("Size", "large")}
+    >
       Accent2 Button
     </Button>
   ))
   .add("accent3", () => (
-    <Button disabled={boolean("Disabled", false)} variant="accent3">
+    <Button
+      disabled={boolean("Disabled", false)}
+      variant="accent3"
+      size={text("Size", "large")}
+    >
       Accent3 Button
     </Button>
   ))
   .add("dark primary", () => (
-    <Button disabled={boolean("Disabled", false)} theme={themes.dark}>
+    <Button
+      disabled={boolean("Disabled", false)}
+      theme={themes.dark}
+      size={text("Size", "large")}
+    >
       Primary Button Dark
     </Button>
   ))
@@ -43,6 +63,7 @@ stories
       disabled={boolean("Disabled", false)}
       theme={themes.dark}
       variant="secondary"
+      size={text("Size", "large")}
     >
       Secondary Button Dark
     </Button>
@@ -52,6 +73,7 @@ stories
       disabled={boolean("Disabled", false)}
       theme={themes.dark}
       variant="accent1"
+      size={text("Size", "large")}
     >
       Accent1 Button Dark
     </Button>
@@ -70,6 +92,7 @@ stories
       disabled={boolean("Disabled", false)}
       theme={themes.dark}
       variant="accent3"
+      size={text("Size", "large")}
     >
       Accent3 Button Dark
     </Button>

@@ -66,11 +66,11 @@ const globalStyle = css`
 
 const gridStyle = ({ backgroundColor, foregroundColor }) => css`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
   grid-template-areas: ${`
   'header header header'
-  '. buttons buttons'
+  '. buttons .'
   '. . .'`};
   background: ${backgroundColor};
   color: ${foregroundColor};
@@ -100,19 +100,7 @@ const headerStyle = css`
     margin-top: 0;
 
     button {
-      border: none;
       margin: 0 4px;
-      padding: 4px 10px;
-      width: auto;
-      overflow: visible;
-      color: white;
-      background: #333;
-      font: inherit;
-      font-size: 14px;
-      line-height: normal;
-      -webkit-font-smoothing: inherit;
-      -moz-osx-font-smoothing: inherit;
-      -webkit-appearance: none;
     }
   }
 `;
@@ -145,9 +133,13 @@ function App() {
           <div>
             {Object.keys(themes).length > 0 &&
               Object.keys(themes).map(key => (
-                <button key={key} onClick={() => setTheme(themes[key])}>
+                <Button
+                  key={key}
+                  onClick={() => setTheme(themes[key])}
+                  size="small"
+                >
                   {key}
-                </button>
+                </Button>
               ))}
           </div>
         </div>

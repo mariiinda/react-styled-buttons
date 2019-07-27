@@ -101,7 +101,7 @@ const Accent3ButtonStyle = ({ theme }) => css`
 `;
 
 const SmallButtonStyle = css`
-  padding: 6px 10px;
+  padding: 4px 12px;
   font-size: 14px;
 `;
 
