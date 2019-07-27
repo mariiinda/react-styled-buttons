@@ -24,7 +24,7 @@ Add Button to your render function.
 import Button from '@marinda/react-styled-buttons';
 ```
 
-You can see all available Buttons and themes in a Storybook panel as shown below.
+[Storybook](https://marinda.me/react-styled-buttons/?path=/story/components-button--primary). Explore all the button themes, styles and sizes.
 
 ![](docs/screenshots/storybook-preview-1.png)
 ![](docs/screenshots/storybook-preview-2.png)
