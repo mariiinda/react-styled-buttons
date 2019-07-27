@@ -1,8 +1,6 @@
 # React Styled Buttons
 
-Button components built in React. Flexible, composable and accessable.
-
-Comes with its own themes (currently one light and one dark). Theme colors are based on [Open Color](https://github.com/yeun/open-color). Buttons have been tested to ensure contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds.
+React button component comes with WCAG 2 AA contrast ratio tested colors, light and dark theme options. Flexible & easily be customized.
 
 ## Getting Started
 

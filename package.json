@@ -1,7 +1,8 @@
 {
   "name": "@marinda/react-styled-buttons",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "React button component comes with WCAG 2 AA contrast ratio tested colors, light and dark theme options. Flexible & easily be customized.",
+  "repository": "mariiinda/react-styled-buttons",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
