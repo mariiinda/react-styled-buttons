@@ -66,8 +66,6 @@ const buttonWrapperStyle = css`
 `;
 
 function Buttons({ theme, setTheme }) {
-  //const [theme, setTheme] = useState(themes.light);
-
   return (
     <div css={gridStyle(theme)}>
       <div css={headerStyle}>
