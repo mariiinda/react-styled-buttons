@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import { css } from "@emotion/core";
 import { ThemeProvider, withTheme } from "emotion-theming";
 
 import Buttons from "./ui/Buttons";
