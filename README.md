@@ -1,6 +1,6 @@
 # React Styled Buttons
 
-React button component comes with WCAG 2 AA contrast ratio tested colors, light and dark theme options. Flexible & easily be customized.
+React button component comes with WCAG 2 AA contrast ratio tested colors, light and dark theme options. Flexible & easily customized.
 
 ## Getting Started
 
