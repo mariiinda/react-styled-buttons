@@ -21,7 +21,7 @@ const sizeOptions = () =>
   options(sizeLabel, sizeValuesObj, sizeDefaultValue, sizeOptionsObj);
 
 // theme knob
-const themeLabel = "themeVariant";
+const themeName = "themeName";
 const themeValuesObj = {
   light: "light",
   dark: "dark"
@@ -31,14 +31,14 @@ const themeOptionsObj = {
   display: "inline-radio"
 };
 const themeOptions = () =>
-  options(themeLabel, themeValuesObj, themeDefaultValue, themeOptionsObj);
+  options(themeName, themeValuesObj, themeDefaultValue, themeOptionsObj);
 
 stories
   .add("primary", () => (
     <Button
       disabled={boolean("Disabled", false)}
       size={sizeOptions()}
-      themeVariant={themeOptions()}
+      themeName={themeOptions()}
     >
       Primary Button
     </Button>
@@ -48,7 +48,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="secondary"
       size={sizeOptions()}
-      themeVariant={themeOptions()}
+      themeName={themeOptions()}
     >
       Secondary Button
     </Button>
@@ -58,7 +58,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="accent1"
       size={sizeOptions()}
-      themeVariant={themeOptions()}
+      themeName={themeOptions()}
     >
       Accent1 Button
     </Button>
@@ -68,7 +68,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="accent2"
       size={sizeOptions()}
-      themeVariant={themeOptions()}
+      themeName={themeOptions()}
     >
       Accent2 Button
     </Button>
@@ -78,7 +78,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="accent3"
       size={sizeOptions()}
-      themeVariant={themeOptions()}
+      themeName={themeOptions()}
     >
       Accent3 Button
     </Button>
@@ -88,7 +88,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="neutral"
       size={sizeOptions()}
-      themeVariant={themeOptions()}
+      themeName={themeOptions()}
     >
       Neutral Button
     </Button>

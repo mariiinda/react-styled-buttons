@@ -149,20 +149,20 @@ function Button({
   as: Element,
   id,
   onClick,
+  themeName,
   variant,
   size,
   theme,
-  themeVariant,
   ...props
 }) {
   const [themeObject, setThemeObject] = useState(theme);
   const composedStyles = composeStyles({ themeObject, variant, size });
 
   useEffect(() => {
-    if (themeVariant === "light" || themeVariant === "dark") {
-      setThemeObject(themes[themeVariant]);
+    if (themeName === "light" || themeName === "dark") {
+      setThemeObject(themes[themeName]);
     }
-  }, [theme, themeVariant]);
+  }, [theme, themeName]);
 
   const type = Element === "button" && !props.type ? "button" : null;
 
@@ -186,14 +186,14 @@ Button.defaultProps = {
   disabled: false,
   onClick: () => {},
   theme: themes.light,
-  themeVariant: "light",
+  themeName: "light",
   variant: "primary",
   size: "large"
 };
 
 // variant: ["primary", "secondary", "accent1", "accent2", "accent3", "neutral"]
 // size: ["large", "medium", "small"]
-// themeVariant: ["light", "dark"]
+// themeName: ["light", "dark"]
 
 export default Button;
 
