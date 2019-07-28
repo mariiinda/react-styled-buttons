@@ -1,8 +1,12 @@
 # React Styled Buttons
 
 <p align="center">
+  <a href="https://travis-ci.org/mariiinda/react-styled-buttons" target="_blank">
+    <img src="https://api.travis-ci.org/mariiinda/react-styled-buttons.svg?branch=master" alt="">
+    </a>
   <a href="https://www.npmjs.com/package/@marinda/react-styled-buttons" target="_blank">
     <img src="https://badgen.net/npm/v/@marinda/react-styled-buttons" alt="">
+    </a>
   <a href="LICENSE.md" target="_blank">
     <img src="https://badgen.net/badge/license/ISC/blue" alt="">
   </a>
