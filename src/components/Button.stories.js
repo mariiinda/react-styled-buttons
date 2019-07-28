@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { boolean, optionsKnob as options } from "@storybook/addon-knobs";
 
 import Button from "./Button";
-import themes from "../theme/themes";
+//import themes from "../theme/themes";
 
 const stories = storiesOf("Components|Button", module);
 
@@ -40,7 +40,7 @@ stories
       <Button
         disabled={boolean("Disabled", false)}
         size={sizeOptions()}
-        theme={themes[themeOptions()]}
+        theme={"light"}
       >
         Primary Button
       </Button>
@@ -51,7 +51,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="secondary"
       size={sizeOptions()}
-      theme={themes[themeOptions()]}
+      theme={"light"}
     >
       Secondary Button
     </Button>
@@ -61,7 +61,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="accent1"
       size={sizeOptions()}
-      theme={themes[themeOptions()]}
+      theme={"light"}
     >
       Accent1 Button
     </Button>
@@ -71,7 +71,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="accent2"
       size={sizeOptions()}
-      theme={themes[themeOptions()]}
+      theme={"light"}
     >
       Accent2 Button
     </Button>
@@ -81,7 +81,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="accent3"
       size={sizeOptions()}
-      theme={themes[themeOptions()]}
+      theme={"light"}
     >
       Accent3 Button
     </Button>
@@ -91,7 +91,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="neutral"
       size={sizeOptions()}
-      theme={themes[themeOptions()]}
+      theme={"light"}
     >
       Neutral Button
     </Button>

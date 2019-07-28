@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { css } from "@emotion/core";
 
 import themes from "../theme/themes";
@@ -123,14 +123,14 @@ const MediumButtonStyle = css`
   padding: 10px;
 `;
 
-const composeStyles = ({ theme, variant, size }) => {
-  const cssStyles = [ButtonStyle(theme)];
+const composeStyles = ({ themeObject, variant, size }) => {
+  const cssStyles = [ButtonStyle(themeObject)];
   const variantCases = {
-    secondary: () => cssStyles.push(SecondaryButtonStyle(theme)),
-    accent1: () => cssStyles.push(Accent1ButtonStyle(theme)),
-    accent2: () => cssStyles.push(Accent2ButtonStyle(theme)),
-    accent3: () => cssStyles.push(Accent3ButtonStyle(theme)),
-    neutral: () => cssStyles.push(NeutralButtonStyle(theme))
+    secondary: () => cssStyles.push(SecondaryButtonStyle(themeObject)),
+    accent1: () => cssStyles.push(Accent1ButtonStyle(themeObject)),
+    accent2: () => cssStyles.push(Accent2ButtonStyle(themeObject)),
+    accent3: () => cssStyles.push(Accent3ButtonStyle(themeObject)),
+    neutral: () => cssStyles.push(NeutralButtonStyle(themeObject))
   };
   if (variantCases[variant]) {
     variantCases[variant]();
@@ -146,13 +146,21 @@ const composeStyles = ({ theme, variant, size }) => {
 };
 
 function Button({ as: Element, id, onClick, variant, size, theme, ...props }) {
-  const composedStyles = composeStyles({ theme, variant, size });
-
+  const [themeObject, setThemeObject] = useState(themes[theme]);
+  useEffect(() => {
+    if (theme === "light" || theme === "dark") {
+      console.log({ t: themes[theme], theme });
+      setThemeObject(themes[theme]);
+    }
+  }, [theme]);
+  const composedStyles = composeStyles({ themeObject, variant, size });
   const type = Element === "button" && !props.type ? "button" : null;
+
+  console.log({ themeObject });
 
   return (
     <Element
-      css={composedStyles}
+      //css={composedStyles}
       id={id}
       data-testid={id}
       onClick={onClick}
@@ -170,12 +178,14 @@ Button.defaultProps = {
   children: null,
   disabled: false,
   onClick: () => {},
-  theme: themes.light,
+  theme: "light",
   variant: "primary",
   size: "large"
 };
 
+// enumarables: todo add to proptypes
 // variant: ["primary", "secondary", "accent1", "accent2", "accent3", "neutral"]
 // size: ["large", "medium", "small"]
+// theme ["light","dark"]
 
 export default Button;

@@ -139,26 +139,26 @@ function Buttons({ theme, setTheme }) {
         </div>
         <section css={buttonWrapperStyle}>
           <h2>Buttons</h2>
-          <Button theme={theme}>Default Button</Button>
+          <Button theme={theme.id}>Default Button</Button>
           <Button theme={theme} variant="secondary">
             Secondary Button
           </Button>
-          <Button theme={theme} variant="accent1">
+          <Button theme={theme.id} variant="accent1">
             Accent1 Button
           </Button>
-          <Button theme={theme} variant="accent2">
+          <Button theme={theme.id} variant="accent2">
             Accent2 Button
           </Button>
-          <Button theme={theme} variant="accent3">
+          <Button theme={theme.id} variant="accent3">
             Accent3 Button
           </Button>
-          <Button theme={theme} variant="neutral">
+          <Button theme={theme.id} variant="neutral">
             Neutral Button
           </Button>
-          <Button theme={theme} size="medium">
+          <Button theme={theme.id} size="medium">
             Medium Button
           </Button>
-          <Button theme={theme} size="small">
+          <Button theme={theme.id} size="small">
             Small Button
           </Button>
         </section>
