@@ -83,16 +83,6 @@ onMouseUp={() => {
 >
 ```
 
-### themeName
-
-Name of the the color theme. Options: light(default), dark.
-
-```js
-<Button themeName="dark">
-  About
-</Button>
-```
-
 ### variant
 
 Button variant - this will assign different theme styles for each variant. Options: primary(default), secondary, accent1, accent2, accent3, neutral.

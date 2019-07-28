@@ -143,16 +143,28 @@ function Buttons({ theme, setTheme }) {
         </div>
         <section css={buttonWrapperStyle}>
           <h2>Buttons</h2>
-          <ButtonWithTheme>Default Button</ButtonWithTheme>
-          <ButtonWithTheme variant="secondary">
+          <Button theme={theme}>Default Button</Button>
+          <Button theme={theme} variant="secondary">
             Secondary Button
-          </ButtonWithTheme>
-          <ButtonWithTheme variant="accent1">Accent1 Button</ButtonWithTheme>
-          <ButtonWithTheme variant="accent2">Accent2 Button</ButtonWithTheme>
-          <ButtonWithTheme variant="accent3">Accent3 Button</ButtonWithTheme>
-          <ButtonWithTheme variant="neutral">Neutral Button</ButtonWithTheme>
-          <ButtonWithTheme size="medium">Medium Button</ButtonWithTheme>
-          <ButtonWithTheme size="small">Small Button</ButtonWithTheme>
+          </Button>
+          <Button theme={theme} variant="accent1">
+            Accent1 Button
+          </Button>
+          <Button theme={theme} variant="accent2">
+            Accent2 Button
+          </Button>
+          <Button theme={theme} variant="accent3">
+            Accent3 Button
+          </Button>
+          <Button theme={theme} variant="neutral">
+            Neutral Button
+          </Button>
+          <Button theme={theme} size="medium">
+            Medium Button
+          </Button>
+          <Button theme={theme} size="small">
+            Small Button
+          </Button>
         </section>
       </div>
     </>

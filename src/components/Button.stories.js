@@ -3,6 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { boolean, optionsKnob as options } from "@storybook/addon-knobs";
 
 import Button from "./Button";
+import themes from "../theme/themes";
 
 const stories = storiesOf("Components|Button", module);
 
@@ -21,7 +22,7 @@ const sizeOptions = () =>
   options(sizeLabel, sizeValuesObj, sizeDefaultValue, sizeOptionsObj);
 
 // theme knob
-const themeName = "themeName";
+const themeName = "theme";
 const themeValuesObj = {
   light: "light",
   dark: "dark"
@@ -34,21 +35,23 @@ const themeOptions = () =>
   options(themeName, themeValuesObj, themeDefaultValue, themeOptionsObj);
 
 stories
-  .add("primary", () => (
-    <Button
-      disabled={boolean("Disabled", false)}
-      size={sizeOptions()}
-      themeName={themeOptions()}
-    >
-      Primary Button
-    </Button>
-  ))
+  .add("primary", () => {
+    return (
+      <Button
+        disabled={boolean("Disabled", false)}
+        size={sizeOptions()}
+        theme={themes[themeOptions()]}
+      >
+        Primary Button
+      </Button>
+    );
+  })
   .add("secondary", () => (
     <Button
       disabled={boolean("Disabled", false)}
       variant="secondary"
       size={sizeOptions()}
-      themeName={themeOptions()}
+      theme={themes[themeOptions()]}
     >
       Secondary Button
     </Button>
@@ -58,7 +61,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="accent1"
       size={sizeOptions()}
-      themeName={themeOptions()}
+      theme={themes[themeOptions()]}
     >
       Accent1 Button
     </Button>
@@ -68,7 +71,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="accent2"
       size={sizeOptions()}
-      themeName={themeOptions()}
+      theme={themes[themeOptions()]}
     >
       Accent2 Button
     </Button>
@@ -78,7 +81,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="accent3"
       size={sizeOptions()}
-      themeName={themeOptions()}
+      theme={themes[themeOptions()]}
     >
       Accent3 Button
     </Button>
@@ -88,7 +91,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="neutral"
       size={sizeOptions()}
-      themeName={themeOptions()}
+      theme={themes[themeOptions()]}
     >
       Neutral Button
     </Button>
