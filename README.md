@@ -3,7 +3,6 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/@marinda/react-styled-buttons" target="_blank">
     <img src="https://badgen.net/npm/v/@marinda/react-styled-buttons" alt="">
-  </>
   <a href="LICENSE.md" target="_blank">
     <img src="https://badgen.net/badge/license/ISC/blue" alt="">
   </a>
@@ -39,7 +38,7 @@ Add Button to your render function.
 ```
 
 ## Demo
-Explore all the button themes, styles and sizes in the [Storybook](https://marinda.me/react-styled-buttons/?path=/story/components-button--primary)
+Explore all the button themes, styles and sizes in the [Storybook](https://marinda.me/react-styled-buttons/?path=/story/components-button--primary).
 
 ![](docs/screenshots/storybook-preview-1.png)
 ![](docs/screenshots/storybook-preview-2.png)
