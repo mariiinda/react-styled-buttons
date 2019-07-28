@@ -29,7 +29,7 @@ npm i -S @marinda/react-styled-buttons
 Import the Button component into your app:
 
 ```js
-import Button from '@marinda/react-styled-buttons';
+import { Button } from '@marinda/react-styled-buttons';
 ```
 
 Add Button to your render function.
