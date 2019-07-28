@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { css } from "@emotion/core";
 
 import themes from "../theme/themes";
@@ -123,14 +123,14 @@ const MediumButtonStyle = css`
   padding: 10px;
 `;
 
-const composeStyles = ({ themeObject, variant, size }) => {
-  const cssStyles = [ButtonStyle(themeObject)];
+const composeStyles = ({ theme, variant, size }) => {
+  const cssStyles = [ButtonStyle(theme)];
   const variantCases = {
-    secondary: () => cssStyles.push(SecondaryButtonStyle(themeObject)),
-    accent1: () => cssStyles.push(Accent1ButtonStyle(themeObject)),
-    accent2: () => cssStyles.push(Accent2ButtonStyle(themeObject)),
-    accent3: () => cssStyles.push(Accent3ButtonStyle(themeObject)),
-    neutral: () => cssStyles.push(NeutralButtonStyle(themeObject))
+    secondary: () => cssStyles.push(SecondaryButtonStyle(theme)),
+    accent1: () => cssStyles.push(Accent1ButtonStyle(theme)),
+    accent2: () => cssStyles.push(Accent2ButtonStyle(theme)),
+    accent3: () => cssStyles.push(Accent3ButtonStyle(theme)),
+    neutral: () => cssStyles.push(NeutralButtonStyle(theme))
   };
   if (variantCases[variant]) {
     variantCases[variant]();
@@ -145,24 +145,8 @@ const composeStyles = ({ themeObject, variant, size }) => {
   return cssStyles;
 };
 
-function Button({
-  as: Element,
-  id,
-  onClick,
-  themeName,
-  variant,
-  size,
-  theme,
-  ...props
-}) {
-  const [themeObject, setThemeObject] = useState(theme);
-  const composedStyles = composeStyles({ themeObject, variant, size });
-
-  useEffect(() => {
-    if (themeName === "light" || themeName === "dark") {
-      setThemeObject(themes[themeName]);
-    }
-  }, [theme, themeName]);
+function Button({ as: Element, id, onClick, variant, size, theme, ...props }) {
+  const composedStyles = composeStyles({ theme, variant, size });
 
   const type = Element === "button" && !props.type ? "button" : null;
 
@@ -186,15 +170,11 @@ Button.defaultProps = {
   disabled: false,
   onClick: () => {},
   theme: themes.light,
-  themeName: "light",
   variant: "primary",
   size: "large"
 };
 
 // variant: ["primary", "secondary", "accent1", "accent2", "accent3", "neutral"]
 // size: ["large", "medium", "small"]
-// themeName: ["light", "dark"]
 
 export default Button;
-
-// SecondaryButtonStyle

@@ -42,10 +42,6 @@ Add Button to your render function.
 ## Demo
 Explore all the button themes, styles and sizes in the [Storybook](https://marinda.me/react-styled-buttons/?path=/story/components-button--primary).
 
-![](docs/screenshots/storybook-preview-1.png)
-![](docs/screenshots/storybook-preview-2.png)
-![](docs/screenshots/storybook-preview-3.png)
-
 ## Button props
 
 These are the available props for the button component.
@@ -81,16 +77,6 @@ onMouseUp={() => {
     /* your mouse up handler */
 }}
 >
-```
-
-### themeName
-
-Name of the the color theme. Options: light(default), dark.
-
-```js
-<Button themeName="dark">
-  About
-</Button>
 ```
 
 ### variant
