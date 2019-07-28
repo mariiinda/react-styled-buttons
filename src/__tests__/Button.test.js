@@ -12,10 +12,6 @@ import Button from "../components/Button";
 
 // afterEach(cleanup)
 
-/* test("renders as any element", () => {
-    expect(getByText(testChildren)).toBeInTheDocument();
-  }); */
-
 test("renders correctly", () => {
   const testChildren = "Click me";
   const { container, getByText } = render(
@@ -24,15 +20,38 @@ test("renders correctly", () => {
   expect(getByText(testChildren)).toBeInTheDocument();
 
   expect(container.firstChild).toMatchInlineSnapshot(`
-    <button
+          <button
+            class="css-p9ne9n-ButtonStyle"
+            data-testid="my-button"
+            id="my-button"
+            type="button"
+          >
+            <span>
+              Click me
+            </span>
+          </button>
+      `);
+});
+
+test("renders as anchor element", () => {
+  const element = "a";
+  const { container } = render(
+    <Button id="my-button" as="a">
+      Click me
+    </Button>
+  );
+  const anchorEl = container.querySelector(element);
+  expect(anchorEl).toBeInTheDocument();
+
+  expect(container.firstChild).toMatchInlineSnapshot(`
+    <a
       class="css-p9ne9n-ButtonStyle"
       data-testid="my-button"
       id="my-button"
-      type="button"
     >
       <span>
         Click me
       </span>
-    </button>
+    </a>
   `);
 });
