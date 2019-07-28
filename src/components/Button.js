@@ -154,6 +154,7 @@ function Button({ as: Element, id, onClick, variant, size, theme, ...props }) {
     <Element
       css={composedStyles}
       id={id}
+      data-testid={id}
       onClick={onClick}
       type={type}
       {...props}
