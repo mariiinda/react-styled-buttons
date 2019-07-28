@@ -13,6 +13,33 @@ import Button from "../components/Button";
 
 // afterEach(cleanup)
 
+test("visible focus state", () => {
+  const { getByTestId } = render(<Button id="my-button">Click me</Button>);
+  getByTestId("my-button").focus();
+  expect(getByTestId("my-button")).toHaveFocus();
+});
+
+test("renders as disbled", () => {
+  //const element = "button";
+  const { getByTestId } = render(
+    <Button id="my-button" disabled>
+      Click me
+    </Button>
+  );
+  expect(getByTestId("my-button")).toBeDisabled();
+});
+
+test("render as anchor element", () => {
+  const element = "a";
+  const { container } = render(
+    <Button id="my-button" as="a">
+      Click me
+    </Button>
+  );
+  const anchorEl = container.querySelector(element);
+  expect(anchorEl).toBeInTheDocument();
+});
+
 test("renders correctly", () => {
   const testChildren = "Click me";
   const { container, getByText } = render(
@@ -43,6 +70,7 @@ test("renders correctly", () => {
       transform: translate3d(0,0,0);
       -webkit-transition: 0.2s ease-in-out;
       transition: 0.2s ease-in-out;
+      box-shadow: none;
     }
 
     .emotion-0:hover {
@@ -79,31 +107,4 @@ test("renders correctly", () => {
       </span>
     </button>
   `);
-});
-
-test("visible focus state", () => {
-  const { getByTestId } = render(<Button id="my-button">Click me</Button>);
-  getByTestId("my-button").focus();
-  expect(getByTestId("my-button")).toHaveFocus();
-});
-
-test("renders as disbled", () => {
-  //const element = "button";
-  const { getByTestId } = render(
-    <Button id="my-button" disabled>
-      Click me
-    </Button>
-  );
-  expect(getByTestId("my-button")).toBeDisabled();
-});
-
-test("render as anchor element", () => {
-  const element = "a";
-  const { container } = render(
-    <Button id="my-button" as="a">
-      Click me
-    </Button>
-  );
-  const anchorEl = container.querySelector(element);
-  expect(anchorEl).toBeInTheDocument();
 });
