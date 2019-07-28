@@ -1,17 +1,11 @@
 import React from "react";
 import "@testing-library/react/cleanup-after-each";
 import "@testing-library/jest-dom/extend-expect";
-import {
-  render,
-  fireEvent,
-  cleanup,
-  waitForElement
-} from "@testing-library/react";
-// toHaveFocus
+import { render, cleanup } from "@testing-library/react";
 
 import Button from "../components/Button";
 
-// afterEach(cleanup)
+afterEach(cleanup);
 
 test("visible focus state", () => {
   const { getByTestId } = render(<Button id="my-button">Click me</Button>);
