@@ -1,13 +1,9 @@
 import React from "react";
 
 import { css, Global } from "@emotion/core";
-import { withTheme } from "emotion-theming";
 
 import Button from "../components/Button";
 import themes from "../theme/themes";
-
-// use HOC here since we want the theme to be passed in as prop not context
-const ButtonWithTheme = withTheme(Button);
 
 // styles
 const globalStyle = css`
