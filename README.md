@@ -101,10 +101,12 @@ Three sizes: large(default), medium, small.
 
 ### theme
 
-Theme object: a list of colors to be used for all the button variants. This object should match the shape of a [theme](https://github.com/mariiinda/react-styled-buttons/blob/master/src/theme/light.js).
+Theme name: light or dark.
+[Preview light](https://marinda.me/react-styled-buttons/?path=/story/ui-buttons--light-buttons)
+[Preview dark](https://marinda.me/react-styled-buttons/?path=/story/ui-buttons--dark-buttons)
 
 ```js
-<Button theme={yourCustomThemeObject}>
+<Button theme="dark">
   About
 </Button>
 ```
