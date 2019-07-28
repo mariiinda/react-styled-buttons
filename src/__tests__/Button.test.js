@@ -64,7 +64,6 @@ test("renders correctly", () => {
       transform: translate3d(0,0,0);
       -webkit-transition: 0.2s ease-in-out;
       transition: 0.2s ease-in-out;
-      box-shadow: none;
     }
 
     .emotion-0:hover {
