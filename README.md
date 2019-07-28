@@ -17,7 +17,7 @@
 
 React button components with WCAG 2 AA contrast ratio tested colors, light and dark theme options. Flexible & easily customized.
 
-Theme colors are [Open Colors](https://github.com/yeun/open-color). Buttons contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds.
+Theme colors are [Open Colors](https://github.com/yeun/open-color). Button contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds.
 
 ## Getting Started
 
