@@ -149,18 +149,16 @@ function Button({ as: Element, id, onClick, variant, size, theme, ...props }) {
   const [themeObject, setThemeObject] = useState(themes[theme]);
   useEffect(() => {
     if (theme === "light" || theme === "dark") {
-      console.log({ t: themes[theme], theme });
-      setThemeObject(themes[theme]);
+      const nextThemeObject = themes[theme];
+      setThemeObject(nextThemeObject);
     }
   }, [theme]);
   const composedStyles = composeStyles({ themeObject, variant, size });
   const type = Element === "button" && !props.type ? "button" : null;
 
-  console.log({ themeObject });
-
   return (
     <Element
-      //css={composedStyles}
+      css={composedStyles}
       id={id}
       data-testid={id}
       onClick={onClick}

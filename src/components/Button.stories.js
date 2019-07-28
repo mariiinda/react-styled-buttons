@@ -40,7 +40,7 @@ stories
       <Button
         disabled={boolean("Disabled", false)}
         size={sizeOptions()}
-        theme={"light"}
+        theme={themeOptions()}
       >
         Primary Button
       </Button>
@@ -51,7 +51,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="secondary"
       size={sizeOptions()}
-      theme={"light"}
+      theme={themeOptions()}
     >
       Secondary Button
     </Button>
@@ -61,7 +61,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="accent1"
       size={sizeOptions()}
-      theme={"light"}
+      theme={themeOptions()}
     >
       Accent1 Button
     </Button>
@@ -71,7 +71,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="accent2"
       size={sizeOptions()}
-      theme={"light"}
+      theme={themeOptions()}
     >
       Accent2 Button
     </Button>
@@ -81,7 +81,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="accent3"
       size={sizeOptions()}
-      theme={"light"}
+      theme={themeOptions()}
     >
       Accent3 Button
     </Button>
@@ -91,7 +91,7 @@ stories
       disabled={boolean("Disabled", false)}
       variant="neutral"
       size={sizeOptions()}
-      theme={"light"}
+      theme={themeOptions()}
     >
       Neutral Button
     </Button>

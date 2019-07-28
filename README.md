@@ -101,7 +101,7 @@ Three sizes: large(default), medium, small.
 
 ### theme
 
-Choose from two themes: light or dark.
+Theme name: light or dark.
 [Preview light](https://marinda.me/react-styled-buttons/?path=/story/ui-buttons--light-buttons)
 [Preview dark](https://marinda.me/react-styled-buttons/?path=/story/ui-buttons--dark-buttons)
 

@@ -140,7 +140,7 @@ function Buttons({ theme, setTheme }) {
         <section css={buttonWrapperStyle}>
           <h2>Buttons</h2>
           <Button theme={theme.id}>Default Button</Button>
-          <Button theme={theme} variant="secondary">
+          <Button theme={theme.id} variant="secondary">
             Secondary Button
           </Button>
           <Button theme={theme.id} variant="accent1">
