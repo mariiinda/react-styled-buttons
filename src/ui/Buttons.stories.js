@@ -1,20 +1,19 @@
 import React, { useState } from "react";
-import { storiesOf } from "@storybook/react";
+import { withA11y } from "@storybook/addon-a11y";
 
 import Buttons from "./Buttons";
 import themes from "../theme/themes";
 
-const stories = storiesOf("UI|Buttons", module);
+export default { title: "UI|Buttons", decorators: [withA11y] };
 
-stories.add("Light Buttons", () =>
+export const light = () =>
   React.createElement(() => {
     const [theme, setTheme] = useState(themes.light);
     return <Buttons theme={theme} setTheme={setTheme}></Buttons>;
-  })
-);
-stories.add("Dark Buttons", () =>
+  });
+
+export const dark = () =>
   React.createElement(() => {
     const [theme, setTheme] = useState(themes.dark);
     return <Buttons theme={theme} setTheme={setTheme}></Buttons>;
-  })
-);
+  });

@@ -1,11 +1,33 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { boolean, optionsKnob as options } from "@storybook/addon-knobs";
+import {
+  boolean,
+  optionsKnob as options,
+  withKnobs
+} from "@storybook/addon-knobs";
+import { withA11y } from "@storybook/addon-a11y";
 
 import Button from "./Button";
-//import themes from "../theme/themes";
 
-const stories = storiesOf("Components|Button", module);
+// variant knob
+const variantName = "variant";
+const variantValuesObj = {
+  primary: "primary",
+  secondary: "secondary",
+  accent1: "accent1",
+  accent2: "accent2",
+  accent3: "accent3",
+  neutral: "neutral"
+};
+const variantOptionsObj = {
+  display: "inline-radio"
+};
+const variantOptions = (variantDefaultValue = "primary") =>
+  options(
+    variantName,
+    variantValuesObj,
+    variantDefaultValue,
+    variantOptionsObj
+  );
 
 // size knob
 const sizeLabel = "size";
@@ -40,78 +62,32 @@ const asValuesObj = {
   button: "button",
   a: "a"
 };
-const asDefaultValue = "button";
 const asOptionsObj = {
   display: "inline-radio"
 };
-const asOptions = () =>
+const asOptions = (asDefaultValue = "button") =>
   options(asName, asValuesObj, asDefaultValue, asOptionsObj);
 
-stories
-  .add("primary", () => {
-    return (
-      <Button
-        disabled={boolean("Disabled", false)}
-        size={sizeOptions()}
-        theme={themeOptions()}
-        as={asOptions()}
-      >
-        Primary Button
-      </Button>
-    );
-  })
-  .add("secondary", () => (
+export default { title: "Buttons|Button", decorators: [withKnobs, withA11y] };
+
+export const primary = ({
+  children = "Primary Button",
+  onClick,
+  disabled,
+  id = "primary-button",
+  as
+} = {}) => {
+  return (
     <Button
-      disabled={boolean("Disabled", false)}
-      variant="secondary"
+      variant={variantOptions()}
+      disabled={boolean("Disabled", disabled)}
       size={sizeOptions()}
       theme={themeOptions()}
-      as={asOptions()}
+      as={asOptions(as)}
+      onClick={onClick}
+      id={id}
     >
-      Secondary Button
+      {children}
     </Button>
-  ))
-  .add("accent1", () => (
-    <Button
-      disabled={boolean("Disabled", false)}
-      variant="accent1"
-      size={sizeOptions()}
-      theme={themeOptions()}
-      as={asOptions()}
-    >
-      Accent1 Button
-    </Button>
-  ))
-  .add("accent2", () => (
-    <Button
-      disabled={boolean("Disabled", false)}
-      variant="accent2"
-      size={sizeOptions()}
-      theme={themeOptions()}
-      as={asOptions()}
-    >
-      Accent2 Button
-    </Button>
-  ))
-  .add("accent3", () => (
-    <Button
-      disabled={boolean("Disabled", false)}
-      variant="accent3"
-      size={sizeOptions()}
-      theme={themeOptions()}
-      as={asOptions()}
-    >
-      Accent3 Button
-    </Button>
-  ))
-  .add("neutral", () => (
-    <Button
-      disabled={boolean("Disabled", false)}
-      variant="neutral"
-      size={sizeOptions()}
-      theme={themeOptions()}
-      as={asOptions()}
-    >
-      Neutral Button
-    </Button>
-  ));
+  );
+};

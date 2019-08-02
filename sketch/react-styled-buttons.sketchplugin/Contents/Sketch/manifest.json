@@ -1,0 +1,24 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "react-styled-buttons",
+      "identifier": "main",
+      "script": "my-command.js"
+    }
+  ],
+  "menu": {
+    "isRoot": true,
+    "items": [
+      "main"
+    ]
+  },
+  "version": "0.0.9",
+  "description": "React button components with WCAG 2 AA contrast ratio tested colors, light and dark theme options. Flexible & easily customized.",
+  "name": "react-styled-buttons",
+  "identifier": "react-styled-buttons",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
+  "author": "marinda s"
+}

@@ -39,10 +39,14 @@ const ButtonStyle = theme => css`
     box-shadow: 0 0px 8px ${theme.primaryShade1},
       0 0px 8px ${theme.primaryShade1};
   }
+`;
 
-  &:disabled {
-    opacity: 0.6;
-  }
+const disabledStyle = css`
+  opacity: 0.6;
+  cursor: default;
+  transition: none;
+  transform: translate3d(0, 0, 0);
+  pointer-events: none;
 `;
 
 const SecondaryButtonStyle = theme => css`
@@ -123,7 +127,7 @@ const MediumButtonStyle = css`
   padding: 10px;
 `;
 
-const composeStyles = ({ themeObject, variant, size }) => {
+const composeStyles = ({ themeObject, variant, size, disabled }) => {
   const cssStyles = [ButtonStyle(themeObject)];
   const variantCases = {
     secondary: () => cssStyles.push(SecondaryButtonStyle(themeObject)),
@@ -142,10 +146,22 @@ const composeStyles = ({ themeObject, variant, size }) => {
   if (sizeCases[size]) {
     sizeCases[size]();
   }
+
+  disabled && cssStyles.push(disabledStyle);
+
   return cssStyles;
 };
 
-function Button({ as: Element, id, onClick, variant, size, theme, ...props }) {
+function Button({
+  as: Element,
+  id,
+  onClick,
+  variant,
+  size,
+  theme,
+  disabled,
+  ...props
+}) {
   const [themeObject, setThemeObject] = useState(themes[theme]);
   useEffect(() => {
     if (theme === "light" || theme === "dark") {
@@ -153,7 +169,12 @@ function Button({ as: Element, id, onClick, variant, size, theme, ...props }) {
       setThemeObject(nextThemeObject);
     }
   }, [theme]);
-  const composedStyles = composeStyles({ themeObject, variant, size });
+  const composedStyles = composeStyles({
+    themeObject,
+    variant,
+    size,
+    disabled
+  });
   const type = Element === "button" && !props.type ? "button" : null;
 
   return (
@@ -163,6 +184,7 @@ function Button({ as: Element, id, onClick, variant, size, theme, ...props }) {
       data-testid={id}
       onClick={onClick}
       type={type}
+      disabled={disabled}
       {...props}
     >
       <span>{props.children}</span>
