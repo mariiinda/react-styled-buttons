@@ -13,8 +13,8 @@
     "prestart": "npm run clean",
     "start": "parcel src/index.html",
     "build": "babel ./src --out-dir ./dist -s inline",
-    "storybook": "start-storybook",
-    "build-storybook": "build-storybook -c .storybook -o docs",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
     "prepublishOnly": "npm run build",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
@@ -28,7 +28,11 @@
     "@babel/preset-react": "^7.0.0",
     "@emotion/babel-preset-css-prop": "^10.0.14",
     "@storybook/addon-a11y": "^5.2.0-beta.20",
+    "@storybook/addon-actions": "^5.2.0-beta.20",
     "@storybook/addon-knobs": "^5.2.0-beta.20",
+    "@storybook/addon-links": "^5.2.0-beta.20",
+    "@storybook/addons": "^5.2.0-beta.20",
+    "@storybook/cli": "^5.2.0-beta.18",
     "@storybook/react": "^5.2.0-beta.20",
     "@testing-library/dom": "^5.6.0",
     "@testing-library/jest-dom": "^4.0.0",
@@ -49,7 +53,6 @@
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2",
     "react-dom": "^16.8.6",
-    "storybook": "^1.0.0",
     "webpack": "^4.37.0"
   },
   "peerDependencies": {

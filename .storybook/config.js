@@ -1,15 +1,4 @@
-import { configure, addDecorator } from "@storybook/react";
-import { withKnobs } from "@storybook/addon-knobs";
-import { withA11y } from "@storybook/addon-a11y";
+import { configure } from "@storybook/react";
 
-addDecorator(withA11y);
-addDecorator(withKnobs);
-
-// import dynamically
-const req = require.context("../src", true, /\.stories\.js$/);
-
-function loadStories() {
-  req.keys().forEach(req);
-}
-
-configure(loadStories, module);
+// automatically import all files ending in *.stories.js
+configure(require.context("../src/", true, /\.stories\.js$/), module);
