@@ -1,6 +1,6 @@
 {
   "name": "@marinda/react-styled-buttons",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "React button components with WCAG 2 AA contrast ratio tested colors, light and dark theme options. Flexible & easily customized.",
   "repository": "mariiinda/react-styled-buttons",
   "main": "dist/index.js",
@@ -14,7 +14,7 @@
     "start": "parcel src/index.html",
     "build": "babel ./src --out-dir ./dist -s inline",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -o docs",
     "prepublishOnly": "npm run build",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "sketch-build": "skpm-build",
