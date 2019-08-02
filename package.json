@@ -16,7 +16,11 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "prepublishOnly": "npm run build",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "sketch-build": "skpm-build",
+    "sketch-render": "skpm-build --watch --run",
+    "sketch-render:once": "skpm-build --run",
+    "sketch-link": "npm run build && skpm-link"
   },
   "author": "marinda s",
   "license": "ISC",
@@ -27,6 +31,7 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@emotion/babel-preset-css-prop": "^10.0.14",
+    "@skpm/builder": "^0.7.2",
     "@storybook/addon-a11y": "^5.2.0-beta.20",
     "@storybook/addon-actions": "^5.2.0-beta.20",
     "@storybook/addon-knobs": "^5.2.0-beta.20",
@@ -53,23 +58,31 @@
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2",
     "react-dom": "^16.8.6",
+    "react-sketchapp": "^3.0.0-beta.9",
+    "react-test-renderer": "^16.8.6",
     "webpack": "^4.37.0"
   },
   "peerDependencies": {
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "@emotion/core": "^10.0.14"
   },
   "files": [
     "dist/"
   ],
   "dependencies": {
-    "@emotion/core": "^10.0.14",
-    "acorn": "^6.2.1",
     "emotion-theming": "^10.0.14",
-    "open-color": "^1.7.0",
-    "typescript": "^3.5.3"
+    "open-color": "^1.7.0"
   },
   "prettier": {},
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "skpm": {
+    "name": "react-styled-buttons",
+    "manifest": "sketch/src/manifest.json",
+    "main": "sketch/react-styled-buttons.sketchplugin"
+  }
 }
