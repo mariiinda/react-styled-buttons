@@ -28,5 +28,6 @@ const Document = () => (
 );
 
 export default () => {
+  // eslint-disable-next-line no-undef
   render(<Document />, context.document.currentPage());
 };
