@@ -1,27 +1,33 @@
 import React from "react";
+import {
+  boolean,
+  optionsKnob as options,
+  withKnobs
+} from "@storybook/addon-knobs";
+import { withA11y } from "@storybook/addon-a11y";
+
 import Button from "./Button";
 
-export default { title: "Button" };
-
-export const primary = () => {
-  return <Button>Primary Button</Button>;
+// variant knob
+const variantName = "variant";
+const variantValuesObj = {
+  primary: "primary",
+  secondary: "secondary",
+  accent1: "accent1",
+  accent2: "accent2",
+  accent3: "accent3",
+  neutral: "neutral"
 };
-
-/* export const enabled = () => (
-  <Counter text="Enabled" />
-);
-export const disabled = () => (
-  <Counter disabled text="Disabled" />
-);
-
- */
-/* import React from "react";
-import { boolean, optionsKnob as options } from "@storybook/addon-knobs";
-
-import Button from "./Button";
-//import themes from "../theme/themes";
-
-//const stories = storiesOf('Components|Button', module);
+const variantOptionsObj = {
+  display: "inline-radio"
+};
+const variantOptions = (variantDefaultValue = "primary") =>
+  options(
+    variantName,
+    variantValuesObj,
+    variantDefaultValue,
+    variantOptionsObj
+  );
 
 // size knob
 const sizeLabel = "size";
@@ -56,83 +62,32 @@ const asValuesObj = {
   button: "button",
   a: "a"
 };
-const asDefaultValue = "button";
 const asOptionsObj = {
   display: "inline-radio"
 };
-const asOptions = () =>
+const asOptions = (asDefaultValue = "button") =>
   options(asName, asValuesObj, asDefaultValue, asOptionsObj);
 
-export const primary = () => {
+export default { title: "Buttons|Button", decorators: [withKnobs, withA11y] };
+
+export const primary = ({
+  children = "Primary Button",
+  onClick,
+  disabled,
+  id = "primary-button",
+  as
+} = {}) => {
   return (
     <Button
-      disabled={boolean("Disabled", false)}
+      variant={variantOptions()}
+      disabled={boolean("Disabled", disabled)}
       size={sizeOptions()}
       theme={themeOptions()}
-      as={asOptions()}
+      as={asOptions(as)}
+      onClick={onClick}
+      id={id}
     >
-      Primary Button
+      {children}
     </Button>
   );
 };
-
-export const secondary = () => (
-  <Button
-    disabled={boolean("Disabled", false)}
-    variant="secondary"
-    size={sizeOptions()}
-    theme={themeOptions()}
-    as={asOptions()}
-  >
-    Secondary Button
-  </Button>
-);
-
-export const accent1 = () => (
-  <Button
-    disabled={boolean("Disabled", false)}
-    variant="accent1"
-    size={sizeOptions()}
-    theme={themeOptions()}
-    as={asOptions()}
-  >
-    Accent1 Button
-  </Button>
-);
-
-export const accent2 = () => (
-  <Button
-    disabled={boolean("Disabled", false)}
-    variant="accent2"
-    size={sizeOptions()}
-    theme={themeOptions()}
-    as={asOptions()}
-  >
-    Accent2 Button
-  </Button>
-);
-
-export const accent3 = () => (
-  <Button
-    disabled={boolean("Disabled", false)}
-    variant="accent3"
-    size={sizeOptions()}
-    theme={themeOptions()}
-    as={asOptions()}
-  >
-    Accent3 Button
-  </Button>
-);
-
-export const neutral = () => (
-  <Button
-    disabled={boolean("Disabled", false)}
-    variant="neutral"
-    size={sizeOptions()}
-    theme={themeOptions()}
-    as={asOptions()}
-  >
-    Neutral Button
-  </Button>
-);
- */
