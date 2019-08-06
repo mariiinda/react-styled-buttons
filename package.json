@@ -1,7 +1,7 @@
 {
   "name": "@marinda/react-styled-buttons",
-  "version": "0.0.11",
-  "description": "React button components with WCAG 2 AA contrast ratio tested colors, light and dark theme options. Flexible & easily customized.",
+  "version": "0.0.12",
+  "description": "Themable Styled React button components. Flexible & easily customized.",
   "repository": "mariiinda/react-styled-buttons",
   "main": "dist/index.js",
   "scripts": {
@@ -11,16 +11,12 @@
     "test:coverage": "jest --coverage",
     "clean": "rm -rf .cache/ dist/",
     "prestart": "npm run clean",
-    "start": "parcel src/index.html",
+    "start": "parcel src/index.html --port 3333",
     "build": "babel ./src --out-dir ./dist -s inline",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs",
     "prepublishOnly": "npm run build",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "sketch-build": "skpm-build",
-    "sketch-render": "skpm-build --watch --run",
-    "sketch-render:once": "skpm-build --run",
-    "sketch-link": "npm run build && skpm-link"
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "author": "marinda s",
   "license": "ISC",
@@ -31,7 +27,6 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@emotion/babel-preset-css-prop": "^10.0.14",
-    "@skpm/builder": "^0.7.2",
     "@storybook/addon-a11y": "^5.2.0-beta.20",
     "@storybook/addon-actions": "^5.2.0-beta.20",
     "@storybook/addon-knobs": "^5.2.0-beta.20",
@@ -58,9 +53,7 @@
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2",
     "react-dom": "^16.8.6",
-    "react-sketchapp": "^3.0.0-beta.9",
-    "react-test-renderer": "^16.8.6",
-    "webpack": "^4.37.0"
+    "react-test-renderer": "^16.8.6"
   },
   "peerDependencies": {
     "react": "^16.8.6",
@@ -76,13 +69,5 @@
   "prettier": {},
   "browserslist": [
     "defaults"
-  ],
-  "engines": {
-    "sketch": ">=3.0"
-  },
-  "skpm": {
-    "name": "react-styled-buttons",
-    "manifest": "sketch/src/manifest.json",
-    "main": "sketch/react-styled-buttons.sketchplugin"
-  }
+  ]
 }
