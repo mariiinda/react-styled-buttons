@@ -93,7 +93,6 @@ const MediumButtonStyle = ({ space: [, , thirdSpace] }) => css`
 `;
 
 const composeStyles = ({ theme, themeColors, variant, size, disabled }) => {
-  console.log({ theme, themeColors });
   const cssStyles = [ButtonStyle({ theme, themeColors })];
   const sizeCases = {
     small: () => cssStyles.push(SmallButtonStyle(theme)),
