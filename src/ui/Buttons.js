@@ -126,6 +126,35 @@ function Buttons({ mode, setMode }) {
           <Button mode={mode} size="small">
             Small Button
           </Button>
+          <Button
+            mode={mode}
+            theme={{
+              colors: {
+                background: "#f8f0fc",
+                primary: "#862E9C",
+                modes: {
+                  dark: {
+                    background: "#333",
+                    primary: "#e599f7"
+                  }
+                }
+              },
+              shadows: {
+                default: "0 .5rem 1rem rebeccapurple"
+              }
+            }}
+            css={css`
+              &:hover,
+              &:focus {
+                background: #a64ebc;
+              }
+              &:active {
+                background: #862e9c;
+              }
+            `}
+          >
+            Custom theme button
+          </Button>
         </section>
       </div>
     </>

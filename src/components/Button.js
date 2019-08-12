@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { css } from "@emotion/core";
+import merge from "deepmerge";
 
 import tetrisTheme from "@marinda/tetris-theme-ui-preset";
 
@@ -92,6 +93,7 @@ const MediumButtonStyle = ({ space: [, , thirdSpace] }) => css`
 `;
 
 const composeStyles = ({ theme, themeColors, variant, size, disabled }) => {
+  console.log({ theme, themeColors });
   const cssStyles = [ButtonStyle({ theme, themeColors })];
   const sizeCases = {
     small: () => cssStyles.push(SmallButtonStyle(theme)),
@@ -116,25 +118,32 @@ function Button({
   size,
   mode,
   disabled,
+  theme,
   ...props
 }) {
   // TODO deep merge theme prop with theme preset
 
-  const [theme, setTheme] = useState(tetrisTheme);
+  const [mergedTheme, setMergedTheme] = useState(tetrisTheme);
   const [themeColors, setThemeColors] = useState(tetrisTheme.colors);
   useEffect(() => {
+    if (theme) {
+      const nextMergedTheme = merge.all([tetrisTheme, theme]);
+      setMergedTheme(nextMergedTheme);
+    }
+  }, [theme]);
+  useEffect(() => {
     if (mode !== "light") {
-      const nextThemeColors = tetrisTheme.colors.modes[mode];
+      const nextThemeColors = mergedTheme.colors.modes[mode];
       setThemeColors(nextThemeColors);
     }
     if (mode === "light") {
-      const nextThemeColors = tetrisTheme.colors;
+      const nextThemeColors = mergedTheme.colors;
       setThemeColors(nextThemeColors);
     }
-  }, [mode]);
+  }, [mode, mergedTheme]);
 
   const composedStyles = composeStyles({
-    theme,
+    theme: mergedTheme,
     themeColors,
     variant,
     size,
@@ -161,6 +170,7 @@ Button.defaultProps = {
   as: "button",
   id: "",
   children: null,
+  theme: null,
   disabled: false,
   onClick: () => {},
   mode: "light",

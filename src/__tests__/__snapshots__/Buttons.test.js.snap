@@ -82,7 +82,7 @@ Object {
   background: #0054ff;
 }
 
-.emotion-11 {
+.emotion-12 {
   grid-area: buttons;
   padding: 30px;
   border-bottom: 1px solid currentColor;
@@ -103,14 +103,14 @@ Object {
   justify-content: space-evenly;
 }
 
-.emotion-11 > button {
+.emotion-12 > button {
   -webkit-flex: 0 1 calc(50% - 20px);
   -ms-flex: 0 1 calc(50% - 20px);
   flex: 0 1 calc(50% - 20px);
   margin-top: 20px;
 }
 
-.emotion-12 {
+.emotion-13 {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -123,11 +123,11 @@ Object {
   transition: 0.2s ease;
 }
 
-.emotion-12 section {
+.emotion-13 section {
   position: relative;
 }
 
-.emotion-12 h2 {
+.emotion-13 h2 {
   position: absolute;
   top: 0px;
   left: 0;
@@ -596,10 +596,70 @@ Object {
   background: #37b0ff;
 }
 
+.emotion-11 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: cyan;
+  color: #212529;
+  font-size: 1rem;
+  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background: cyan;
+  color: #212529;
+}
+
+.emotion-11:hover {
+  background: #37b0ff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-11:active {
+  background: #b0b7ff;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-11:focus {
+  box-shadow: 0 0px 8px #37b0ff,0 0px 8px #0032a8;
+}
+
+.emotion-11:hover {
+  color: #212529;
+  background: #37b0ff;
+}
+
+.emotion-11:hover,
+.emotion-11:focus {
+  background: #ff9c61;
+}
+
+.emotion-11:active {
+  background: #fd9d91;
+}
+
 <body>
     <div>
       <div
-        class="emotion-12"
+        class="emotion-13"
       >
         <div
           class="emotion-1"
@@ -618,7 +678,7 @@ Object {
           </button>
         </div>
         <section
-          class="emotion-11"
+          class="emotion-12"
         >
           <button
             class="emotion-2"
@@ -710,6 +770,16 @@ Object {
               Small Button
             </span>
           </button>
+          <button
+            class="emotion-11"
+            data-testid=""
+            id=""
+            type="button"
+          >
+            <span>
+              Custom theme button
+            </span>
+          </button>
         </section>
       </div>
     </div>
@@ -793,7 +863,7 @@ Object {
   background: #0054ff;
 }
 
-.emotion-11 {
+.emotion-12 {
   grid-area: buttons;
   padding: 30px;
   border-bottom: 1px solid currentColor;
@@ -814,14 +884,14 @@ Object {
   justify-content: space-evenly;
 }
 
-.emotion-11 > button {
+.emotion-12 > button {
   -webkit-flex: 0 1 calc(50% - 20px);
   -ms-flex: 0 1 calc(50% - 20px);
   flex: 0 1 calc(50% - 20px);
   margin-top: 20px;
 }
 
-.emotion-12 {
+.emotion-13 {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -834,11 +904,11 @@ Object {
   transition: 0.2s ease;
 }
 
-.emotion-12 section {
+.emotion-13 section {
   position: relative;
 }
 
-.emotion-12 h2 {
+.emotion-13 h2 {
   position: absolute;
   top: 0px;
   left: 0;
@@ -1307,9 +1377,69 @@ Object {
   background: #37b0ff;
 }
 
+.emotion-11 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: cyan;
+  color: #212529;
+  font-size: 1rem;
+  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background: cyan;
+  color: #212529;
+}
+
+.emotion-11:hover {
+  background: #37b0ff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-11:active {
+  background: #b0b7ff;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-11:focus {
+  box-shadow: 0 0px 8px #37b0ff,0 0px 8px #0032a8;
+}
+
+.emotion-11:hover {
+  color: #212529;
+  background: #37b0ff;
+}
+
+.emotion-11:hover,
+.emotion-11:focus {
+  background: #ff9c61;
+}
+
+.emotion-11:active {
+  background: #fd9d91;
+}
+
 <div>
     <div
-      class="emotion-12"
+      class="emotion-13"
     >
       <div
         class="emotion-1"
@@ -1328,7 +1458,7 @@ Object {
         </button>
       </div>
       <section
-        class="emotion-11"
+        class="emotion-12"
       >
         <button
           class="emotion-2"
@@ -1420,6 +1550,16 @@ Object {
             Small Button
           </span>
         </button>
+        <button
+          class="emotion-11"
+          data-testid=""
+          id=""
+          type="button"
+        >
+          <span>
+            Custom theme button
+          </span>
+        </button>
       </section>
     </div>
   </div>,
@@ -1480,7 +1620,7 @@ Object {
 exports[`renders theme light 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": .emotion-12 {
+  "baseElement": .emotion-13 {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -1493,11 +1633,11 @@ Object {
   transition: 0.2s ease;
 }
 
-.emotion-12 section {
+.emotion-13 section {
   position: relative;
 }
 
-.emotion-12 h2 {
+.emotion-13 h2 {
   position: absolute;
   top: 0px;
   left: 0;
@@ -1583,7 +1723,7 @@ Object {
   background: #0054ff;
 }
 
-.emotion-11 {
+.emotion-12 {
   grid-area: buttons;
   padding: 30px;
   border-bottom: 1px solid currentColor;
@@ -1604,7 +1744,7 @@ Object {
   justify-content: space-evenly;
 }
 
-.emotion-11 > button {
+.emotion-12 > button {
   -webkit-flex: 0 1 calc(50% - 20px);
   -ms-flex: 0 1 calc(50% - 20px);
   flex: 0 1 calc(50% - 20px);
@@ -2020,10 +2160,70 @@ Object {
   background: #0054ff;
 }
 
+.emotion-11 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: orange;
+  color: #212529;
+  font-size: 1rem;
+  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background: orange;
+  color: #212529;
+}
+
+.emotion-11:hover {
+  background: #0054ff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-11:active {
+  background: #0032a8;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-11:focus {
+  box-shadow: 0 0px 8px #0054ff,0 0px 8px #b0b7ff;
+}
+
+.emotion-11:hover {
+  color: #212529;
+  background: #0054ff;
+}
+
+.emotion-11:hover,
+.emotion-11:focus {
+  background: #ff9c61;
+}
+
+.emotion-11:active {
+  background: #fd9d91;
+}
+
 <body>
     <div>
       <div
-        class="emotion-12"
+        class="emotion-13"
       >
         <div
           class="emotion-1"
@@ -2042,7 +2242,7 @@ Object {
           </button>
         </div>
         <section
-          class="emotion-11"
+          class="emotion-12"
         >
           <button
             class="emotion-2"
@@ -2134,11 +2334,21 @@ Object {
               Small Button
             </span>
           </button>
+          <button
+            class="emotion-11"
+            data-testid=""
+            id=""
+            type="button"
+          >
+            <span>
+              Custom theme button
+            </span>
+          </button>
         </section>
       </div>
     </div>
   </body>,
-  "container": .emotion-12 {
+  "container": .emotion-13 {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -2151,11 +2361,11 @@ Object {
   transition: 0.2s ease;
 }
 
-.emotion-12 section {
+.emotion-13 section {
   position: relative;
 }
 
-.emotion-12 h2 {
+.emotion-13 h2 {
   position: absolute;
   top: 0px;
   left: 0;
@@ -2241,7 +2451,7 @@ Object {
   background: #0054ff;
 }
 
-.emotion-11 {
+.emotion-12 {
   grid-area: buttons;
   padding: 30px;
   border-bottom: 1px solid currentColor;
@@ -2262,7 +2472,7 @@ Object {
   justify-content: space-evenly;
 }
 
-.emotion-11 > button {
+.emotion-12 > button {
   -webkit-flex: 0 1 calc(50% - 20px);
   -ms-flex: 0 1 calc(50% - 20px);
   flex: 0 1 calc(50% - 20px);
@@ -2678,9 +2888,69 @@ Object {
   background: #0054ff;
 }
 
+.emotion-11 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: orange;
+  color: #212529;
+  font-size: 1rem;
+  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background: orange;
+  color: #212529;
+}
+
+.emotion-11:hover {
+  background: #0054ff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-11:active {
+  background: #0032a8;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-11:focus {
+  box-shadow: 0 0px 8px #0054ff,0 0px 8px #b0b7ff;
+}
+
+.emotion-11:hover {
+  color: #212529;
+  background: #0054ff;
+}
+
+.emotion-11:hover,
+.emotion-11:focus {
+  background: #ff9c61;
+}
+
+.emotion-11:active {
+  background: #fd9d91;
+}
+
 <div>
     <div
-      class="emotion-12"
+      class="emotion-13"
     >
       <div
         class="emotion-1"
@@ -2699,7 +2969,7 @@ Object {
         </button>
       </div>
       <section
-        class="emotion-11"
+        class="emotion-12"
       >
         <button
           class="emotion-2"
@@ -2789,6 +3059,16 @@ Object {
         >
           <span>
             Small Button
+          </span>
+        </button>
+        <button
+          class="emotion-11"
+          data-testid=""
+          id=""
+          type="button"
+        >
+          <span>
+            Custom theme button
           </span>
         </button>
       </section>

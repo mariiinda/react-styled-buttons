@@ -105,15 +105,41 @@ Three sizes: large(default), medium, small.
 </Button>
 ```
 
-### theme
+### mode
 
-Theme name: light or dark.
-[Preview light](https://marinda.me/react-styled-buttons/?path=/story/ui-buttons--light-buttons)
-[Preview dark](https://marinda.me/react-styled-buttons/?path=/story/ui-buttons--dark-buttons)
+Mode: light or dark.
 
 ```js
-<Button theme="dark">
+<Button mode="dark">
   About
+</Button>
+```
+
+### theme
+
+The Button component uses a theme [preset](https://github.com/mariiinda/tetris-theme-ui-preset)  to set styles. Override the theme by passing a theme object, this will be merged with the Button's theme. Pass in the same [properties](https://github.com/mariiinda/tetris-theme-ui-preset/blob/master/src/json/index.json) as the inner theme.
+
+
+```js
+<Button
+  mode={mode}
+  theme={{
+    colors: {
+      background: "#f8f0fc",
+      primary: "#862E9C",
+      modes: {
+        dark: {
+          background: "#333",
+          primary: "#e599f7"
+        }
+      }
+    },
+    shadows: {
+      default: "0 .5rem 1rem rebeccapurple"
+    }
+  }}
+>
+  Custom theme button
 </Button>
 ```
 

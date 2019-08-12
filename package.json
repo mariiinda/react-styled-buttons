@@ -63,7 +63,8 @@
     "dist/"
   ],
   "dependencies": {
-    "@marinda/tetris-theme-ui-preset": "*"
+    "@marinda/tetris-theme-ui-preset": "*",
+    "deep-merge": "^1.0.0"
   },
   "prettier": {},
   "browserslist": [
