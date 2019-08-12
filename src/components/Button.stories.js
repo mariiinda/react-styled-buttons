@@ -13,7 +13,7 @@ const variantName = "variant";
 const variantValuesObj = {
   primary: "primary",
   secondary: "secondary",
-  accent1: "accent",
+  accent: "accent",
   accent2: "accent2",
   accent3: "accent3",
   accent4: "accent4",
