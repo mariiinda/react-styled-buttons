@@ -40,6 +40,7 @@
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
+    "deep-merge": "^1.0.0",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-emotion": "^10.0.14",
@@ -56,15 +57,14 @@
     "react-test-renderer": "^16.8.6"
   },
   "peerDependencies": {
-    "react": "^16.8.6",
-    "@emotion/core": "^10.0.14"
+    "@emotion/core": "^10.0.14",
+    "react": "^16.8.6"
   },
   "files": [
     "dist/"
   ],
   "dependencies": {
-    "@marinda/tetris-theme-ui-preset": "*",
-    "deep-merge": "^1.0.0"
+    "@marinda/tetris-theme-ui-preset": "^1.0.8"
   },
   "prettier": {},
   "browserslist": [
