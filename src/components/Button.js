@@ -9,7 +9,8 @@ const ButtonStyle = ({
     fontSizes: [, , , fourthFontSize],
     space: [, , , fourthSpace],
     radii: [, secondRadius],
-    shadows
+    shadows,
+    fonts: { body }
   },
   themeColors: {
     background,
@@ -30,7 +31,7 @@ const ButtonStyle = ({
   background: ${primary};
   color: ${background};
   font-size: ${fourthFontSize};
-  font-family: inherit;
+  font-family: ${body};
   line-height: inherit;
   font-weight: inherit;
   transform: translate3d(0, 0, 0);
