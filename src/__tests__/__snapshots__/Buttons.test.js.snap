@@ -607,8 +607,8 @@ Object {
   display: inline-block;
   border: none;
   border-radius: 5px;
-  background: cyan;
-  color: #212529;
+  background: #e599f7;
+  color: #333;
   font-size: 1rem;
   font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
   line-height: inherit;
@@ -618,8 +618,8 @@ Object {
   transform: translate3d(0,0,0);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  background: cyan;
-  color: #212529;
+  background: #e599f7;
+  color: #333;
 }
 
 .emotion-11:hover {
@@ -627,7 +627,7 @@ Object {
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  box-shadow: 0 .5rem 1rem rebeccapurple;
 }
 
 .emotion-11:active {
@@ -635,7 +635,7 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  box-shadow: 0 .5rem 1rem rebeccapurple;
 }
 
 .emotion-11:focus {
@@ -643,17 +643,17 @@ Object {
 }
 
 .emotion-11:hover {
-  color: #212529;
+  color: #333;
   background: #37b0ff;
 }
 
 .emotion-11:hover,
 .emotion-11:focus {
-  background: #ff9c61;
+  background: #a64ebc;
 }
 
 .emotion-11:active {
-  background: #fd9d91;
+  background: #862e9c;
 }
 
 <body>
@@ -1388,8 +1388,8 @@ Object {
   display: inline-block;
   border: none;
   border-radius: 5px;
-  background: cyan;
-  color: #212529;
+  background: #e599f7;
+  color: #333;
   font-size: 1rem;
   font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
   line-height: inherit;
@@ -1399,8 +1399,8 @@ Object {
   transform: translate3d(0,0,0);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  background: cyan;
-  color: #212529;
+  background: #e599f7;
+  color: #333;
 }
 
 .emotion-11:hover {
@@ -1408,7 +1408,7 @@ Object {
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  box-shadow: 0 .5rem 1rem rebeccapurple;
 }
 
 .emotion-11:active {
@@ -1416,7 +1416,7 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  box-shadow: 0 .5rem 1rem rebeccapurple;
 }
 
 .emotion-11:focus {
@@ -1424,17 +1424,17 @@ Object {
 }
 
 .emotion-11:hover {
-  color: #212529;
+  color: #333;
   background: #37b0ff;
 }
 
 .emotion-11:hover,
 .emotion-11:focus {
-  background: #ff9c61;
+  background: #a64ebc;
 }
 
 .emotion-11:active {
-  background: #fd9d91;
+  background: #862e9c;
 }
 
 <div>
@@ -2171,8 +2171,8 @@ Object {
   display: inline-block;
   border: none;
   border-radius: 5px;
-  background: orange;
-  color: #212529;
+  background: #862E9C;
+  color: #f8f0fc;
   font-size: 1rem;
   font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
   line-height: inherit;
@@ -2182,8 +2182,8 @@ Object {
   transform: translate3d(0,0,0);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  background: orange;
-  color: #212529;
+  background: #862E9C;
+  color: #f8f0fc;
 }
 
 .emotion-11:hover {
@@ -2191,7 +2191,7 @@ Object {
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  box-shadow: 0 .5rem 1rem rebeccapurple;
 }
 
 .emotion-11:active {
@@ -2199,7 +2199,7 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  box-shadow: 0 .5rem 1rem rebeccapurple;
 }
 
 .emotion-11:focus {
@@ -2207,17 +2207,17 @@ Object {
 }
 
 .emotion-11:hover {
-  color: #212529;
+  color: #f8f0fc;
   background: #0054ff;
 }
 
 .emotion-11:hover,
 .emotion-11:focus {
-  background: #ff9c61;
+  background: #a64ebc;
 }
 
 .emotion-11:active {
-  background: #fd9d91;
+  background: #862e9c;
 }
 
 <body>
@@ -2899,8 +2899,8 @@ Object {
   display: inline-block;
   border: none;
   border-radius: 5px;
-  background: orange;
-  color: #212529;
+  background: #862E9C;
+  color: #f8f0fc;
   font-size: 1rem;
   font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
   line-height: inherit;
@@ -2910,8 +2910,8 @@ Object {
   transform: translate3d(0,0,0);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  background: orange;
-  color: #212529;
+  background: #862E9C;
+  color: #f8f0fc;
 }
 
 .emotion-11:hover {
@@ -2919,7 +2919,7 @@ Object {
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  box-shadow: 0 .5rem 1rem rebeccapurple;
 }
 
 .emotion-11:active {
@@ -2927,7 +2927,7 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  box-shadow: 0 .5rem 1rem rebeccapurple;
 }
 
 .emotion-11:focus {
@@ -2935,17 +2935,17 @@ Object {
 }
 
 .emotion-11:hover {
-  color: #212529;
+  color: #f8f0fc;
   background: #0054ff;
 }
 
 .emotion-11:hover,
 .emotion-11:focus {
-  background: #ff9c61;
+  background: #a64ebc;
 }
 
 .emotion-11:active {
-  background: #fd9d91;
+  background: #862e9c;
 }
 
 <div>
