@@ -3,7 +3,7 @@ import React from "react";
 import { css, Global } from "@emotion/core";
 
 import Button from "../components/Button";
-/* import themes from "../theme/themes"; */
+import tetrisTheme from "@marinda/tetris-theme-ui-preset";
 
 // styles
 const globalStyle = css`
@@ -21,44 +21,10 @@ const globalStyle = css`
     height: 100%;
     margin: 0;
     padding: 0;
-    color: #555;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-
-    /* remove margin for the main div that Gatsby mounts into */
-    > div {
-      margin-top: 0;
-      width: 100%;
-      height: 100%;
-
-      > button {
-        margin: 0;
-        padding: 0;
-      }
-    }
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: inherit;
-    line-height: 1.1;
-    + * {
-      margin-top: 0.5rem;
-    }
-  }
-  strong {
-    color: #222;
-  }
-  li {
-    margin-top: 0.25rem;
   }
 `;
 
-/* const gridStyle = ({ backgroundColor, foregroundColor }) => css`
+const gridStyle = ({ text, background }) => css`
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -66,8 +32,8 @@ const globalStyle = css`
   'header header header'
   '. buttons .'
   '. . .'`};
-  background: ${backgroundColor};
-  color: ${foregroundColor};
+  background: ${background};
+  color: ${text};
   width: 100%;
   height: 100%;
   transition: 0.2s ease;
@@ -81,9 +47,7 @@ const globalStyle = css`
     left: 0;
     text-transform: uppercase;
   }
-`; 
-<div css={gridStyle(mode)}>
-*/
+`;
 
 const headerStyle = css`
   grid-area: header;
@@ -117,34 +81,26 @@ const buttonWrapperStyle = css`
 `;
 
 function Buttons({ mode, setMode }) {
+  const { colors } = tetrisTheme;
+  const colormodeColors = mode === "light" ? colors : colors.modes.dark;
   return (
     <>
       <Global styles={globalStyle} />
-      <div>
+      <div
+        css={gridStyle({
+          background: colormodeColors.background,
+          text: colormodeColors.text
+        })}
+      >
         <div css={headerStyle}>
-          <h1>Themes: </h1>
-          {/*   <div>
-            {Object.keys(themes).length > 0 &&
-              Object.keys(themes).map(key => (
-                <Button
-                  key={key}
-                  onClick={() => setTheme(themes[key])}
-                  size="small"
-                >
-                  {key}
-                </Button>
-              ))}
-          </div> */}
-          current mode : {mode}
-          <Button onClick={() => setMode("light")} size="small">
-            light
-          </Button>
-          <Button onClick={() => setMode("dark")} size="small">
-            dark
+          <Button
+            onClick={() => setMode(mode === "light" ? "dark" : "light")}
+            size="small"
+          >
+            Show {mode === "light" ? "dark" : "light"} mode
           </Button>
         </div>
         <section css={buttonWrapperStyle}>
-          <h2>Buttons</h2>
           <Button mode={mode}>Default Button</Button>
           <Button mode={mode} variant="secondary">
             Secondary Button
