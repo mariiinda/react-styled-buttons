@@ -121,8 +121,6 @@ function Button({
   theme,
   ...props
 }) {
-  // TODO deep merge theme prop with theme preset
-
   const [mergedTheme, setMergedTheme] = useState(tetrisTheme);
   const [themeColors, setThemeColors] = useState(tetrisTheme.colors);
   useEffect(() => {
