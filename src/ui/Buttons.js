@@ -3,7 +3,7 @@ import React from "react";
 import { css, Global } from "@emotion/core";
 
 import Button from "../components/Button";
-import themes from "../theme/themes";
+/* import themes from "../theme/themes"; */
 
 // styles
 const globalStyle = css`
@@ -61,7 +61,7 @@ const globalStyle = css`
   }
 `;
 
-const gridStyle = ({ backgroundColor, foregroundColor }) => css`
+/* const gridStyle = ({ backgroundColor, foregroundColor }) => css`
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -84,7 +84,9 @@ const gridStyle = ({ backgroundColor, foregroundColor }) => css`
     left: 0;
     text-transform: uppercase;
   }
-`;
+`; 
+<div css={gridStyle(mode)}>
+*/
 
 const headerStyle = css`
   grid-area: header;
@@ -117,14 +119,14 @@ const buttonWrapperStyle = css`
   }
 `;
 
-function Buttons({ theme, setTheme }) {
+function Buttons({ mode, setMode }) {
   return (
     <>
       <Global styles={globalStyle} />
-      <div css={gridStyle(theme)}>
+      <div>
         <div css={headerStyle}>
           <h1>Themes: </h1>
-          <div>
+          {/*   <div>
             {Object.keys(themes).length > 0 &&
               Object.keys(themes).map(key => (
                 <Button
@@ -135,30 +137,40 @@ function Buttons({ theme, setTheme }) {
                   {key}
                 </Button>
               ))}
-          </div>
+          </div> */}
+          current mode : {mode}
+          <Button onClick={() => setMode("light")} size="small">
+            light
+          </Button>
+          <Button onClick={() => setMode("dark")} size="small">
+            dark
+          </Button>
         </div>
         <section css={buttonWrapperStyle}>
           <h2>Buttons</h2>
-          <Button theme={theme.id}>Default Button</Button>
-          <Button theme={theme.id} variant="secondary">
+          <Button mode={mode}>Default Button</Button>
+          <Button mode={mode} variant="secondary">
             Secondary Button
           </Button>
-          <Button theme={theme.id} variant="accent1">
+          <Button mode={mode} variant="accent">
             Accent1 Button
           </Button>
-          <Button theme={theme.id} variant="accent2">
+          <Button mode={mode} variant="accent2">
             Accent2 Button
           </Button>
-          <Button theme={theme.id} variant="accent3">
+          <Button mode={mode} variant="accent3">
             Accent3 Button
           </Button>
-          <Button theme={theme.id} variant="neutral">
-            Neutral Button
+          <Button mode={mode} variant="accent4">
+            Accent4 Button
           </Button>
-          <Button theme={theme.id} size="medium">
+          <Button mode={mode} variant="gray">
+            Gray Button
+          </Button>
+          <Button mode={mode} size="medium">
             Medium Button
           </Button>
-          <Button theme={theme.id} size="small">
+          <Button mode={mode} size="small">
             Small Button
           </Button>
         </section>

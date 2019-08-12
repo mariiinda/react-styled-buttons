@@ -13,10 +13,11 @@ const variantName = "variant";
 const variantValuesObj = {
   primary: "primary",
   secondary: "secondary",
-  accent1: "accent1",
+  accent1: "accent",
   accent2: "accent2",
   accent3: "accent3",
-  neutral: "neutral"
+  accent4: "accent4",
+  gray: "gray"
 };
 const variantOptionsObj = {
   display: "inline-radio"
@@ -43,18 +44,18 @@ const sizeOptionsObj = {
 const sizeOptions = () =>
   options(sizeLabel, sizeValuesObj, sizeDefaultValue, sizeOptionsObj);
 
-// theme knob
-const themeName = "theme";
-const themeValuesObj = {
+// mode knob
+const modeName = "mode";
+const modeValuesObj = {
   light: "light",
   dark: "dark"
 };
-const themeDefaultValue = "light";
-const themeOptionsObj = {
+const modeDefaultValue = "light";
+const modeOptionsObj = {
   display: "inline-radio"
 };
-const themeOptions = () =>
-  options(themeName, themeValuesObj, themeDefaultValue, themeOptionsObj);
+const modeOptions = () =>
+  options(modeName, modeValuesObj, modeDefaultValue, modeOptionsObj);
 
 // as knob
 const asName = "as";
@@ -82,7 +83,7 @@ export const primary = ({
       variant={variantOptions()}
       disabled={boolean("Disabled", disabled)}
       size={sizeOptions()}
-      theme={themeOptions()}
+      mode={modeOptions()}
       as={asOptions(as)}
       onClick={onClick}
       id={id}

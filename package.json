@@ -64,7 +64,8 @@
   ],
   "dependencies": {
     "emotion-theming": "^10.0.14",
-    "open-color": "^1.7.0"
+    "open-color": "^1.7.0",
+    "@marinda/tetris-theme-ui-preset": "*"
   },
   "prettier": {},
   "browserslist": [
