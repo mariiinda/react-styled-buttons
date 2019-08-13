@@ -132,6 +132,7 @@ function Buttons({ mode, setMode }) {
               colors: {
                 background: "#f8f0fc",
                 primary: "#862E9C",
+                primaryShades: ["peachpuff", "purple", "rebeccapurple"],
                 modes: {
                   dark: {
                     background: "#333",
@@ -143,17 +144,22 @@ function Buttons({ mode, setMode }) {
                 default: "0 .5rem 1rem rebeccapurple"
               }
             }}
+          >
+            Custom theme button
+          </Button>
+          <Button
+            mode={mode}
             css={css`
+              color: black;
+              background: peachpuff;
               &:hover,
-              &:focus {
-                background: #a64ebc;
-              }
               &:active {
-                background: #862e9c;
+                color: white;
+                background: orangered;
               }
             `}
           >
-            Custom theme button
+            Custom css button
           </Button>
         </section>
       </div>

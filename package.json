@@ -1,6 +1,6 @@
 {
   "name": "@marinda/react-styled-buttons",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "Themable Styled React button components. Flexible & easily customized.",
   "repository": "mariiinda/react-styled-buttons",
   "main": "dist/index.js",
@@ -63,8 +63,8 @@
     "dist/"
   ],
   "dependencies": {
-    "deep-merge": "^1.0.0",
-    "@marinda/tetris-theme-ui-preset": "^1.0.8"
+    "@marinda/tetris-theme-ui-preset": "^1.0.8",
+    "lodash.merge": "^4.6.2"
   },
   "prettier": {},
   "browserslist": [
