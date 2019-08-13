@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { css } from "@emotion/core";
-import merge from "deepmerge";
+/* import merge from "deepmerge"; */
+import merge from "lodash.merge";
 
 import tetrisTheme from "@marinda/tetris-theme-ui-preset";
 
@@ -65,9 +66,14 @@ const disabledStyle = css`
 
 const VariantStyle = ({ colors, variant }) => {
   const shades = colors[`${variant}Shades`];
+
   let hoverColor = colors.grayText;
+  let firstShade = colors.grayText;
+  let lastShade = colors.grayText;
   if (shades && shades.length > 0) {
+    firstShade = shades[0];
     hoverColor = shades[1];
+    lastShade = shades[2];
   }
   return css`
     background: ${colors[variant]};
@@ -76,6 +82,14 @@ const VariantStyle = ({ colors, variant }) => {
     &:hover {
       color: ${variant === "gray" ? colors.gray : colors.background};
       background: ${hoverColor};
+    }
+
+    &:active {
+      background: ${lastShade};
+    }
+
+    &:focus {
+      box-shadow: 0 0px 8px ${hoverColor}, 0 0px 8px ${firstShade};
     }
   `;
 };
@@ -103,7 +117,9 @@ const composeStyles = ({ theme, themeColors, variant, size, disabled }) => {
     sizeCases[size]();
   }
 
-  variant && cssStyles.push(VariantStyle({ colors: themeColors, variant }));
+  variant &&
+    variant !== "primary" &&
+    cssStyles.push(VariantStyle({ colors: themeColors, variant }));
   disabled && cssStyles.push(disabledStyle);
 
   return cssStyles;
@@ -122,12 +138,7 @@ function Button({
 }) {
   const [mergedTheme, setMergedTheme] = useState(tetrisTheme);
   const [themeColors, setThemeColors] = useState(tetrisTheme.colors);
-  useEffect(() => {
-    if (theme) {
-      const nextMergedTheme = merge.all([tetrisTheme, theme]);
-      setMergedTheme(nextMergedTheme);
-    }
-  }, [theme]);
+
   useEffect(() => {
     if (mode !== "light") {
       const nextThemeColors = mergedTheme.colors.modes[mode];
@@ -138,6 +149,19 @@ function Button({
       setThemeColors(nextThemeColors);
     }
   }, [mode, mergedTheme]);
+
+  useEffect(() => {
+    if (theme) {
+      const next = {};
+      const nextMergedTheme = merge(next, tetrisTheme, theme);
+      /*  console.log({ nextMergedTheme }); */
+      /* const nextMergedTheme = merge.all([tetrisTheme, theme]); */
+      setMergedTheme(nextMergedTheme);
+      const nextThemeColors = nextMergedTheme.colors;
+      setThemeColors(nextThemeColors);
+      //console.log({ nextMergedTheme, nextThemeColors });
+    }
+  }, [theme]);
 
   const composedStyles = composeStyles({
     theme: mergedTheme,
@@ -158,7 +182,9 @@ function Button({
       disabled={disabled}
       {...props}
     >
-      <span>{props.children}</span>
+      <span>
+        {props.children} {themeColors && themeColors.primary}
+      </span>
     </Element>
   );
 }
