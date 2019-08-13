@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { css } from "@emotion/core";
-/* import merge from "deepmerge"; */
 import merge from "lodash.merge";
 
 import tetrisTheme from "@marinda/tetris-theme-ui-preset";
@@ -152,14 +151,10 @@ function Button({
 
   useEffect(() => {
     if (theme) {
-      const next = {};
-      const nextMergedTheme = merge(next, tetrisTheme, theme);
-      /*  console.log({ nextMergedTheme }); */
-      /* const nextMergedTheme = merge.all([tetrisTheme, theme]); */
+      const nextMergedTheme = merge({}, tetrisTheme, theme);
       setMergedTheme(nextMergedTheme);
       const nextThemeColors = nextMergedTheme.colors;
       setThemeColors(nextThemeColors);
-      //console.log({ nextMergedTheme, nextThemeColors });
     }
   }, [theme]);
 
@@ -182,9 +177,7 @@ function Button({
       disabled={disabled}
       {...props}
     >
-      <span>
-        {props.children} {themeColors && themeColors.primary}
-      </span>
+      <span>{props.children}</span>
     </Element>
   );
 }
