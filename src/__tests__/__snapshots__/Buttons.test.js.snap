@@ -53,8 +53,6 @@ Object {
   transition: 0.2s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
-  background: #3b5bdb;
-  color: #ffffff;
 }
 
 .emotion-0:hover {
@@ -77,12 +75,7 @@ Object {
   box-shadow: 0 0px 8px #0054ff,0 0px 8px #b0b7ff;
 }
 
-.emotion-0:hover {
-  color: #ffffff;
-  background: #0054ff;
-}
-
-.emotion-12 {
+.emotion-13 {
   grid-area: buttons;
   padding: 30px;
   border-bottom: 1px solid currentColor;
@@ -103,14 +96,14 @@ Object {
   justify-content: space-evenly;
 }
 
-.emotion-12 > button {
+.emotion-13 > button {
   -webkit-flex: 0 1 calc(50% - 20px);
   -ms-flex: 0 1 calc(50% - 20px);
   flex: 0 1 calc(50% - 20px);
   margin-top: 20px;
 }
 
-.emotion-13 {
+.emotion-14 {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -123,11 +116,11 @@ Object {
   transition: 0.2s ease;
 }
 
-.emotion-13 section {
+.emotion-14 section {
   position: relative;
 }
 
-.emotion-13 h2 {
+.emotion-14 h2 {
   position: absolute;
   top: 0px;
   left: 0;
@@ -156,8 +149,6 @@ Object {
   transform: translate3d(0,0,0);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  background: #b0b7ff;
-  color: #212529;
 }
 
 .emotion-2:hover {
@@ -178,11 +169,6 @@ Object {
 
 .emotion-2:focus {
   box-shadow: 0 0px 8px #37b0ff,0 0px 8px #0032a8;
-}
-
-.emotion-2:hover {
-  color: #212529;
-  background: #37b0ff;
 }
 
 .emotion-3 {
@@ -236,6 +222,14 @@ Object {
   background: #ff00c2;
 }
 
+.emotion-3:active {
+  background: #ff91b8;
+}
+
+.emotion-3:focus {
+  box-shadow: 0 0px 8px #ff00c2,0 0px 8px #8c0033;
+}
+
 .emotion-4 {
   position: relative;
   cursor: pointer;
@@ -285,6 +279,14 @@ Object {
 .emotion-4:hover {
   color: #212529;
   background: #00ff80;
+}
+
+.emotion-4:active {
+  background: #7feab5;
+}
+
+.emotion-4:focus {
+  box-shadow: 0 0px 8px #00ff80,0 0px 8px #00582e;
 }
 
 .emotion-5 {
@@ -338,6 +340,14 @@ Object {
   background: #ff6c00;
 }
 
+.emotion-5:active {
+  background: #ff9c61;
+}
+
+.emotion-5:focus {
+  box-shadow: 0 0px 8px #ff6c00,0 0px 8px #910000;
+}
+
 .emotion-6 {
   position: relative;
   cursor: pointer;
@@ -387,6 +397,14 @@ Object {
 .emotion-6:hover {
   color: #212529;
   background: #ff493b;
+}
+
+.emotion-6:active {
+  background: #ff9d89;
+}
+
+.emotion-6:focus {
+  box-shadow: 0 0px 8px #ff493b,0 0px 8px #a60009;
 }
 
 .emotion-7 {
@@ -440,6 +458,14 @@ Object {
   background: #00f3ff;
 }
 
+.emotion-7:active {
+  background: #82d9ef;
+}
+
+.emotion-7:focus {
+  box-shadow: 0 0px 8px #00f3ff,0 0px 8px #004c5f;
+}
+
 .emotion-8 {
   position: relative;
   cursor: pointer;
@@ -491,6 +517,14 @@ Object {
   background: #a3abb3;
 }
 
+.emotion-8:active {
+  background: #a3abb3;
+}
+
+.emotion-8:focus {
+  box-shadow: 0 0px 8px #a3abb3,0 0px 8px #a3abb3;
+}
+
 .emotion-9 {
   position: relative;
   cursor: pointer;
@@ -514,8 +548,6 @@ Object {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   padding: 8px;
-  background: #b0b7ff;
-  color: #212529;
 }
 
 .emotion-9:hover {
@@ -536,11 +568,6 @@ Object {
 
 .emotion-9:focus {
   box-shadow: 0 0px 8px #37b0ff,0 0px 8px #0032a8;
-}
-
-.emotion-9:hover {
-  color: #212529;
-  background: #37b0ff;
 }
 
 .emotion-10 {
@@ -567,8 +594,6 @@ Object {
   transition: 0.2s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
-  background: #b0b7ff;
-  color: #212529;
 }
 
 .emotion-10:hover {
@@ -591,9 +616,56 @@ Object {
   box-shadow: 0 0px 8px #37b0ff,0 0px 8px #0032a8;
 }
 
-.emotion-10:hover {
+.emotion-12 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #b0b7ff;
   color: #212529;
+  font-size: 1rem;
+  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  color: black;
+  background: peachpuff;
+}
+
+.emotion-12:hover {
   background: #37b0ff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-12:active {
+  background: #b0b7ff;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-12:focus {
+  box-shadow: 0 0px 8px #37b0ff,0 0px 8px #0032a8;
+}
+
+.emotion-12:hover,
+.emotion-12:active {
+  color: white;
+  background: orangered;
 }
 
 .emotion-11 {
@@ -618,8 +690,6 @@ Object {
   transform: translate3d(0,0,0);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  background: #e599f7;
-  color: #333;
 }
 
 .emotion-11:hover {
@@ -642,24 +712,10 @@ Object {
   box-shadow: 0 0px 8px #37b0ff,0 0px 8px #0032a8;
 }
 
-.emotion-11:hover {
-  color: #333;
-  background: #37b0ff;
-}
-
-.emotion-11:hover,
-.emotion-11:focus {
-  background: #a64ebc;
-}
-
-.emotion-11:active {
-  background: #862e9c;
-}
-
 <body>
     <div>
       <div
-        class="emotion-13"
+        class="emotion-14"
       >
         <div
           class="emotion-1"
@@ -678,7 +734,7 @@ Object {
           </button>
         </div>
         <section
-          class="emotion-12"
+          class="emotion-13"
         >
           <button
             class="emotion-2"
@@ -780,6 +836,16 @@ Object {
               Custom theme button
             </span>
           </button>
+          <button
+            class="emotion-12"
+            data-testid=""
+            id=""
+            type="button"
+          >
+            <span>
+              Custom css button
+            </span>
+          </button>
         </section>
       </div>
     </div>
@@ -834,8 +900,6 @@ Object {
   transition: 0.2s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
-  background: #3b5bdb;
-  color: #ffffff;
 }
 
 .emotion-0:hover {
@@ -858,12 +922,7 @@ Object {
   box-shadow: 0 0px 8px #0054ff,0 0px 8px #b0b7ff;
 }
 
-.emotion-0:hover {
-  color: #ffffff;
-  background: #0054ff;
-}
-
-.emotion-12 {
+.emotion-13 {
   grid-area: buttons;
   padding: 30px;
   border-bottom: 1px solid currentColor;
@@ -884,14 +943,14 @@ Object {
   justify-content: space-evenly;
 }
 
-.emotion-12 > button {
+.emotion-13 > button {
   -webkit-flex: 0 1 calc(50% - 20px);
   -ms-flex: 0 1 calc(50% - 20px);
   flex: 0 1 calc(50% - 20px);
   margin-top: 20px;
 }
 
-.emotion-13 {
+.emotion-14 {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -904,11 +963,11 @@ Object {
   transition: 0.2s ease;
 }
 
-.emotion-13 section {
+.emotion-14 section {
   position: relative;
 }
 
-.emotion-13 h2 {
+.emotion-14 h2 {
   position: absolute;
   top: 0px;
   left: 0;
@@ -937,8 +996,6 @@ Object {
   transform: translate3d(0,0,0);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  background: #b0b7ff;
-  color: #212529;
 }
 
 .emotion-2:hover {
@@ -959,11 +1016,6 @@ Object {
 
 .emotion-2:focus {
   box-shadow: 0 0px 8px #37b0ff,0 0px 8px #0032a8;
-}
-
-.emotion-2:hover {
-  color: #212529;
-  background: #37b0ff;
 }
 
 .emotion-3 {
@@ -1017,6 +1069,14 @@ Object {
   background: #ff00c2;
 }
 
+.emotion-3:active {
+  background: #ff91b8;
+}
+
+.emotion-3:focus {
+  box-shadow: 0 0px 8px #ff00c2,0 0px 8px #8c0033;
+}
+
 .emotion-4 {
   position: relative;
   cursor: pointer;
@@ -1066,6 +1126,14 @@ Object {
 .emotion-4:hover {
   color: #212529;
   background: #00ff80;
+}
+
+.emotion-4:active {
+  background: #7feab5;
+}
+
+.emotion-4:focus {
+  box-shadow: 0 0px 8px #00ff80,0 0px 8px #00582e;
 }
 
 .emotion-5 {
@@ -1119,6 +1187,14 @@ Object {
   background: #ff6c00;
 }
 
+.emotion-5:active {
+  background: #ff9c61;
+}
+
+.emotion-5:focus {
+  box-shadow: 0 0px 8px #ff6c00,0 0px 8px #910000;
+}
+
 .emotion-6 {
   position: relative;
   cursor: pointer;
@@ -1168,6 +1244,14 @@ Object {
 .emotion-6:hover {
   color: #212529;
   background: #ff493b;
+}
+
+.emotion-6:active {
+  background: #ff9d89;
+}
+
+.emotion-6:focus {
+  box-shadow: 0 0px 8px #ff493b,0 0px 8px #a60009;
 }
 
 .emotion-7 {
@@ -1221,6 +1305,14 @@ Object {
   background: #00f3ff;
 }
 
+.emotion-7:active {
+  background: #82d9ef;
+}
+
+.emotion-7:focus {
+  box-shadow: 0 0px 8px #00f3ff,0 0px 8px #004c5f;
+}
+
 .emotion-8 {
   position: relative;
   cursor: pointer;
@@ -1272,6 +1364,14 @@ Object {
   background: #a3abb3;
 }
 
+.emotion-8:active {
+  background: #a3abb3;
+}
+
+.emotion-8:focus {
+  box-shadow: 0 0px 8px #a3abb3,0 0px 8px #a3abb3;
+}
+
 .emotion-9 {
   position: relative;
   cursor: pointer;
@@ -1295,8 +1395,6 @@ Object {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   padding: 8px;
-  background: #b0b7ff;
-  color: #212529;
 }
 
 .emotion-9:hover {
@@ -1317,11 +1415,6 @@ Object {
 
 .emotion-9:focus {
   box-shadow: 0 0px 8px #37b0ff,0 0px 8px #0032a8;
-}
-
-.emotion-9:hover {
-  color: #212529;
-  background: #37b0ff;
 }
 
 .emotion-10 {
@@ -1348,8 +1441,6 @@ Object {
   transition: 0.2s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
-  background: #b0b7ff;
-  color: #212529;
 }
 
 .emotion-10:hover {
@@ -1372,9 +1463,56 @@ Object {
   box-shadow: 0 0px 8px #37b0ff,0 0px 8px #0032a8;
 }
 
-.emotion-10:hover {
+.emotion-12 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #b0b7ff;
   color: #212529;
+  font-size: 1rem;
+  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  color: black;
+  background: peachpuff;
+}
+
+.emotion-12:hover {
   background: #37b0ff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-12:active {
+  background: #b0b7ff;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-12:focus {
+  box-shadow: 0 0px 8px #37b0ff,0 0px 8px #0032a8;
+}
+
+.emotion-12:hover,
+.emotion-12:active {
+  color: white;
+  background: orangered;
 }
 
 .emotion-11 {
@@ -1399,8 +1537,6 @@ Object {
   transform: translate3d(0,0,0);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  background: #e599f7;
-  color: #333;
 }
 
 .emotion-11:hover {
@@ -1423,23 +1559,9 @@ Object {
   box-shadow: 0 0px 8px #37b0ff,0 0px 8px #0032a8;
 }
 
-.emotion-11:hover {
-  color: #333;
-  background: #37b0ff;
-}
-
-.emotion-11:hover,
-.emotion-11:focus {
-  background: #a64ebc;
-}
-
-.emotion-11:active {
-  background: #862e9c;
-}
-
 <div>
     <div
-      class="emotion-13"
+      class="emotion-14"
     >
       <div
         class="emotion-1"
@@ -1458,7 +1580,7 @@ Object {
         </button>
       </div>
       <section
-        class="emotion-12"
+        class="emotion-13"
       >
         <button
           class="emotion-2"
@@ -1560,6 +1682,16 @@ Object {
             Custom theme button
           </span>
         </button>
+        <button
+          class="emotion-12"
+          data-testid=""
+          id=""
+          type="button"
+        >
+          <span>
+            Custom css button
+          </span>
+        </button>
       </section>
     </div>
   </div>,
@@ -1620,7 +1752,7 @@ Object {
 exports[`renders theme light 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": .emotion-13 {
+  "baseElement": .emotion-14 {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -1633,11 +1765,11 @@ Object {
   transition: 0.2s ease;
 }
 
-.emotion-13 section {
+.emotion-14 section {
   position: relative;
 }
 
-.emotion-13 h2 {
+.emotion-14 h2 {
   position: absolute;
   top: 0px;
   left: 0;
@@ -1694,8 +1826,6 @@ Object {
   transition: 0.2s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
-  background: #3b5bdb;
-  color: #ffffff;
 }
 
 .emotion-0:hover {
@@ -1718,12 +1848,7 @@ Object {
   box-shadow: 0 0px 8px #0054ff,0 0px 8px #b0b7ff;
 }
 
-.emotion-0:hover {
-  color: #ffffff;
-  background: #0054ff;
-}
-
-.emotion-12 {
+.emotion-13 {
   grid-area: buttons;
   padding: 30px;
   border-bottom: 1px solid currentColor;
@@ -1744,7 +1869,7 @@ Object {
   justify-content: space-evenly;
 }
 
-.emotion-12 > button {
+.emotion-13 > button {
   -webkit-flex: 0 1 calc(50% - 20px);
   -ms-flex: 0 1 calc(50% - 20px);
   flex: 0 1 calc(50% - 20px);
@@ -1773,8 +1898,6 @@ Object {
   transform: translate3d(0,0,0);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  background: #3b5bdb;
-  color: #ffffff;
 }
 
 .emotion-2:hover {
@@ -1795,11 +1918,6 @@ Object {
 
 .emotion-2:focus {
   box-shadow: 0 0px 8px #0054ff,0 0px 8px #b0b7ff;
-}
-
-.emotion-2:hover {
-  color: #ffffff;
-  background: #0054ff;
 }
 
 .emotion-3 {
@@ -1853,6 +1971,14 @@ Object {
   background: #ff0052;
 }
 
+.emotion-3:active {
+  background: #8c0033;
+}
+
+.emotion-3:focus {
+  box-shadow: 0 0px 8px #ff0052,0 0px 8px #ff91b8;
+}
+
 .emotion-4 {
   position: relative;
   cursor: pointer;
@@ -1902,6 +2028,14 @@ Object {
 .emotion-4:hover {
   color: #ffffff;
   background: #009423;
+}
+
+.emotion-4:active {
+  background: #00582e;
+}
+
+.emotion-4:focus {
+  box-shadow: 0 0px 8px #009423,0 0px 8px #7feab5;
 }
 
 .emotion-5 {
@@ -1955,6 +2089,14 @@ Object {
   background: #ff0000;
 }
 
+.emotion-5:active {
+  background: #910000;
+}
+
+.emotion-5:focus {
+  box-shadow: 0 0px 8px #ff0000,0 0px 8px #ff9c61;
+}
+
 .emotion-6 {
   position: relative;
   cursor: pointer;
@@ -2004,6 +2146,14 @@ Object {
 .emotion-6:hover {
   color: #ffffff;
   background: #ff0000;
+}
+
+.emotion-6:active {
+  background: #a60009;
+}
+
+.emotion-6:focus {
+  box-shadow: 0 0px 8px #ff0000,0 0px 8px #ff9d89;
 }
 
 .emotion-7 {
@@ -2057,6 +2207,14 @@ Object {
   background: #008cdf;
 }
 
+.emotion-7:active {
+  background: #004c5f;
+}
+
+.emotion-7:focus {
+  box-shadow: 0 0px 8px #008cdf,0 0px 8px #82d9ef;
+}
+
 .emotion-8 {
   position: relative;
   cursor: pointer;
@@ -2108,6 +2266,14 @@ Object {
   background: #495057;
 }
 
+.emotion-8:active {
+  background: #495057;
+}
+
+.emotion-8:focus {
+  box-shadow: 0 0px 8px #495057,0 0px 8px #495057;
+}
+
 .emotion-9 {
   position: relative;
   cursor: pointer;
@@ -2131,8 +2297,6 @@ Object {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   padding: 8px;
-  background: #3b5bdb;
-  color: #ffffff;
 }
 
 .emotion-9:hover {
@@ -2155,9 +2319,56 @@ Object {
   box-shadow: 0 0px 8px #0054ff,0 0px 8px #b0b7ff;
 }
 
-.emotion-9:hover {
+.emotion-12 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #3b5bdb;
   color: #ffffff;
+  font-size: 1rem;
+  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  color: black;
+  background: peachpuff;
+}
+
+.emotion-12:hover {
   background: #0054ff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-12:active {
+  background: #0032a8;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-12:focus {
+  box-shadow: 0 0px 8px #0054ff,0 0px 8px #b0b7ff;
+}
+
+.emotion-12:hover,
+.emotion-12:active {
+  color: white;
+  background: orangered;
 }
 
 .emotion-11 {
@@ -2182,12 +2393,10 @@ Object {
   transform: translate3d(0,0,0);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  background: #862E9C;
-  color: #f8f0fc;
 }
 
 .emotion-11:hover {
-  background: #0054ff;
+  background: purple;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2195,7 +2404,7 @@ Object {
 }
 
 .emotion-11:active {
-  background: #0032a8;
+  background: rebeccapurple;
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
@@ -2203,27 +2412,13 @@ Object {
 }
 
 .emotion-11:focus {
-  box-shadow: 0 0px 8px #0054ff,0 0px 8px #b0b7ff;
-}
-
-.emotion-11:hover {
-  color: #f8f0fc;
-  background: #0054ff;
-}
-
-.emotion-11:hover,
-.emotion-11:focus {
-  background: #a64ebc;
-}
-
-.emotion-11:active {
-  background: #862e9c;
+  box-shadow: 0 0px 8px purple,0 0px 8px peachpuff;
 }
 
 <body>
     <div>
       <div
-        class="emotion-13"
+        class="emotion-14"
       >
         <div
           class="emotion-1"
@@ -2242,7 +2437,7 @@ Object {
           </button>
         </div>
         <section
-          class="emotion-12"
+          class="emotion-13"
         >
           <button
             class="emotion-2"
@@ -2344,11 +2539,21 @@ Object {
               Custom theme button
             </span>
           </button>
+          <button
+            class="emotion-12"
+            data-testid=""
+            id=""
+            type="button"
+          >
+            <span>
+              Custom css button
+            </span>
+          </button>
         </section>
       </div>
     </div>
   </body>,
-  "container": .emotion-13 {
+  "container": .emotion-14 {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -2361,11 +2566,11 @@ Object {
   transition: 0.2s ease;
 }
 
-.emotion-13 section {
+.emotion-14 section {
   position: relative;
 }
 
-.emotion-13 h2 {
+.emotion-14 h2 {
   position: absolute;
   top: 0px;
   left: 0;
@@ -2422,8 +2627,6 @@ Object {
   transition: 0.2s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
-  background: #3b5bdb;
-  color: #ffffff;
 }
 
 .emotion-0:hover {
@@ -2446,12 +2649,7 @@ Object {
   box-shadow: 0 0px 8px #0054ff,0 0px 8px #b0b7ff;
 }
 
-.emotion-0:hover {
-  color: #ffffff;
-  background: #0054ff;
-}
-
-.emotion-12 {
+.emotion-13 {
   grid-area: buttons;
   padding: 30px;
   border-bottom: 1px solid currentColor;
@@ -2472,7 +2670,7 @@ Object {
   justify-content: space-evenly;
 }
 
-.emotion-12 > button {
+.emotion-13 > button {
   -webkit-flex: 0 1 calc(50% - 20px);
   -ms-flex: 0 1 calc(50% - 20px);
   flex: 0 1 calc(50% - 20px);
@@ -2501,8 +2699,6 @@ Object {
   transform: translate3d(0,0,0);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  background: #3b5bdb;
-  color: #ffffff;
 }
 
 .emotion-2:hover {
@@ -2523,11 +2719,6 @@ Object {
 
 .emotion-2:focus {
   box-shadow: 0 0px 8px #0054ff,0 0px 8px #b0b7ff;
-}
-
-.emotion-2:hover {
-  color: #ffffff;
-  background: #0054ff;
 }
 
 .emotion-3 {
@@ -2581,6 +2772,14 @@ Object {
   background: #ff0052;
 }
 
+.emotion-3:active {
+  background: #8c0033;
+}
+
+.emotion-3:focus {
+  box-shadow: 0 0px 8px #ff0052,0 0px 8px #ff91b8;
+}
+
 .emotion-4 {
   position: relative;
   cursor: pointer;
@@ -2630,6 +2829,14 @@ Object {
 .emotion-4:hover {
   color: #ffffff;
   background: #009423;
+}
+
+.emotion-4:active {
+  background: #00582e;
+}
+
+.emotion-4:focus {
+  box-shadow: 0 0px 8px #009423,0 0px 8px #7feab5;
 }
 
 .emotion-5 {
@@ -2683,6 +2890,14 @@ Object {
   background: #ff0000;
 }
 
+.emotion-5:active {
+  background: #910000;
+}
+
+.emotion-5:focus {
+  box-shadow: 0 0px 8px #ff0000,0 0px 8px #ff9c61;
+}
+
 .emotion-6 {
   position: relative;
   cursor: pointer;
@@ -2732,6 +2947,14 @@ Object {
 .emotion-6:hover {
   color: #ffffff;
   background: #ff0000;
+}
+
+.emotion-6:active {
+  background: #a60009;
+}
+
+.emotion-6:focus {
+  box-shadow: 0 0px 8px #ff0000,0 0px 8px #ff9d89;
 }
 
 .emotion-7 {
@@ -2785,6 +3008,14 @@ Object {
   background: #008cdf;
 }
 
+.emotion-7:active {
+  background: #004c5f;
+}
+
+.emotion-7:focus {
+  box-shadow: 0 0px 8px #008cdf,0 0px 8px #82d9ef;
+}
+
 .emotion-8 {
   position: relative;
   cursor: pointer;
@@ -2836,6 +3067,14 @@ Object {
   background: #495057;
 }
 
+.emotion-8:active {
+  background: #495057;
+}
+
+.emotion-8:focus {
+  box-shadow: 0 0px 8px #495057,0 0px 8px #495057;
+}
+
 .emotion-9 {
   position: relative;
   cursor: pointer;
@@ -2859,8 +3098,6 @@ Object {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   padding: 8px;
-  background: #3b5bdb;
-  color: #ffffff;
 }
 
 .emotion-9:hover {
@@ -2883,9 +3120,56 @@ Object {
   box-shadow: 0 0px 8px #0054ff,0 0px 8px #b0b7ff;
 }
 
-.emotion-9:hover {
+.emotion-12 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #3b5bdb;
   color: #ffffff;
+  font-size: 1rem;
+  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  color: black;
+  background: peachpuff;
+}
+
+.emotion-12:hover {
   background: #0054ff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-12:active {
+  background: #0032a8;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-12:focus {
+  box-shadow: 0 0px 8px #0054ff,0 0px 8px #b0b7ff;
+}
+
+.emotion-12:hover,
+.emotion-12:active {
+  color: white;
+  background: orangered;
 }
 
 .emotion-11 {
@@ -2910,12 +3194,10 @@ Object {
   transform: translate3d(0,0,0);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  background: #862E9C;
-  color: #f8f0fc;
 }
 
 .emotion-11:hover {
-  background: #0054ff;
+  background: purple;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2923,7 +3205,7 @@ Object {
 }
 
 .emotion-11:active {
-  background: #0032a8;
+  background: rebeccapurple;
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
@@ -2931,26 +3213,12 @@ Object {
 }
 
 .emotion-11:focus {
-  box-shadow: 0 0px 8px #0054ff,0 0px 8px #b0b7ff;
-}
-
-.emotion-11:hover {
-  color: #f8f0fc;
-  background: #0054ff;
-}
-
-.emotion-11:hover,
-.emotion-11:focus {
-  background: #a64ebc;
-}
-
-.emotion-11:active {
-  background: #862e9c;
+  box-shadow: 0 0px 8px purple,0 0px 8px peachpuff;
 }
 
 <div>
     <div
-      class="emotion-13"
+      class="emotion-14"
     >
       <div
         class="emotion-1"
@@ -2969,7 +3237,7 @@ Object {
         </button>
       </div>
       <section
-        class="emotion-12"
+        class="emotion-13"
       >
         <button
           class="emotion-2"
@@ -3069,6 +3337,16 @@ Object {
         >
           <span>
             Custom theme button
+          </span>
+        </button>
+        <button
+          class="emotion-12"
+          data-testid=""
+          id=""
+          type="button"
+        >
+          <span>
+            Custom css button
           </span>
         </button>
       </section>
