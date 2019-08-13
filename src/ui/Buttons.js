@@ -147,6 +147,20 @@ function Buttons({ mode, setMode }) {
           >
             Custom theme button
           </Button>
+          <Button
+            mode={mode}
+            css={css`
+              color: black;
+              background: peachpuff;
+              &:hover,
+              &:active {
+                color: white;
+                background: orangered;
+              }
+            `}
+          >
+            Custom css button
+          </Button>
         </section>
       </div>
     </>
