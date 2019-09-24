@@ -49,9 +49,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
@@ -148,9 +148,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
 }
 
 .emotion-2:hover {
@@ -193,9 +193,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #ff91b8;
   color: #212529;
 }
@@ -252,9 +252,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #7feab5;
   color: #212529;
 }
@@ -311,9 +311,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #ff9c61;
   color: #212529;
 }
@@ -370,9 +370,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #ff9d89;
   color: #212529;
 }
@@ -429,9 +429,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #82d9ef;
   color: #212529;
 }
@@ -488,9 +488,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #515458;
   color: #ffffff;
 }
@@ -547,9 +547,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   padding: 8px;
 }
 
@@ -593,9 +593,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
@@ -640,9 +640,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   color: black;
   background: peachpuff;
 }
@@ -693,9 +693,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
 }
 
 .emotion-11:hover {
@@ -902,9 +902,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
@@ -1001,9 +1001,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
 }
 
 .emotion-2:hover {
@@ -1046,9 +1046,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #ff91b8;
   color: #212529;
 }
@@ -1105,9 +1105,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #7feab5;
   color: #212529;
 }
@@ -1164,9 +1164,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #ff9c61;
   color: #212529;
 }
@@ -1223,9 +1223,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #ff9d89;
   color: #212529;
 }
@@ -1282,9 +1282,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #82d9ef;
   color: #212529;
 }
@@ -1341,9 +1341,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #515458;
   color: #ffffff;
 }
@@ -1400,9 +1400,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   padding: 8px;
 }
 
@@ -1446,9 +1446,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
@@ -1493,9 +1493,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   color: black;
   background: peachpuff;
 }
@@ -1546,9 +1546,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
 }
 
 .emotion-11:hover {
@@ -1834,9 +1834,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
@@ -1909,9 +1909,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
 }
 
 .emotion-2:hover {
@@ -1954,9 +1954,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #C2255C;
   color: #ffffff;
 }
@@ -2013,9 +2013,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #008658;
   color: #ffffff;
 }
@@ -2072,9 +2072,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #C93700;
   color: #ffffff;
 }
@@ -2131,9 +2131,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #e03131;
   color: #ffffff;
 }
@@ -2190,9 +2190,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #00788C;
   color: #ffffff;
 }
@@ -2249,9 +2249,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #dee2e6;
   color: #212529;
 }
@@ -2308,9 +2308,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   padding: 8px;
 }
 
@@ -2354,9 +2354,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   color: black;
   background: peachpuff;
 }
@@ -2407,9 +2407,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
 }
 
 .emotion-11:hover {
@@ -2640,9 +2640,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
@@ -2715,9 +2715,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
 }
 
 .emotion-2:hover {
@@ -2760,9 +2760,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #C2255C;
   color: #ffffff;
 }
@@ -2819,9 +2819,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #008658;
   color: #ffffff;
 }
@@ -2878,9 +2878,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #C93700;
   color: #ffffff;
 }
@@ -2937,9 +2937,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #e03131;
   color: #ffffff;
 }
@@ -2996,9 +2996,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #00788C;
   color: #ffffff;
 }
@@ -3055,9 +3055,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   background: #dee2e6;
   color: #212529;
 }
@@ -3114,9 +3114,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   padding: 8px;
 }
 
@@ -3160,9 +3160,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
   color: black;
   background: peachpuff;
 }
@@ -3213,9 +3213,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
 }
 
 .emotion-11:hover {
