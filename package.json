@@ -1,6 +1,6 @@
 {
   "name": "@marinda/react-styled-buttons",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Themable Styled React button components. Flexible & easily customized.",
   "repository": "mariiinda/react-styled-buttons",
   "main": "dist/index.js",
@@ -27,13 +27,13 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@emotion/babel-preset-css-prop": "^10.0.14",
-    "@storybook/addon-a11y": "^5.2.0-beta.20",
-    "@storybook/addon-actions": "^5.2.0-beta.20",
-    "@storybook/addon-knobs": "^5.2.0-beta.20",
-    "@storybook/addon-links": "^5.2.0-beta.20",
-    "@storybook/addons": "^5.2.0-beta.20",
-    "@storybook/cli": "^5.2.0-beta.18",
-    "@storybook/react": "^5.2.0-beta.20",
+    "@storybook/addon-a11y": "^5.2.1",
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-knobs": "^5.2.1",
+    "@storybook/addon-links": "^5.2.1",
+    "@storybook/addons": "^5.2.1",
+    "@storybook/cli": "^5.2.1",
+    "@storybook/react": "^5.2.1",
     "@testing-library/dom": "^5.6.0",
     "@testing-library/jest-dom": "^4.0.0",
     "@testing-library/react": "^8.0.7",
@@ -63,7 +63,7 @@
     "dist/"
   ],
   "dependencies": {
-    "@marinda/tetris-theme-ui-preset": "^1.0.8",
+    "@marinda/tetris-theme-ui-preset": "^2.0.14",
     "chroma-js": "^2.0.4",
     "lodash.merge": "^4.6.2"
   },

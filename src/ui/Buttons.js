@@ -132,7 +132,6 @@ function Buttons({ mode, setMode }) {
               colors: {
                 background: "#f8f0fc",
                 primary: "#862E9C",
-                primaryShades: ["peachpuff", "purple", "rebeccapurple"],
                 modes: {
                   dark: {
                     background: "#333",

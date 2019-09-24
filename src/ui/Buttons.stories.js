@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { withA11y } from "@storybook/addon-a11y";
 
 import Buttons from "./Buttons";
-/* import themes from "../theme/themes"; */
 
 export default { title: "UI|Buttons", decorators: [withA11y] };
 
