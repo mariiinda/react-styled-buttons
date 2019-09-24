@@ -43,7 +43,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -142,7 +142,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -187,7 +187,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -246,7 +246,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -305,7 +305,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -364,7 +364,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -423,7 +423,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -482,7 +482,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -541,7 +541,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -587,7 +587,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -620,6 +620,51 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
+.emotion-11 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #e599f7;
+  color: #333;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+}
+
+.emotion-11:hover {
+  background: #ec93ff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rebeccapurple;
+}
+
+.emotion-11:active {
+  background: #d27be5;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  box-shadow: 0 .5rem 1rem rebeccapurple;
+}
+
+.emotion-11:focus {
+  box-shadow: 0 0px 8px #ffa5ff;
+}
+
 .emotion-12 {
   position: relative;
   cursor: pointer;
@@ -634,7 +679,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -671,51 +716,6 @@ Object {
 .emotion-12:active {
   color: white;
   background: orangered;
-}
-
-.emotion-11 {
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  margin: 0;
-  padding: 16px;
-  width: auto;
-  text-align: center;
-  display: inline-block;
-  border: none;
-  border-radius: 5px;
-  background: #e599f7;
-  color: #333;
-  font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
-  line-height: inherit;
-  font-weight: inherit;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-}
-
-.emotion-11:hover {
-  background: #ec93ff;
-  -webkit-transform: translate3d(0,-3px,0);
-  -ms-transform: translate3d(0,-3px,0);
-  transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rebeccapurple;
-}
-
-.emotion-11:active {
-  background: #d27be5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rebeccapurple;
-}
-
-.emotion-11:focus {
-  box-shadow: 0 0px 8px #ffa5ff;
 }
 
 <body>
@@ -896,7 +896,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -995,7 +995,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -1040,7 +1040,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -1099,7 +1099,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -1158,7 +1158,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -1217,7 +1217,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -1276,7 +1276,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -1335,7 +1335,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -1394,7 +1394,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -1440,7 +1440,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -1473,6 +1473,51 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
+.emotion-11 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #e599f7;
+  color: #333;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+}
+
+.emotion-11:hover {
+  background: #ec93ff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rebeccapurple;
+}
+
+.emotion-11:active {
+  background: #d27be5;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  box-shadow: 0 .5rem 1rem rebeccapurple;
+}
+
+.emotion-11:focus {
+  box-shadow: 0 0px 8px #ffa5ff;
+}
+
 .emotion-12 {
   position: relative;
   cursor: pointer;
@@ -1487,7 +1532,7 @@ Object {
   background: #b0b7ff;
   color: #212529;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -1524,51 +1569,6 @@ Object {
 .emotion-12:active {
   color: white;
   background: orangered;
-}
-
-.emotion-11 {
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  margin: 0;
-  padding: 16px;
-  width: auto;
-  text-align: center;
-  display: inline-block;
-  border: none;
-  border-radius: 5px;
-  background: #e599f7;
-  color: #333;
-  font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
-  line-height: inherit;
-  font-weight: inherit;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-}
-
-.emotion-11:hover {
-  background: #ec93ff;
-  -webkit-transform: translate3d(0,-3px,0);
-  -ms-transform: translate3d(0,-3px,0);
-  transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rebeccapurple;
-}
-
-.emotion-11:active {
-  background: #d27be5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rebeccapurple;
-}
-
-.emotion-11:focus {
-  box-shadow: 0 0px 8px #ffa5ff;
 }
 
 <div>
@@ -1828,7 +1828,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -1903,7 +1903,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -1948,7 +1948,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2007,7 +2007,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2066,7 +2066,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2125,7 +2125,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2184,7 +2184,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2243,7 +2243,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2302,7 +2302,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2348,7 +2348,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2401,7 +2401,7 @@ Object {
   background: #862E9C;
   color: #f8f0fc;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2634,7 +2634,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2709,7 +2709,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2754,7 +2754,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2813,7 +2813,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2872,7 +2872,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2931,7 +2931,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -2990,7 +2990,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -3049,7 +3049,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -3108,7 +3108,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -3154,7 +3154,7 @@ Object {
   background: #3b5bdb;
   color: #ffffff;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);
@@ -3207,7 +3207,7 @@ Object {
   background: #862E9C;
   color: #f8f0fc;
   font-size: 1rem;
-  font-family: "IBM Plex Sans",Arial,Helvetica,sans-serif;
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   -webkit-transform: translate3d(0,0,0);

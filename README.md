@@ -21,7 +21,7 @@
 
 React button components with WCAG 2 AA contrast ratio tested colors, light and dark theme options. Flexible & easily customized.
 
-Uses [a theme](https://github.com/mariiinda/tetris-theme-ui-preset) based on  [System UI Theme Specification](https://system-ui.com/theme/) that can be overriden by passing in your own theme as a prop.
+Uses a theme based on [System UI Theme Specification](https://system-ui.com/theme/) & can be overriden by passing in your own theme as a prop.
 
 If you are using emotion, styles can also be overriden via [composition](https://emotion.sh/docs/composition).
 

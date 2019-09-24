@@ -3,7 +3,7 @@ import React from "react";
 import { css, Global } from "@emotion/core";
 
 import Button from "../components/Button";
-import tetrisTheme from "@marinda/tetris-theme-ui-preset";
+import defaultTheme from "../theme";
 
 // styles
 const globalStyle = css`
@@ -21,6 +21,9 @@ const globalStyle = css`
     height: 100%;
     margin: 0;
     padding: 0;
+  }
+  body {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   }
 `;
 
@@ -81,7 +84,7 @@ const buttonWrapperStyle = css`
 `;
 
 function Buttons({ mode, setMode }) {
-  const { colors } = tetrisTheme;
+  const { colors } = defaultTheme;
   const colormodeColors = mode === "light" ? colors : colors.modes.dark;
   return (
     <>

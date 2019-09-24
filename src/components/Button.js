@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { css } from "@emotion/core";
-import merge from "lodash.merge";
 import chroma from "chroma-js";
 
-import tetrisTheme from "@marinda/tetris-theme-ui-preset";
+import defaultTheme from "../theme";
 
 // CSS
 const ButtonStyle = ({
   theme: {
-    fontSizes: [, , , fourthFontSize],
-    space: [, , , fourthSpace],
-    radii: [, secondRadius],
-    shadows,
-    fonts: { body }
+    fontSizes: [, , , fourthFontSize] = [],
+    space: [, , , fourthSpace] = [],
+    radii: [, secondRadius] = [],
+    shadows
   },
   themeColors: { background, primary }
 }) => css`
@@ -29,7 +27,7 @@ const ButtonStyle = ({
   background: ${primary};
   color: ${background};
   font-size: ${fourthFontSize};
-  font-family: ${body};
+  font-family: inherit;
   line-height: inherit;
   font-weight: inherit;
   transform: translate3d(0, 0, 0);
@@ -149,8 +147,8 @@ function Button({
   theme,
   ...props
 }) {
-  const [mergedTheme, setMergedTheme] = useState(tetrisTheme);
-  const [themeColors, setThemeColors] = useState(tetrisTheme.colors);
+  const [mergedTheme, setMergedTheme] = useState(theme);
+  const [themeColors, setThemeColors] = useState(theme.colors);
 
   useEffect(() => {
     if (mode !== "light") {
@@ -165,7 +163,17 @@ function Button({
 
   useEffect(() => {
     if (theme) {
-      const nextMergedTheme = merge({}, tetrisTheme, theme);
+      const nextMergedTheme = Object.assign(
+        {},
+        {
+          colors: defaultTheme.colors,
+          space: defaultTheme.space,
+          fontSizes: defaultTheme.fontSizes,
+          radii: defaultTheme.radii,
+          shadows: defaultTheme.shadows
+        },
+        theme
+      );
       setMergedTheme(nextMergedTheme);
       const nextThemeColors = nextMergedTheme.colors;
       setThemeColors(nextThemeColors);
@@ -200,7 +208,7 @@ Button.defaultProps = {
   as: "button",
   id: "",
   children: null,
-  theme: null,
+  theme: defaultTheme,
   disabled: false,
   onClick: () => {},
   mode: "light",
