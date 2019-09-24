@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { css } from "@emotion/core";
 import merge from "lodash.merge";
+import chroma from "chroma-js";
 
 import tetrisTheme from "@marinda/tetris-theme-ui-preset";
 
@@ -13,11 +14,7 @@ const ButtonStyle = ({
     shadows,
     fonts: { body }
   },
-  themeColors: {
-    background,
-    primary,
-    primaryShades: [firstShade, secondShade, lastShade]
-  }
+  themeColors: { background, primary }
 }) => css`
   position: relative;
   cursor: pointer;
@@ -36,22 +33,31 @@ const ButtonStyle = ({
   line-height: inherit;
   font-weight: inherit;
   transform: translate3d(0, 0, 0);
-  transition: 0.2s ease-in-out;
+  transition: transform 0.25s ease-in-out, background 0.3s ease-in;
 
   &:hover {
-    background: ${secondShade};
+    background: ${chroma(primary)
+      .saturate(0.5)
+      .hex()};
     transform: translate3d(0, -3px, 0);
     box-shadow: ${shadows.default};
   }
 
   &:active {
-    background: ${lastShade};
+    background: ${chroma(primary)
+      .saturate(0.5)
+      .darken(0.5)
+      .hex()};
     transform: translate3d(0, 0, 0);
     box-shadow: ${shadows.default};
   }
 
   &:focus {
-    box-shadow: 0 0px 8px ${secondShade}, 0 0px 8px ${firstShade};
+    box-shadow: 0 0px 8px
+      ${chroma(primary)
+        .brighten(1)
+        .saturate(3)
+        .hex()};
   }
 `;
 
@@ -64,31 +70,38 @@ const disabledStyle = css`
 `;
 
 const VariantStyle = ({ colors, variant }) => {
-  const shades = colors[`${variant}Shades`];
-
-  let hoverColor = colors.grayText;
-  let firstShade = colors.grayText;
-  let lastShade = colors.grayText;
-  if (shades && shades.length > 0) {
-    firstShade = shades[0];
-    hoverColor = shades[1];
-    lastShade = shades[2];
-  }
+  const variantColor = colors[variant];
   return css`
-    background: ${colors[variant]};
+    background: ${variantColor};
     color: ${variant === "gray" ? colors.text : colors.background};
 
     &:hover {
-      color: ${variant === "gray" ? colors.gray : colors.background};
-      background: ${hoverColor};
+      background: ${variant === "gray"
+        ? chroma(variantColor)
+            .darken(0.5)
+            .hex()
+        : chroma(variantColor)
+            .saturate(0.5)
+            .hex()};
     }
 
     &:active {
-      background: ${lastShade};
+      background: ${variant === "gray"
+        ? chroma(variantColor)
+            .darken(0.8)
+            .hex()
+        : chroma(variantColor)
+            .saturate(0.5)
+            .darken(0.5)
+            .hex()};
     }
 
     &:focus {
-      box-shadow: 0 0px 8px ${hoverColor}, 0 0px 8px ${firstShade};
+      box-shadow: 0 0px 8px
+        ${chroma(variantColor)
+          .brighten(1)
+          .saturate(3)
+          .hex()};
     }
   `;
 };
@@ -141,11 +154,11 @@ function Button({
   useEffect(() => {
     if (mode !== "light") {
       const nextThemeColors = mergedTheme.colors.modes[mode];
-      setThemeColors(nextThemeColors);
+      nextThemeColors && setThemeColors(nextThemeColors);
     }
     if (mode === "light") {
       const nextThemeColors = mergedTheme.colors;
-      setThemeColors(nextThemeColors);
+      nextThemeColors && setThemeColors(nextThemeColors);
     }
   }, [mode, mergedTheme]);
 
