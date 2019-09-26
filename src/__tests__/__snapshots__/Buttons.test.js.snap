@@ -49,14 +49,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
 
 .emotion-0:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -145,12 +146,13 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
 }
 
 .emotion-2:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -187,13 +189,14 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #869cff;
 }
 
 .emotion-3:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -230,14 +233,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #ff91b8;
   color: #212529;
 }
 
 .emotion-4:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -255,7 +259,7 @@ Object {
 }
 
 .emotion-4:hover {
-  background: #ff88b9;
+  background: #ff91b8;
 }
 
 .emotion-4:focus {
@@ -282,14 +286,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #7feab5;
   color: #212529;
 }
 
 .emotion-5:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -307,7 +312,7 @@ Object {
 }
 
 .emotion-5:hover {
-  background: #66edaf;
+  background: #7feab5;
 }
 
 .emotion-5:focus {
@@ -334,14 +339,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #ff9c61;
   color: #212529;
 }
 
 .emotion-6:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -359,7 +365,7 @@ Object {
 }
 
 .emotion-6:hover {
-  background: #ff9753;
+  background: #ff9c61;
 }
 
 .emotion-6:focus {
@@ -386,14 +392,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #ff9d89;
   color: #212529;
 }
 
 .emotion-7:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -411,7 +418,7 @@ Object {
 }
 
 .emotion-7:hover {
-  background: #ff9680;
+  background: #ff9d89;
 }
 
 .emotion-7:focus {
@@ -438,14 +445,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #82d9ef;
   color: #212529;
 }
 
 .emotion-8:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -463,7 +471,7 @@ Object {
 }
 
 .emotion-8:hover {
-  background: #59ddfa;
+  background: #82d9ef;
 }
 
 .emotion-8:focus {
@@ -490,14 +498,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #c2cbe5;
   color: #ffffff;
 }
 
 .emotion-9:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -515,7 +524,7 @@ Object {
 }
 
 .emotion-9:hover {
-  background: #bbcbf6;
+  background: #c2cbe5;
 }
 
 .emotion-9:focus {
@@ -542,14 +551,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #a6e1ff;
   color: #212529;
 }
 
 .emotion-10:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -567,7 +577,7 @@ Object {
 }
 
 .emotion-10:hover {
-  background: #8be4ff;
+  background: #a6e1ff;
 }
 
 .emotion-10:focus {
@@ -594,14 +604,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #515458;
   color: #ffffff;
 }
 
 .emotion-11:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -619,7 +630,7 @@ Object {
 }
 
 .emotion-11:hover {
-  background: #3c3f43;
+  background: #515458;
 }
 
 .emotion-11:focus {
@@ -646,13 +657,14 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   padding: 8px;
 }
 
 .emotion-12:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -689,14 +701,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
 
 .emotion-13:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -733,12 +746,13 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
 }
 
 .emotion-14:hover {
-  background: #9da4ff;
+  background: #b4b2f7;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -775,14 +789,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   color: black;
   background: peachpuff;
 }
 
 .emotion-15:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -825,8 +840,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   opacity: 0.6;
   cursor: default;
   -webkit-transition: none;
@@ -839,7 +855,7 @@ Object {
 }
 
 .emotion-16:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1097,14 +1113,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
 
 .emotion-0:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1193,12 +1210,13 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
 }
 
 .emotion-2:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1235,13 +1253,14 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #869cff;
 }
 
 .emotion-3:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1278,14 +1297,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #ff91b8;
   color: #212529;
 }
 
 .emotion-4:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1303,7 +1323,7 @@ Object {
 }
 
 .emotion-4:hover {
-  background: #ff88b9;
+  background: #ff91b8;
 }
 
 .emotion-4:focus {
@@ -1330,14 +1350,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #7feab5;
   color: #212529;
 }
 
 .emotion-5:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1355,7 +1376,7 @@ Object {
 }
 
 .emotion-5:hover {
-  background: #66edaf;
+  background: #7feab5;
 }
 
 .emotion-5:focus {
@@ -1382,14 +1403,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #ff9c61;
   color: #212529;
 }
 
 .emotion-6:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1407,7 +1429,7 @@ Object {
 }
 
 .emotion-6:hover {
-  background: #ff9753;
+  background: #ff9c61;
 }
 
 .emotion-6:focus {
@@ -1434,14 +1456,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #ff9d89;
   color: #212529;
 }
 
 .emotion-7:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1459,7 +1482,7 @@ Object {
 }
 
 .emotion-7:hover {
-  background: #ff9680;
+  background: #ff9d89;
 }
 
 .emotion-7:focus {
@@ -1486,14 +1509,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #82d9ef;
   color: #212529;
 }
 
 .emotion-8:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1511,7 +1535,7 @@ Object {
 }
 
 .emotion-8:hover {
-  background: #59ddfa;
+  background: #82d9ef;
 }
 
 .emotion-8:focus {
@@ -1538,14 +1562,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #c2cbe5;
   color: #ffffff;
 }
 
 .emotion-9:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1563,7 +1588,7 @@ Object {
 }
 
 .emotion-9:hover {
-  background: #bbcbf6;
+  background: #c2cbe5;
 }
 
 .emotion-9:focus {
@@ -1590,14 +1615,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #a6e1ff;
   color: #212529;
 }
 
 .emotion-10:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1615,7 +1641,7 @@ Object {
 }
 
 .emotion-10:hover {
-  background: #8be4ff;
+  background: #a6e1ff;
 }
 
 .emotion-10:focus {
@@ -1642,14 +1668,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #515458;
   color: #ffffff;
 }
 
 .emotion-11:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1667,7 +1694,7 @@ Object {
 }
 
 .emotion-11:hover {
-  background: #3c3f43;
+  background: #515458;
 }
 
 .emotion-11:focus {
@@ -1694,13 +1721,14 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   padding: 8px;
 }
 
 .emotion-12:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1737,14 +1765,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
 
 .emotion-13:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1781,12 +1810,13 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
 }
 
 .emotion-14:hover {
-  background: #9da4ff;
+  background: #b4b2f7;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1823,14 +1853,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   color: black;
   background: peachpuff;
 }
 
 .emotion-15:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -1873,8 +1904,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   opacity: 0.6;
   cursor: default;
   -webkit-transition: none;
@@ -1887,7 +1919,7 @@ Object {
 }
 
 .emotion-16:hover {
-  background: #91aaff;
+  background: #b0b7ff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2224,14 +2256,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
 
 .emotion-0:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2296,12 +2329,13 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
 }
 
 .emotion-2:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2338,13 +2372,14 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #0044e3;
 }
 
 .emotion-3:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2381,14 +2416,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #C2255C;
   color: #ffffff;
 }
 
 .emotion-4:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2406,7 +2442,7 @@ Object {
 }
 
 .emotion-4:hover {
-  background: #cd005b;
+  background: #C2255C;
 }
 
 .emotion-4:focus {
@@ -2433,14 +2469,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #008658;
   color: #ffffff;
 }
 
 .emotion-5:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2458,7 +2495,7 @@ Object {
 }
 
 .emotion-5:hover {
-  background: #008852;
+  background: #008658;
 }
 
 .emotion-5:focus {
@@ -2485,14 +2522,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #862E9C;
   color: #ffffff;
 }
 
 .emotion-6:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2510,7 +2548,7 @@ Object {
 }
 
 .emotion-6:hover {
-  background: #8b23a5;
+  background: #862E9C;
 }
 
 .emotion-6:focus {
@@ -2537,14 +2575,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #e03131;
   color: #ffffff;
 }
 
 .emotion-7:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2562,7 +2601,7 @@ Object {
 }
 
 .emotion-7:hover {
-  background: #ea1929;
+  background: #e03131;
 }
 
 .emotion-7:focus {
@@ -2589,14 +2628,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #00788C;
   color: #ffffff;
 }
 
 .emotion-8:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2614,7 +2654,7 @@ Object {
 }
 
 .emotion-8:hover {
-  background: #007b96;
+  background: #00788C;
 }
 
 .emotion-8:focus {
@@ -2641,14 +2681,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #dbe4ff;
   color: #212529;
 }
 
 .emotion-9:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2666,7 +2707,7 @@ Object {
 }
 
 .emotion-9:hover {
-  background: #d4e4ff;
+  background: #dbe4ff;
 }
 
 .emotion-9:focus {
@@ -2693,14 +2734,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #0081ff;
   color: #ffffff;
 }
 
 .emotion-10:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2745,14 +2787,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #dee2e6;
   color: #212529;
 }
 
 .emotion-11:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2770,7 +2813,7 @@ Object {
 }
 
 .emotion-11:hover {
-  background: #c5c9cd;
+  background: #dee2e6;
 }
 
 .emotion-11:focus {
@@ -2797,13 +2840,14 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   padding: 8px;
 }
 
 .emotion-12:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2840,14 +2884,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   color: black;
   background: peachpuff;
 }
 
 .emotion-15:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2890,8 +2935,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   opacity: 0.6;
   cursor: default;
   -webkit-transition: none;
@@ -2904,7 +2950,7 @@ Object {
 }
 
 .emotion-16:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -2941,12 +2987,13 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
 }
 
 .emotion-14:hover {
-  background: #00009f;
+  background: #040086;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3228,14 +3275,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
 
 .emotion-0:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3300,12 +3348,13 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
 }
 
 .emotion-2:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3342,13 +3391,14 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #0044e3;
 }
 
 .emotion-3:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3385,14 +3435,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #C2255C;
   color: #ffffff;
 }
 
 .emotion-4:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3410,7 +3461,7 @@ Object {
 }
 
 .emotion-4:hover {
-  background: #cd005b;
+  background: #C2255C;
 }
 
 .emotion-4:focus {
@@ -3437,14 +3488,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #008658;
   color: #ffffff;
 }
 
 .emotion-5:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3462,7 +3514,7 @@ Object {
 }
 
 .emotion-5:hover {
-  background: #008852;
+  background: #008658;
 }
 
 .emotion-5:focus {
@@ -3489,14 +3541,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #862E9C;
   color: #ffffff;
 }
 
 .emotion-6:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3514,7 +3567,7 @@ Object {
 }
 
 .emotion-6:hover {
-  background: #8b23a5;
+  background: #862E9C;
 }
 
 .emotion-6:focus {
@@ -3541,14 +3594,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #e03131;
   color: #ffffff;
 }
 
 .emotion-7:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3566,7 +3620,7 @@ Object {
 }
 
 .emotion-7:hover {
-  background: #ea1929;
+  background: #e03131;
 }
 
 .emotion-7:focus {
@@ -3593,14 +3647,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #00788C;
   color: #ffffff;
 }
 
 .emotion-8:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3618,7 +3673,7 @@ Object {
 }
 
 .emotion-8:hover {
-  background: #007b96;
+  background: #00788C;
 }
 
 .emotion-8:focus {
@@ -3645,14 +3700,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #dbe4ff;
   color: #212529;
 }
 
 .emotion-9:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3670,7 +3726,7 @@ Object {
 }
 
 .emotion-9:hover {
-  background: #d4e4ff;
+  background: #dbe4ff;
 }
 
 .emotion-9:focus {
@@ -3697,14 +3753,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #0081ff;
   color: #ffffff;
 }
 
 .emotion-10:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3749,14 +3806,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   background: #dee2e6;
   color: #212529;
 }
 
 .emotion-11:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3774,7 +3832,7 @@ Object {
 }
 
 .emotion-11:hover {
-  background: #c5c9cd;
+  background: #dee2e6;
 }
 
 .emotion-11:focus {
@@ -3801,13 +3859,14 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   padding: 8px;
 }
 
 .emotion-12:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3844,14 +3903,15 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   color: black;
   background: peachpuff;
 }
 
 .emotion-15:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3894,8 +3954,9 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
   opacity: 0.6;
   cursor: default;
   -webkit-transition: none;
@@ -3908,7 +3969,7 @@ Object {
 }
 
 .emotion-16:hover {
-  background: #004ffc;
+  background: #3b5bdb;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
@@ -3945,12 +4006,13 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out,background 0.3s ease-in-out,color 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
 }
 
 .emotion-14:hover {
-  background: #00009f;
+  background: #040086;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
