@@ -13,7 +13,9 @@ const ButtonStyle = ({
     radii: [, secondRadius] = [],
     shadows
   },
-  themeColors: { background, primary }
+  themeColors: { background, primary },
+  transformColors,
+  animate
 }) => css`
   position: relative;
   cursor: pointer;
@@ -32,15 +34,19 @@ const ButtonStyle = ({
   line-height: inherit;
   font-weight: inherit;
   transform: translate3d(0, 0, 0);
-  transition: 0.3s ease-in-out;
+  transition: ${animate
+    ? "transform 0.3s ease-in-out, background 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
+    : ""};
 
   &:hover {
-    background: ${chroma(primary)
-      .darken(0.2)
-      .saturate(1.5)
-      .hex()};
-    transform: translate3d(0, -3px, 0);
-    box-shadow: ${shadows.default};
+    background: ${transformColors
+      ? chroma(primary)
+          .darken(0.2)
+          .saturate(1.5)
+          .hex()
+      : primary};
+    transform: ${animate ? "translate3d(0, -3px, 0)" : ""};
+    box-shadow: ${animate ? shadows.default : ""};
   }
 
   &:focus {
@@ -52,7 +58,7 @@ const ButtonStyle = ({
   }
 
   &:active {
-    transform: translate3d(0, 1px, 0);
+    transform: ${animate ? "translate3d(0, 1px, 0)" : ""};
   }
 `;
 
@@ -75,8 +81,16 @@ const activeStyle = ({ colors, variant }) => {
   `;
 };
 
-const VariantStyle = ({ colors, variant }) => {
+const VariantStyle = ({ colors, variant, transformColors }) => {
   const variantColor = colors[variant];
+  const hoverColor =
+    variant === "gray"
+      ? chroma(variantColor)
+          .darken(0.5)
+          .hex()
+      : chroma(variantColor)
+          .saturate(0.5)
+          .hex();
   return css`
     background: ${variantColor};
     color: ${variant === "gray" || variant === "muted"
@@ -84,13 +98,7 @@ const VariantStyle = ({ colors, variant }) => {
       : colors.background};
 
     &:hover {
-      background: ${variant === "gray"
-        ? chroma(variantColor)
-            .darken(0.5)
-            .hex()
-        : chroma(variantColor)
-            .saturate(0.5)
-            .hex()};
+      background: ${transformColors ? hoverColor : variantColor};
     }
 
     &:focus {
@@ -121,9 +129,13 @@ const composeStyles = ({
   variant,
   size,
   disabled,
-  active
+  active,
+  transformColors,
+  animate
 }) => {
-  const cssStyles = [ButtonStyle({ theme, themeColors })];
+  const cssStyles = [
+    ButtonStyle({ theme, themeColors, transformColors, animate })
+  ];
   const sizeCases = {
     small: () => cssStyles.push(SmallButtonStyle(theme)),
     medium: () => cssStyles.push(MediumButtonStyle(theme))
@@ -135,7 +147,9 @@ const composeStyles = ({
 
   variant &&
     variant !== "primary" &&
-    cssStyles.push(VariantStyle({ colors: themeColors, variant }));
+    cssStyles.push(
+      VariantStyle({ colors: themeColors, variant, transformColors })
+    );
   disabled && cssStyles.push(disabledStyle);
   active && cssStyles.push(activeStyle({ colors: themeColors, variant }));
 
@@ -152,6 +166,8 @@ function Button({
   disabled,
   theme,
   active,
+  transformColors,
+  animate,
   ...props
 }) {
   const [mergedTheme, setMergedTheme] = useState(theme);
@@ -193,7 +209,9 @@ function Button({
     variant,
     size,
     disabled,
-    active
+    active,
+    transformColors,
+    animate
   });
   const type = Element === "button" && !props.type ? "button" : null;
 
@@ -220,6 +238,8 @@ Button.defaultProps = {
   theme: defaultTheme,
   disabled: false,
   active: false,
+  transformColors: false,
+  animate: true,
   onClick: () => {},
   mode: "light",
   variant: "primary",
@@ -243,7 +263,9 @@ Button.propTypes = {
   ]),
   size: PropTypes.oneOf(["large", "medium", "small"]),
   mode: PropTypes.oneOf(["light", "dark"]),
-  active: PropTypes.bool
+  active: PropTypes.bool,
+  transformColors: PropTypes.bool,
+  animate: PropTypes.bool
 };
 
 export default Button;
