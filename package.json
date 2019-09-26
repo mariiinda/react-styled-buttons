@@ -1,6 +1,6 @@
 {
   "name": "@marinda/react-styled-buttons",
-  "version": "1.1.21",
+  "version": "1.2.21",
   "description": "Themable Styled React button components. Flexible & easily customized.",
   "repository": "mariiinda/react-styled-buttons",
   "main": "dist/index.js",
