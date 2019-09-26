@@ -17,6 +17,8 @@ const variantValuesObj = {
   accent2: "accent2",
   accent3: "accent3",
   accent4: "accent4",
+  highlight: "highlight",
+  muted: "muted",
   gray: "gray"
 };
 const variantOptionsObj = {
@@ -75,6 +77,7 @@ export const primary = ({
   children = "Primary Button",
   onClick,
   disabled,
+  active,
   id = "primary-button",
   as
 } = {}) => {
@@ -82,6 +85,7 @@ export const primary = ({
     <Button
       variant={variantOptions()}
       disabled={boolean("Disabled", disabled)}
+      active={boolean("Active", active)}
       size={sizeOptions()}
       mode={modeOptions()}
       as={asOptions(as)}

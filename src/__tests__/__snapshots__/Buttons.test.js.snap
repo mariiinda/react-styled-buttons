@@ -49,26 +49,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
 
 .emotion-0:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-0:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -76,7 +67,13 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-13 {
+.emotion-0:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-17 {
   grid-area: buttons;
   padding: 30px;
   border-bottom: 1px solid currentColor;
@@ -97,14 +94,14 @@ Object {
   justify-content: space-evenly;
 }
 
-.emotion-13 > button {
+.emotion-17 > button {
   -webkit-flex: 0 1 calc(50% - 20px);
   -ms-flex: 0 1 calc(50% - 20px);
   flex: 0 1 calc(50% - 20px);
   margin-top: 20px;
 }
 
-.emotion-14 {
+.emotion-18 {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -117,11 +114,11 @@ Object {
   transition: 0.2s ease;
 }
 
-.emotion-14 section {
+.emotion-18 section {
   position: relative;
 }
 
-.emotion-14 h2 {
+.emotion-18 h2 {
   position: absolute;
   top: 0px;
   left: 0;
@@ -148,29 +145,26 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .emotion-2:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
-.emotion-2:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
 .emotion-2:focus {
   box-shadow: 0 0px 8px #a9e8ff;
+}
+
+.emotion-2:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
 .emotion-3 {
@@ -193,26 +187,16 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #ff91b8;
-  color: #212529;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #869cff;
 }
 
 .emotion-3:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-3:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -220,16 +204,10 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
-.emotion-3:hover {
-  background: #ff88b9;
-}
-
 .emotion-3:active {
-  background: #e46fa1;
-}
-
-.emotion-3:focus {
-  box-shadow: 0 0px 8px #ff94ff;
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
 .emotion-4 {
@@ -252,26 +230,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #7feab5;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #ff91b8;
   color: #212529;
 }
 
 .emotion-4:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-4:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -279,16 +248,18 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
-.emotion-4:hover {
-  background: #66edaf;
+.emotion-4:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-4:active {
-  background: #49d396;
+.emotion-4:hover {
+  background: #ff88b9;
 }
 
 .emotion-4:focus {
-  box-shadow: 0 0px 8px #00ffd7;
+  box-shadow: 0 0px 8px #ff94ff;
 }
 
 .emotion-5 {
@@ -311,26 +282,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #ff9c61;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #7feab5;
   color: #212529;
 }
 
 .emotion-5:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-5:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -338,16 +300,18 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
-.emotion-5:hover {
-  background: #ff9753;
+.emotion-5:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-5:active {
-  background: #e3803c;
+.emotion-5:hover {
+  background: #66edaf;
 }
 
 .emotion-5:focus {
-  box-shadow: 0 0px 8px #ffc200;
+  box-shadow: 0 0px 8px #00ffd7;
 }
 
 .emotion-6 {
@@ -370,26 +334,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #ff9d89;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #ff9c61;
   color: #212529;
 }
 
 .emotion-6:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-6:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -397,16 +352,18 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
-.emotion-6:hover {
-  background: #ff9680;
+.emotion-6:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-6:active {
-  background: #e47e69;
+.emotion-6:hover {
+  background: #ff9753;
 }
 
 .emotion-6:focus {
-  box-shadow: 0 0px 8px #ffb16a;
+  box-shadow: 0 0px 8px #ffc200;
 }
 
 .emotion-7 {
@@ -429,26 +386,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #82d9ef;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #ff9d89;
   color: #212529;
 }
 
 .emotion-7:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-7:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -456,16 +404,18 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
-.emotion-7:hover {
-  background: #59ddfa;
+.emotion-7:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-7:active {
-  background: #36c3e0;
+.emotion-7:hover {
+  background: #ff9680;
 }
 
 .emotion-7:focus {
-  box-shadow: 0 0px 8px #00ffff;
+  box-shadow: 0 0px 8px #ffb16a;
 }
 
 .emotion-8 {
@@ -488,26 +438,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #515458;
-  color: #ffffff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #82d9ef;
+  color: #212529;
 }
 
 .emotion-8:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-8:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -515,16 +456,18 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
-.emotion-8:hover {
-  background: #3c3f43;
+.emotion-8:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-8:active {
-  background: #303337;
+.emotion-8:hover {
+  background: #59ddfa;
 }
 
 .emotion-8:focus {
-  box-shadow: 0 0px 8px #0089e1;
+  box-shadow: 0 0px 8px #00ffff;
 }
 
 .emotion-9 {
@@ -547,30 +490,36 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  padding: 8px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #c2cbe5;
+  color: #ffffff;
 }
 
 .emotion-9:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
+.emotion-9:focus {
+  box-shadow: 0 0px 8px #a9e8ff;
+}
+
 .emotion-9:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-9:hover {
+  background: #bbcbf6;
 }
 
 .emotion-9:focus {
-  box-shadow: 0 0px 8px #a9e8ff;
+  box-shadow: 0 0px 8px #00ffff;
 }
 
 .emotion-10 {
@@ -593,31 +542,36 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  padding: 4px 8px;
-  font-size: 0.875rempx;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #a6e1ff;
+  color: #212529;
 }
 
 .emotion-10:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
+.emotion-10:focus {
+  box-shadow: 0 0px 8px #a9e8ff;
+}
+
 .emotion-10:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-10:hover {
+  background: #8be4ff;
 }
 
 .emotion-10:focus {
-  box-shadow: 0 0px 8px #a9e8ff;
+  box-shadow: 0 0px 8px #00ffff;
 }
 
 .emotion-11 {
@@ -631,8 +585,8 @@ Object {
   display: inline-block;
   border: none;
   border-radius: 5px;
-  background: #e599f7;
-  color: #333;
+  background: #b0b7ff;
+  color: #212529;
   font-size: 1rem;
   font-family: inherit;
   line-height: inherit;
@@ -640,29 +594,36 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #515458;
+  color: #ffffff;
 }
 
 .emotion-11:hover {
-  background: #ec93ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rebeccapurple;
-}
-
-.emotion-11:active {
-  background: #d27be5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rebeccapurple;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
 .emotion-11:focus {
-  box-shadow: 0 0px 8px #ffa5ff;
+  box-shadow: 0 0px 8px #a9e8ff;
+}
+
+.emotion-11:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-11:hover {
+  background: #3c3f43;
+}
+
+.emotion-11:focus {
+  box-shadow: 0 0px 8px #0089e1;
 }
 
 .emotion-12 {
@@ -685,26 +646,16 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  color: black;
-  background: peachpuff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 8px;
 }
 
 .emotion-12:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-12:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -712,16 +663,203 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
-.emotion-12:hover,
 .emotion-12:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-13 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #b0b7ff;
+  color: #212529;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 4px 8px;
+  font-size: 0.875rempx;
+}
+
+.emotion-13:hover {
+  background: #91aaff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-13:focus {
+  box-shadow: 0 0px 8px #a9e8ff;
+}
+
+.emotion-13:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-14 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #b4b2f7;
+  color: #333;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.emotion-14:hover {
+  background: #9da4ff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rebeccapurple;
+}
+
+.emotion-14:focus {
+  box-shadow: 0 0px 8px #dbd9ff;
+}
+
+.emotion-14:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-15 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #b0b7ff;
+  color: #212529;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: black;
+  background: peachpuff;
+}
+
+.emotion-15:hover {
+  background: #91aaff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-15:focus {
+  box-shadow: 0 0px 8px #a9e8ff;
+}
+
+.emotion-15:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-15:hover,
+.emotion-15:active {
   color: white;
   background: orangered;
+}
+
+.emotion-16 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #b0b7ff;
+  color: #212529;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0.6;
+  cursor: default;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  pointer-events: none;
+  cursor: none;
+}
+
+.emotion-16:hover {
+  background: #91aaff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-16:focus {
+  box-shadow: 0 0px 8px #a9e8ff;
+}
+
+.emotion-16:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
 <body>
     <div>
       <div
-        class="emotion-14"
+        class="emotion-18"
       >
         <div
           class="emotion-1"
@@ -730,6 +868,7 @@ Object {
             class="emotion-0"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -740,22 +879,35 @@ Object {
           </button>
         </div>
         <section
-          class="emotion-13"
+          class="emotion-17"
         >
           <button
             class="emotion-2"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
-              Default Button
+              Primary Button
             </span>
           </button>
           <button
             class="emotion-3"
             data-testid=""
             id=""
+            testid=""
+            type="button"
+          >
+            <span>
+              Primary Button (Active)
+            </span>
+          </button>
+          <button
+            class="emotion-4"
+            data-testid=""
+            id=""
+            testid=""
             type="button"
           >
             <span>
@@ -763,9 +915,10 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-4"
+            class="emotion-5"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -773,9 +926,10 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-5"
+            class="emotion-6"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -783,9 +937,10 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-6"
+            class="emotion-7"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -793,9 +948,10 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-7"
+            class="emotion-8"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -803,9 +959,32 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-8"
+            class="emotion-9"
             data-testid=""
             id=""
+            testid=""
+            type="button"
+          >
+            <span>
+              Muted Button
+            </span>
+          </button>
+          <button
+            class="emotion-10"
+            data-testid=""
+            id=""
+            testid=""
+            type="button"
+          >
+            <span>
+              Highlight Button
+            </span>
+          </button>
+          <button
+            class="emotion-11"
+            data-testid=""
+            id=""
+            testid=""
             type="button"
           >
             <span>
@@ -813,9 +992,10 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-9"
+            class="emotion-12"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -823,9 +1003,10 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-10"
+            class="emotion-13"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -833,9 +1014,10 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-11"
+            class="emotion-14"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -843,13 +1025,26 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-12"
+            class="emotion-15"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
               Custom css button
+            </span>
+          </button>
+          <button
+            class="emotion-16"
+            data-testid=""
+            disabled=""
+            id=""
+            testid=""
+            type="button"
+          >
+            <span>
+              Disabled Button
             </span>
           </button>
         </section>
@@ -902,26 +1097,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
 
 .emotion-0:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-0:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -929,7 +1115,13 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-13 {
+.emotion-0:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-17 {
   grid-area: buttons;
   padding: 30px;
   border-bottom: 1px solid currentColor;
@@ -950,14 +1142,14 @@ Object {
   justify-content: space-evenly;
 }
 
-.emotion-13 > button {
+.emotion-17 > button {
   -webkit-flex: 0 1 calc(50% - 20px);
   -ms-flex: 0 1 calc(50% - 20px);
   flex: 0 1 calc(50% - 20px);
   margin-top: 20px;
 }
 
-.emotion-14 {
+.emotion-18 {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -970,11 +1162,11 @@ Object {
   transition: 0.2s ease;
 }
 
-.emotion-14 section {
+.emotion-18 section {
   position: relative;
 }
 
-.emotion-14 h2 {
+.emotion-18 h2 {
   position: absolute;
   top: 0px;
   left: 0;
@@ -1001,29 +1193,26 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .emotion-2:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
-.emotion-2:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
 .emotion-2:focus {
   box-shadow: 0 0px 8px #a9e8ff;
+}
+
+.emotion-2:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
 .emotion-3 {
@@ -1046,26 +1235,16 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #ff91b8;
-  color: #212529;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #869cff;
 }
 
 .emotion-3:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-3:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -1073,16 +1252,10 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
-.emotion-3:hover {
-  background: #ff88b9;
-}
-
 .emotion-3:active {
-  background: #e46fa1;
-}
-
-.emotion-3:focus {
-  box-shadow: 0 0px 8px #ff94ff;
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
 .emotion-4 {
@@ -1105,26 +1278,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #7feab5;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #ff91b8;
   color: #212529;
 }
 
 .emotion-4:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-4:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -1132,16 +1296,18 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
-.emotion-4:hover {
-  background: #66edaf;
+.emotion-4:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-4:active {
-  background: #49d396;
+.emotion-4:hover {
+  background: #ff88b9;
 }
 
 .emotion-4:focus {
-  box-shadow: 0 0px 8px #00ffd7;
+  box-shadow: 0 0px 8px #ff94ff;
 }
 
 .emotion-5 {
@@ -1164,26 +1330,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #ff9c61;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #7feab5;
   color: #212529;
 }
 
 .emotion-5:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-5:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -1191,16 +1348,18 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
-.emotion-5:hover {
-  background: #ff9753;
+.emotion-5:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-5:active {
-  background: #e3803c;
+.emotion-5:hover {
+  background: #66edaf;
 }
 
 .emotion-5:focus {
-  box-shadow: 0 0px 8px #ffc200;
+  box-shadow: 0 0px 8px #00ffd7;
 }
 
 .emotion-6 {
@@ -1223,26 +1382,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #ff9d89;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #ff9c61;
   color: #212529;
 }
 
 .emotion-6:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-6:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -1250,16 +1400,18 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
-.emotion-6:hover {
-  background: #ff9680;
+.emotion-6:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-6:active {
-  background: #e47e69;
+.emotion-6:hover {
+  background: #ff9753;
 }
 
 .emotion-6:focus {
-  box-shadow: 0 0px 8px #ffb16a;
+  box-shadow: 0 0px 8px #ffc200;
 }
 
 .emotion-7 {
@@ -1282,26 +1434,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #82d9ef;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #ff9d89;
   color: #212529;
 }
 
 .emotion-7:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-7:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -1309,16 +1452,18 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
-.emotion-7:hover {
-  background: #59ddfa;
+.emotion-7:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-7:active {
-  background: #36c3e0;
+.emotion-7:hover {
+  background: #ff9680;
 }
 
 .emotion-7:focus {
-  box-shadow: 0 0px 8px #00ffff;
+  box-shadow: 0 0px 8px #ffb16a;
 }
 
 .emotion-8 {
@@ -1341,26 +1486,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #515458;
-  color: #ffffff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #82d9ef;
+  color: #212529;
 }
 
 .emotion-8:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-8:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -1368,16 +1504,18 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
-.emotion-8:hover {
-  background: #3c3f43;
+.emotion-8:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-8:active {
-  background: #303337;
+.emotion-8:hover {
+  background: #59ddfa;
 }
 
 .emotion-8:focus {
-  box-shadow: 0 0px 8px #0089e1;
+  box-shadow: 0 0px 8px #00ffff;
 }
 
 .emotion-9 {
@@ -1400,30 +1538,36 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  padding: 8px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #c2cbe5;
+  color: #ffffff;
 }
 
 .emotion-9:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
+.emotion-9:focus {
+  box-shadow: 0 0px 8px #a9e8ff;
+}
+
 .emotion-9:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-9:hover {
+  background: #bbcbf6;
 }
 
 .emotion-9:focus {
-  box-shadow: 0 0px 8px #a9e8ff;
+  box-shadow: 0 0px 8px #00ffff;
 }
 
 .emotion-10 {
@@ -1446,31 +1590,36 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  padding: 4px 8px;
-  font-size: 0.875rempx;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #a6e1ff;
+  color: #212529;
 }
 
 .emotion-10:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
+.emotion-10:focus {
+  box-shadow: 0 0px 8px #a9e8ff;
+}
+
 .emotion-10:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-10:hover {
+  background: #8be4ff;
 }
 
 .emotion-10:focus {
-  box-shadow: 0 0px 8px #a9e8ff;
+  box-shadow: 0 0px 8px #00ffff;
 }
 
 .emotion-11 {
@@ -1484,8 +1633,8 @@ Object {
   display: inline-block;
   border: none;
   border-radius: 5px;
-  background: #e599f7;
-  color: #333;
+  background: #b0b7ff;
+  color: #212529;
   font-size: 1rem;
   font-family: inherit;
   line-height: inherit;
@@ -1493,29 +1642,36 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #515458;
+  color: #ffffff;
 }
 
 .emotion-11:hover {
-  background: #ec93ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rebeccapurple;
-}
-
-.emotion-11:active {
-  background: #d27be5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rebeccapurple;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
 .emotion-11:focus {
-  box-shadow: 0 0px 8px #ffa5ff;
+  box-shadow: 0 0px 8px #a9e8ff;
+}
+
+.emotion-11:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-11:hover {
+  background: #3c3f43;
+}
+
+.emotion-11:focus {
+  box-shadow: 0 0px 8px #0089e1;
 }
 
 .emotion-12 {
@@ -1538,26 +1694,16 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  color: black;
-  background: peachpuff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 8px;
 }
 
 .emotion-12:hover {
-  background: #abb6ff;
+  background: #91aaff;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-12:active {
-  background: #929ee5;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -1565,15 +1711,202 @@ Object {
   box-shadow: 0 0px 8px #a9e8ff;
 }
 
-.emotion-12:hover,
 .emotion-12:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-13 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #b0b7ff;
+  color: #212529;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 4px 8px;
+  font-size: 0.875rempx;
+}
+
+.emotion-13:hover {
+  background: #91aaff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-13:focus {
+  box-shadow: 0 0px 8px #a9e8ff;
+}
+
+.emotion-13:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-14 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #b4b2f7;
+  color: #333;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.emotion-14:hover {
+  background: #9da4ff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rebeccapurple;
+}
+
+.emotion-14:focus {
+  box-shadow: 0 0px 8px #dbd9ff;
+}
+
+.emotion-14:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-15 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #b0b7ff;
+  color: #212529;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: black;
+  background: peachpuff;
+}
+
+.emotion-15:hover {
+  background: #91aaff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-15:focus {
+  box-shadow: 0 0px 8px #a9e8ff;
+}
+
+.emotion-15:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-15:hover,
+.emotion-15:active {
   color: white;
   background: orangered;
 }
 
+.emotion-16 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #b0b7ff;
+  color: #212529;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0.6;
+  cursor: default;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  pointer-events: none;
+  cursor: none;
+}
+
+.emotion-16:hover {
+  background: #91aaff;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-16:focus {
+  box-shadow: 0 0px 8px #a9e8ff;
+}
+
+.emotion-16:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
 <div>
     <div
-      class="emotion-14"
+      class="emotion-18"
     >
       <div
         class="emotion-1"
@@ -1582,6 +1915,7 @@ Object {
           class="emotion-0"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -1592,22 +1926,35 @@ Object {
         </button>
       </div>
       <section
-        class="emotion-13"
+        class="emotion-17"
       >
         <button
           class="emotion-2"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
-            Default Button
+            Primary Button
           </span>
         </button>
         <button
           class="emotion-3"
           data-testid=""
           id=""
+          testid=""
+          type="button"
+        >
+          <span>
+            Primary Button (Active)
+          </span>
+        </button>
+        <button
+          class="emotion-4"
+          data-testid=""
+          id=""
+          testid=""
           type="button"
         >
           <span>
@@ -1615,9 +1962,10 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-4"
+          class="emotion-5"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -1625,9 +1973,10 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-5"
+          class="emotion-6"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -1635,9 +1984,10 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-6"
+          class="emotion-7"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -1645,9 +1995,10 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-7"
+          class="emotion-8"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -1655,9 +2006,32 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-8"
+          class="emotion-9"
           data-testid=""
           id=""
+          testid=""
+          type="button"
+        >
+          <span>
+            Muted Button
+          </span>
+        </button>
+        <button
+          class="emotion-10"
+          data-testid=""
+          id=""
+          testid=""
+          type="button"
+        >
+          <span>
+            Highlight Button
+          </span>
+        </button>
+        <button
+          class="emotion-11"
+          data-testid=""
+          id=""
+          testid=""
           type="button"
         >
           <span>
@@ -1665,9 +2039,10 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-9"
+          class="emotion-12"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -1675,9 +2050,10 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-10"
+          class="emotion-13"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -1685,9 +2061,10 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-11"
+          class="emotion-14"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -1695,13 +2072,26 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-12"
+          class="emotion-15"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
             Custom css button
+          </span>
+        </button>
+        <button
+          class="emotion-16"
+          data-testid=""
+          disabled=""
+          id=""
+          testid=""
+          type="button"
+        >
+          <span>
+            Disabled Button
           </span>
         </button>
       </section>
@@ -1764,7 +2154,7 @@ Object {
 exports[`renders theme light 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": .emotion-14 {
+  "baseElement": .emotion-18 {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -1777,11 +2167,11 @@ Object {
   transition: 0.2s ease;
 }
 
-.emotion-14 section {
+.emotion-18 section {
   position: relative;
 }
 
-.emotion-14 h2 {
+.emotion-18 h2 {
   position: absolute;
   top: 0px;
   left: 0;
@@ -1834,26 +2224,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
 
 .emotion-0:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-0:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -1861,7 +2242,13 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-13 {
+.emotion-0:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-17 {
   grid-area: buttons;
   padding: 30px;
   border-bottom: 1px solid currentColor;
@@ -1882,7 +2269,7 @@ Object {
   justify-content: space-evenly;
 }
 
-.emotion-13 > button {
+.emotion-17 > button {
   -webkit-flex: 0 1 calc(50% - 20px);
   -ms-flex: 0 1 calc(50% - 20px);
   flex: 0 1 calc(50% - 20px);
@@ -1909,29 +2296,26 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .emotion-2:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
-.emotion-2:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
 .emotion-2:focus {
   box-shadow: 0 0px 8px #0081ff;
+}
+
+.emotion-2:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
 .emotion-3 {
@@ -1954,26 +2338,16 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #C2255C;
-  color: #ffffff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #0044e3;
 }
 
 .emotion-3:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-3:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -1981,16 +2355,10 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-3:hover {
-  background: #cd005b;
-}
-
 .emotion-3:active {
-  background: #b10046;
-}
-
-.emotion-3:focus {
-  box-shadow: 0 0px 8px #ff0080;
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
 .emotion-4 {
@@ -2013,26 +2381,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #008658;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #C2255C;
   color: #ffffff;
 }
 
 .emotion-4:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-4:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -2040,16 +2399,18 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-4:hover {
-  background: #008852;
+.emotion-4:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-4:active {
-  background: #00713d;
+.emotion-4:hover {
+  background: #cd005b;
 }
 
 .emotion-4:focus {
-  box-shadow: 0 0px 8px #00c55f;
+  box-shadow: 0 0px 8px #ff0080;
 }
 
 .emotion-5 {
@@ -2072,26 +2433,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #C93700;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #008658;
   color: #ffffff;
 }
 
 .emotion-5:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-5:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -2099,16 +2451,18 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-5:hover {
-  background: #d12a00;
+.emotion-5:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-5:active {
-  background: #b40000;
+.emotion-5:hover {
+  background: #008852;
 }
 
 .emotion-5:focus {
-  box-shadow: 0 0px 8px #ff0000;
+  box-shadow: 0 0px 8px #00c55f;
 }
 
 .emotion-6 {
@@ -2131,26 +2485,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #e03131;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #862E9C;
   color: #ffffff;
 }
 
 .emotion-6:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-6:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -2158,16 +2503,18 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-6:hover {
-  background: #ea1929;
+.emotion-6:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-6:active {
-  background: #cc0015;
+.emotion-6:hover {
+  background: #8b23a5;
 }
 
 .emotion-6:focus {
-  box-shadow: 0 0px 8px #ff0029;
+  box-shadow: 0 0px 8px #da00ff;
 }
 
 .emotion-7 {
@@ -2190,26 +2537,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #00788C;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #e03131;
   color: #ffffff;
 }
 
 .emotion-7:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-7:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -2217,16 +2555,18 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-7:hover {
-  background: #007b96;
+.emotion-7:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-7:active {
-  background: #00657f;
+.emotion-7:hover {
+  background: #ea1929;
 }
 
 .emotion-7:focus {
-  box-shadow: 0 0px 8px #00b9fd;
+  box-shadow: 0 0px 8px #ff0029;
 }
 
 .emotion-8 {
@@ -2249,26 +2589,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #dee2e6;
-  color: #212529;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #00788C;
+  color: #ffffff;
 }
 
 .emotion-8:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-8:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -2276,16 +2607,18 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-8:hover {
-  background: #c5c9cd;
+.emotion-8:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-8:active {
-  background: #b6babe;
+.emotion-8:hover {
+  background: #007b96;
 }
 
 .emotion-8:focus {
-  box-shadow: 0 0px 8px #ffd5ff;
+  box-shadow: 0 0px 8px #00b9fd;
 }
 
 .emotion-9 {
@@ -2308,30 +2641,140 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  padding: 8px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #dbe4ff;
+  color: #212529;
 }
 
 .emotion-9:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
+.emotion-9:focus {
+  box-shadow: 0 0px 8px #0081ff;
+}
+
 .emotion-9:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-9:hover {
+  background: #d4e4ff;
 }
 
 .emotion-9:focus {
+  box-shadow: 0 0px 8px #ffd5ff;
+}
+
+.emotion-10 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #3b5bdb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #0081ff;
+  color: #ffffff;
+}
+
+.emotion-10:hover {
+  background: #004ffc;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-10:focus {
   box-shadow: 0 0px 8px #0081ff;
+}
+
+.emotion-10:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-10:hover {
+  background: #0081ff;
+}
+
+.emotion-10:focus {
+  box-shadow: 0 0px 8px #00b7ff;
+}
+
+.emotion-11 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #3b5bdb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #dee2e6;
+  color: #212529;
+}
+
+.emotion-11:hover {
+  background: #004ffc;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-11:focus {
+  box-shadow: 0 0px 8px #0081ff;
+}
+
+.emotion-11:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-11:hover {
+  background: #c5c9cd;
+}
+
+.emotion-11:focus {
+  box-shadow: 0 0px 8px #ffd5ff;
 }
 
 .emotion-12 {
@@ -2354,26 +2797,16 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  color: black;
-  background: peachpuff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 8px;
 }
 
 .emotion-12:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-12:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -2381,13 +2814,13 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-12:hover,
 .emotion-12:active {
-  color: white;
-  background: orangered;
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-11 {
+.emotion-15 {
   position: relative;
   cursor: pointer;
   outline: none;
@@ -2398,7 +2831,108 @@ Object {
   display: inline-block;
   border: none;
   border-radius: 5px;
-  background: #862E9C;
+  background: #3b5bdb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: black;
+  background: peachpuff;
+}
+
+.emotion-15:hover {
+  background: #004ffc;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-15:focus {
+  box-shadow: 0 0px 8px #0081ff;
+}
+
+.emotion-15:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-15:hover,
+.emotion-15:active {
+  color: white;
+  background: orangered;
+}
+
+.emotion-16 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #3b5bdb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0.6;
+  cursor: default;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  pointer-events: none;
+  cursor: none;
+}
+
+.emotion-16:hover {
+  background: #004ffc;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-16:focus {
+  box-shadow: 0 0px 8px #0081ff;
+}
+
+.emotion-16:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-14 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #040086;
   color: #f8f0fc;
   font-size: 1rem;
   font-family: inherit;
@@ -2407,35 +2941,32 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.emotion-11:hover {
-  background: #8b23a5;
+.emotion-14:hover {
+  background: #00009f;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
   box-shadow: 0 .5rem 1rem rebeccapurple;
 }
 
-.emotion-11:active {
-  background: #72008d;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rebeccapurple;
+.emotion-14:focus {
+  box-shadow: 0 0px 8px #0000ff;
 }
 
-.emotion-11:focus {
-  box-shadow: 0 0px 8px #da00ff;
+.emotion-14:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
 <body>
     <div>
       <div
-        class="emotion-14"
+        class="emotion-18"
       >
         <div
           class="emotion-1"
@@ -2444,6 +2975,7 @@ Object {
             class="emotion-0"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -2454,22 +2986,35 @@ Object {
           </button>
         </div>
         <section
-          class="emotion-13"
+          class="emotion-17"
         >
           <button
             class="emotion-2"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
-              Default Button
+              Primary Button
             </span>
           </button>
           <button
             class="emotion-3"
             data-testid=""
             id=""
+            testid=""
+            type="button"
+          >
+            <span>
+              Primary Button (Active)
+            </span>
+          </button>
+          <button
+            class="emotion-4"
+            data-testid=""
+            id=""
+            testid=""
             type="button"
           >
             <span>
@@ -2477,9 +3022,10 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-4"
+            class="emotion-5"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -2487,9 +3033,10 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-5"
+            class="emotion-6"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -2497,9 +3044,10 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-6"
+            class="emotion-7"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -2507,9 +3055,10 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-7"
+            class="emotion-8"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -2517,9 +3066,32 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-8"
+            class="emotion-9"
             data-testid=""
             id=""
+            testid=""
+            type="button"
+          >
+            <span>
+              Muted Button
+            </span>
+          </button>
+          <button
+            class="emotion-10"
+            data-testid=""
+            id=""
+            testid=""
+            type="button"
+          >
+            <span>
+              Highlight Button
+            </span>
+          </button>
+          <button
+            class="emotion-11"
+            data-testid=""
+            id=""
+            testid=""
             type="button"
           >
             <span>
@@ -2527,9 +3099,10 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-9"
+            class="emotion-12"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -2540,6 +3113,7 @@ Object {
             class="emotion-0"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -2547,9 +3121,10 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-11"
+            class="emotion-14"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
@@ -2557,20 +3132,33 @@ Object {
             </span>
           </button>
           <button
-            class="emotion-12"
+            class="emotion-15"
             data-testid=""
             id=""
+            testid=""
             type="button"
           >
             <span>
               Custom css button
             </span>
           </button>
+          <button
+            class="emotion-16"
+            data-testid=""
+            disabled=""
+            id=""
+            testid=""
+            type="button"
+          >
+            <span>
+              Disabled Button
+            </span>
+          </button>
         </section>
       </div>
     </div>
   </body>,
-  "container": .emotion-14 {
+  "container": .emotion-18 {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -2583,11 +3171,11 @@ Object {
   transition: 0.2s ease;
 }
 
-.emotion-14 section {
+.emotion-18 section {
   position: relative;
 }
 
-.emotion-14 h2 {
+.emotion-18 h2 {
   position: absolute;
   top: 0px;
   left: 0;
@@ -2640,26 +3228,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   padding: 4px 8px;
   font-size: 0.875rempx;
 }
 
 .emotion-0:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-0:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -2667,7 +3246,13 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-13 {
+.emotion-0:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-17 {
   grid-area: buttons;
   padding: 30px;
   border-bottom: 1px solid currentColor;
@@ -2688,7 +3273,7 @@ Object {
   justify-content: space-evenly;
 }
 
-.emotion-13 > button {
+.emotion-17 > button {
   -webkit-flex: 0 1 calc(50% - 20px);
   -ms-flex: 0 1 calc(50% - 20px);
   flex: 0 1 calc(50% - 20px);
@@ -2715,29 +3300,26 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .emotion-2:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
-.emotion-2:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
 .emotion-2:focus {
   box-shadow: 0 0px 8px #0081ff;
+}
+
+.emotion-2:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
 .emotion-3 {
@@ -2760,26 +3342,16 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #C2255C;
-  color: #ffffff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #0044e3;
 }
 
 .emotion-3:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-3:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -2787,16 +3359,10 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-3:hover {
-  background: #cd005b;
-}
-
 .emotion-3:active {
-  background: #b10046;
-}
-
-.emotion-3:focus {
-  box-shadow: 0 0px 8px #ff0080;
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
 .emotion-4 {
@@ -2819,26 +3385,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #008658;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #C2255C;
   color: #ffffff;
 }
 
 .emotion-4:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-4:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -2846,16 +3403,18 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-4:hover {
-  background: #008852;
+.emotion-4:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-4:active {
-  background: #00713d;
+.emotion-4:hover {
+  background: #cd005b;
 }
 
 .emotion-4:focus {
-  box-shadow: 0 0px 8px #00c55f;
+  box-shadow: 0 0px 8px #ff0080;
 }
 
 .emotion-5 {
@@ -2878,26 +3437,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #C93700;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #008658;
   color: #ffffff;
 }
 
 .emotion-5:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-5:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -2905,16 +3455,18 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-5:hover {
-  background: #d12a00;
+.emotion-5:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-5:active {
-  background: #b40000;
+.emotion-5:hover {
+  background: #008852;
 }
 
 .emotion-5:focus {
-  box-shadow: 0 0px 8px #ff0000;
+  box-shadow: 0 0px 8px #00c55f;
 }
 
 .emotion-6 {
@@ -2937,26 +3489,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #e03131;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #862E9C;
   color: #ffffff;
 }
 
 .emotion-6:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-6:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -2964,16 +3507,18 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-6:hover {
-  background: #ea1929;
+.emotion-6:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-6:active {
-  background: #cc0015;
+.emotion-6:hover {
+  background: #8b23a5;
 }
 
 .emotion-6:focus {
-  box-shadow: 0 0px 8px #ff0029;
+  box-shadow: 0 0px 8px #da00ff;
 }
 
 .emotion-7 {
@@ -2996,26 +3541,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #00788C;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #e03131;
   color: #ffffff;
 }
 
 .emotion-7:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-7:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -3023,16 +3559,18 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-7:hover {
-  background: #007b96;
+.emotion-7:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-7:active {
-  background: #00657f;
+.emotion-7:hover {
+  background: #ea1929;
 }
 
 .emotion-7:focus {
-  box-shadow: 0 0px 8px #00b9fd;
+  box-shadow: 0 0px 8px #ff0029;
 }
 
 .emotion-8 {
@@ -3055,26 +3593,17 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  background: #dee2e6;
-  color: #212529;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #00788C;
+  color: #ffffff;
 }
 
 .emotion-8:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-8:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -3082,16 +3611,18 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-8:hover {
-  background: #c5c9cd;
+.emotion-8:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-8:active {
-  background: #b6babe;
+.emotion-8:hover {
+  background: #007b96;
 }
 
 .emotion-8:focus {
-  box-shadow: 0 0px 8px #ffd5ff;
+  box-shadow: 0 0px 8px #00b9fd;
 }
 
 .emotion-9 {
@@ -3114,30 +3645,140 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  padding: 8px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #dbe4ff;
+  color: #212529;
 }
 
 .emotion-9:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
+.emotion-9:focus {
+  box-shadow: 0 0px 8px #0081ff;
+}
+
 .emotion-9:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-9:hover {
+  background: #d4e4ff;
 }
 
 .emotion-9:focus {
+  box-shadow: 0 0px 8px #ffd5ff;
+}
+
+.emotion-10 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #3b5bdb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #0081ff;
+  color: #ffffff;
+}
+
+.emotion-10:hover {
+  background: #004ffc;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-10:focus {
   box-shadow: 0 0px 8px #0081ff;
+}
+
+.emotion-10:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-10:hover {
+  background: #0081ff;
+}
+
+.emotion-10:focus {
+  box-shadow: 0 0px 8px #00b7ff;
+}
+
+.emotion-11 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #3b5bdb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: #dee2e6;
+  color: #212529;
+}
+
+.emotion-11:hover {
+  background: #004ffc;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-11:focus {
+  box-shadow: 0 0px 8px #0081ff;
+}
+
+.emotion-11:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-11:hover {
+  background: #c5c9cd;
+}
+
+.emotion-11:focus {
+  box-shadow: 0 0px 8px #ffd5ff;
 }
 
 .emotion-12 {
@@ -3160,26 +3801,16 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  color: black;
-  background: peachpuff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding: 8px;
 }
 
 .emotion-12:hover {
-  background: #235ae9;
+  background: #004ffc;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.emotion-12:active {
-  background: #0045cf;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -3187,13 +3818,13 @@ Object {
   box-shadow: 0 0px 8px #0081ff;
 }
 
-.emotion-12:hover,
 .emotion-12:active {
-  color: white;
-  background: orangered;
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
-.emotion-11 {
+.emotion-15 {
   position: relative;
   cursor: pointer;
   outline: none;
@@ -3204,7 +3835,108 @@ Object {
   display: inline-block;
   border: none;
   border-radius: 5px;
-  background: #862E9C;
+  background: #3b5bdb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: black;
+  background: peachpuff;
+}
+
+.emotion-15:hover {
+  background: #004ffc;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-15:focus {
+  box-shadow: 0 0px 8px #0081ff;
+}
+
+.emotion-15:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-15:hover,
+.emotion-15:active {
+  color: white;
+  background: orangered;
+}
+
+.emotion-16 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #3b5bdb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0.6;
+  cursor: default;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  pointer-events: none;
+  cursor: none;
+}
+
+.emotion-16:hover {
+  background: #004ffc;
+  -webkit-transform: translate3d(0,-3px,0);
+  -ms-transform: translate3d(0,-3px,0);
+  transform: translate3d(0,-3px,0);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.emotion-16:focus {
+  box-shadow: 0 0px 8px #0081ff;
+}
+
+.emotion-16:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
+}
+
+.emotion-14 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 16px;
+  width: auto;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: #040086;
   color: #f8f0fc;
   font-size: 1rem;
   font-family: inherit;
@@ -3213,34 +3945,31 @@ Object {
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  -webkit-transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
-  transition: transform 0.25s ease-in-out,background 0.3s ease-in,color 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.emotion-11:hover {
-  background: #8b23a5;
+.emotion-14:hover {
+  background: #00009f;
   -webkit-transform: translate3d(0,-3px,0);
   -ms-transform: translate3d(0,-3px,0);
   transform: translate3d(0,-3px,0);
   box-shadow: 0 .5rem 1rem rebeccapurple;
 }
 
-.emotion-11:active {
-  background: #72008d;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  box-shadow: 0 .5rem 1rem rebeccapurple;
+.emotion-14:focus {
+  box-shadow: 0 0px 8px #0000ff;
 }
 
-.emotion-11:focus {
-  box-shadow: 0 0px 8px #da00ff;
+.emotion-14:active {
+  -webkit-transform: translate3d(0,1px,0);
+  -ms-transform: translate3d(0,1px,0);
+  transform: translate3d(0,1px,0);
 }
 
 <div>
     <div
-      class="emotion-14"
+      class="emotion-18"
     >
       <div
         class="emotion-1"
@@ -3249,6 +3978,7 @@ Object {
           class="emotion-0"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -3259,22 +3989,35 @@ Object {
         </button>
       </div>
       <section
-        class="emotion-13"
+        class="emotion-17"
       >
         <button
           class="emotion-2"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
-            Default Button
+            Primary Button
           </span>
         </button>
         <button
           class="emotion-3"
           data-testid=""
           id=""
+          testid=""
+          type="button"
+        >
+          <span>
+            Primary Button (Active)
+          </span>
+        </button>
+        <button
+          class="emotion-4"
+          data-testid=""
+          id=""
+          testid=""
           type="button"
         >
           <span>
@@ -3282,9 +4025,10 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-4"
+          class="emotion-5"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -3292,9 +4036,10 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-5"
+          class="emotion-6"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -3302,9 +4047,10 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-6"
+          class="emotion-7"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -3312,9 +4058,10 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-7"
+          class="emotion-8"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -3322,9 +4069,32 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-8"
+          class="emotion-9"
           data-testid=""
           id=""
+          testid=""
+          type="button"
+        >
+          <span>
+            Muted Button
+          </span>
+        </button>
+        <button
+          class="emotion-10"
+          data-testid=""
+          id=""
+          testid=""
+          type="button"
+        >
+          <span>
+            Highlight Button
+          </span>
+        </button>
+        <button
+          class="emotion-11"
+          data-testid=""
+          id=""
+          testid=""
           type="button"
         >
           <span>
@@ -3332,9 +4102,10 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-9"
+          class="emotion-12"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -3345,6 +4116,7 @@ Object {
           class="emotion-0"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -3352,9 +4124,10 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-11"
+          class="emotion-14"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
@@ -3362,13 +4135,26 @@ Object {
           </span>
         </button>
         <button
-          class="emotion-12"
+          class="emotion-15"
           data-testid=""
           id=""
+          testid=""
           type="button"
         >
           <span>
             Custom css button
+          </span>
+        </button>
+        <button
+          class="emotion-16"
+          data-testid=""
+          disabled=""
+          id=""
+          testid=""
+          type="button"
+        >
+          <span>
+            Disabled Button
           </span>
         </button>
       </section>

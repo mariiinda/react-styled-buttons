@@ -104,7 +104,10 @@ function Buttons({ mode, setMode }) {
           </Button>
         </div>
         <section css={buttonWrapperStyle}>
-          <Button mode={mode}>Default Button</Button>
+          <Button mode={mode}>Primary Button</Button>
+          <Button mode={mode} active>
+            Primary Button (Active)
+          </Button>
           <Button mode={mode} variant="secondary">
             Secondary Button
           </Button>
@@ -123,6 +126,9 @@ function Buttons({ mode, setMode }) {
           <Button mode={mode} variant="muted">
             Muted Button
           </Button>
+          <Button mode={mode} variant="highlight">
+            Highlight Button
+          </Button>
           <Button mode={mode} variant="gray">
             Gray Button
           </Button>
@@ -137,11 +143,11 @@ function Buttons({ mode, setMode }) {
             theme={{
               colors: {
                 background: "#f8f0fc",
-                primary: "#862E9C",
+                primary: "#040086",
                 modes: {
                   dark: {
                     background: "#333",
-                    primary: "#e599f7"
+                    primary: "#b4b2f7"
                   }
                 }
               },
@@ -165,6 +171,9 @@ function Buttons({ mode, setMode }) {
             `}
           >
             Custom css button
+          </Button>
+          <Button mode={mode} disabled>
+            Disabled Button
           </Button>
         </section>
       </div>

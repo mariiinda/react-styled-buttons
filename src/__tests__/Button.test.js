@@ -3,7 +3,6 @@ import "@testing-library/react/cleanup-after-each";
 import "@testing-library/jest-dom/extend-expect";
 import { render, fireEvent, cleanup } from "@testing-library/react";
 
-/* import Button from "../components/Button"; */
 import { primary } from "../components/Button.stories";
 
 afterEach(cleanup);

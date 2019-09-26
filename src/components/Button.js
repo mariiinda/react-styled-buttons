@@ -36,18 +36,10 @@ const ButtonStyle = ({
 
   &:hover {
     background: ${chroma(primary)
-      .saturate(0.5)
+      .darken(0.2)
+      .saturate(1.5)
       .hex()};
     transform: translate3d(0, -3px, 0);
-    box-shadow: ${shadows.default};
-  }
-
-  &:active {
-    background: ${chroma(primary)
-      .saturate(0.5)
-      .darken(0.5)
-      .hex()};
-    transform: translate3d(0, 0, 0);
     box-shadow: ${shadows.default};
   }
 
@@ -58,6 +50,10 @@ const ButtonStyle = ({
         .saturate(3)
         .hex()};
   }
+
+  &:active {
+    transform: translate3d(0, 1px, 0);
+  }
 `;
 
 const disabledStyle = css`
@@ -66,11 +62,18 @@ const disabledStyle = css`
   transition: none;
   transform: translate3d(0, 0, 0);
   pointer-events: none;
+  cursor: none;
 `;
 
-const activeStyle = css`
-  border: 3px solid purple;
-`;
+const activeStyle = ({ colors, variant }) => {
+  const variantColor = colors[variant];
+  return css`
+    background: ${chroma(variantColor)
+      .darken(0.5)
+      .saturate(1.2)
+      .hex()};
+  `;
+};
 
 const VariantStyle = ({ colors, variant }) => {
   const variantColor = colors[variant];
@@ -87,17 +90,6 @@ const VariantStyle = ({ colors, variant }) => {
             .hex()
         : chroma(variantColor)
             .saturate(0.5)
-            .hex()};
-    }
-
-    &:active {
-      background: ${variant === "gray"
-        ? chroma(variantColor)
-            .darken(0.8)
-            .hex()
-        : chroma(variantColor)
-            .saturate(0.5)
-            .darken(0.5)
             .hex()};
     }
 
@@ -123,7 +115,14 @@ const MediumButtonStyle = ({ space: [, , thirdSpace] }) => css`
   padding: ${thirdSpace}px;
 `;
 
-const composeStyles = ({ theme, themeColors, variant, size, disabled }) => {
+const composeStyles = ({
+  theme,
+  themeColors,
+  variant,
+  size,
+  disabled,
+  active
+}) => {
   const cssStyles = [ButtonStyle({ theme, themeColors })];
   const sizeCases = {
     small: () => cssStyles.push(SmallButtonStyle(theme)),
@@ -138,6 +137,7 @@ const composeStyles = ({ theme, themeColors, variant, size, disabled }) => {
     variant !== "primary" &&
     cssStyles.push(VariantStyle({ colors: themeColors, variant }));
   disabled && cssStyles.push(disabledStyle);
+  active && cssStyles.push(activeStyle({ colors: themeColors, variant }));
 
   return cssStyles;
 };
@@ -151,6 +151,7 @@ function Button({
   mode,
   disabled,
   theme,
+  active,
   ...props
 }) {
   const [mergedTheme, setMergedTheme] = useState(theme);
@@ -191,7 +192,8 @@ function Button({
     themeColors,
     variant,
     size,
-    disabled
+    disabled,
+    active
   });
   const type = Element === "button" && !props.type ? "button" : null;
 
@@ -213,6 +215,7 @@ function Button({
 Button.defaultProps = {
   as: "button",
   id: "",
+  testid: "",
   children: null,
   theme: defaultTheme,
   disabled: false,
@@ -223,6 +226,10 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
+  as: PropTypes.string,
+  id: PropTypes.string,
+  theme: PropTypes.object,
+  onClick: PropTypes.func,
   variant: PropTypes.oneOf([
     "primary",
     "secondary",
@@ -231,11 +238,12 @@ Button.propTypes = {
     "accent3",
     "accent4",
     "muted",
+    "highlight",
     "gray"
   ]),
   size: PropTypes.oneOf(["large", "medium", "small"]),
   mode: PropTypes.oneOf(["light", "dark"]),
-  isActive: PropTypes.bool
+  active: PropTypes.bool
 };
 
 export default Button;
