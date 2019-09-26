@@ -219,6 +219,7 @@ Button.defaultProps = {
   children: null,
   theme: defaultTheme,
   disabled: false,
+  active: false,
   onClick: () => {},
   mode: "light",
   variant: "primary",
