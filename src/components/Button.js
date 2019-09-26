@@ -68,11 +68,17 @@ const disabledStyle = css`
   pointer-events: none;
 `;
 
+const activeStyle = css`
+  border: 3px solid purple;
+`;
+
 const VariantStyle = ({ colors, variant }) => {
   const variantColor = colors[variant];
   return css`
     background: ${variantColor};
-    color: ${variant === "gray" ? colors.text : colors.background};
+    color: ${variant === "gray" || variant === "muted"
+      ? colors.text
+      : colors.background};
 
     &:hover {
       background: ${variant === "gray"
@@ -222,8 +228,9 @@ Button.propTypes = {
     "secondary",
     "accent",
     "accent2",
-    "accen3",
+    "accent3",
     "accent4",
+    "muted",
     "gray"
   ]),
   size: PropTypes.oneOf(["large", "medium", "small"]),

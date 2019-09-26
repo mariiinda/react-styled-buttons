@@ -120,6 +120,9 @@ function Buttons({ mode, setMode }) {
           <Button mode={mode} variant="accent4">
             Accent4 Button
           </Button>
+          <Button mode={mode} variant="muted">
+            Muted Button
+          </Button>
           <Button mode={mode} variant="gray">
             Gray Button
           </Button>
