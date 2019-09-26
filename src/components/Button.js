@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import { css } from "@emotion/core";
 import chroma from "chroma-js";
 
@@ -215,9 +216,19 @@ Button.defaultProps = {
   size: "large"
 };
 
-// enumarables: todo add to proptypes
-// variant: ["primary", "secondary", "accent", "accent2", "accent3", "accent4", "gray"]
-// size: ["large", "medium", "small"]
-// mode ["light","dark"]
+Button.propTypes = {
+  variant: PropTypes.oneOf([
+    "primary",
+    "secondary",
+    "accent",
+    "accent2",
+    "accen3",
+    "accent4",
+    "gray"
+  ]),
+  size: PropTypes.oneOf(["large", "medium", "small"]),
+  mode: PropTypes.oneOf(["light", "dark"]),
+  isActive: PropTypes.bool
+};
 
 export default Button;
