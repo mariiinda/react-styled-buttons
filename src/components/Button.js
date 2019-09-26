@@ -226,7 +226,6 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
-  as: PropTypes.string,
   id: PropTypes.string,
   theme: PropTypes.object,
   onClick: PropTypes.func,
