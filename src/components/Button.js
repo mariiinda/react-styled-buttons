@@ -31,8 +31,7 @@ const ButtonStyle = ({
   line-height: inherit;
   font-weight: inherit;
   transform: translate3d(0, 0, 0);
-  transition: transform 0.25s ease-in-out, background 0.3s ease-in,
-    color 0.3s ease-in;
+  transition: 0.3s ease-in-out;
 
   &:hover {
     background: ${chroma(primary)
