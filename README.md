@@ -87,7 +87,7 @@ onMouseUp={() => {
 
 ### variant
 
-Button variant - this will assign different theme styles for each variant. Options: primary(default), secondary, accent1, accent2, accent3, neutral.
+Button variant - this will assign different theme styles for each variant. Options: primary(default), secondary, accent1, accent2, accent3, accent4, muted, highlight, gray.
 
 ```js
 <Button variant="secondary">
@@ -111,6 +111,34 @@ Mode: light or dark.
 
 ```js
 <Button mode="dark">
+  About
+</Button>
+```
+
+### disabled
+
+Sets button to disabled.
+
+```js
+<Button disabled>
+  About
+</Button>
+```
+
+### 
+
+Disables button animation on hover & click.
+
+```js
+<Button disableAnimation>
+  About
+</Button>
+```
+
+Disable color transforms on hover & click.
+
+```js
+<Button disableColorTransforms>
   About
 </Button>
 ```

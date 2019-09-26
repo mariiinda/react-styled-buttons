@@ -77,9 +77,8 @@ export const primary = ({
   children = "Primary Button",
   onClick,
   disabled,
-  active,
-  transformColors,
-  animate,
+  disableColorTransforms = false,
+  disableAnimation = false,
   id = "primary-button",
   as
 } = {}) => {
@@ -87,9 +86,11 @@ export const primary = ({
     <Button
       variant={variantOptions()}
       disabled={boolean("Disabled", disabled)}
-      active={boolean("Active", active)}
-      transformColors={boolean("Transform colors on hover", transformColors)}
-      animate={boolean("Is animated", animate)}
+      disableColorTransforms={boolean(
+        "Disable color transforms",
+        disableColorTransforms
+      )}
+      disableAnimation={boolean("Disable Animation", disableAnimation)}
       size={sizeOptions()}
       mode={modeOptions()}
       as={asOptions(as)}

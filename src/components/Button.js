@@ -14,8 +14,8 @@ const ButtonStyle = ({
     shadows
   },
   themeColors: { background, primary },
-  transformColors,
-  animate
+  disableColorTransforms,
+  disableAnimation
 }) => css`
   position: relative;
   cursor: pointer;
@@ -34,19 +34,19 @@ const ButtonStyle = ({
   line-height: inherit;
   font-weight: inherit;
   transform: translate3d(0, 0, 0);
-  transition: ${animate
+  transition: ${!disableAnimation
     ? "transform 0.3s ease-in-out, background 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out"
     : ""};
 
   &:hover {
-    background: ${transformColors
+    background: ${!disableColorTransforms
       ? chroma(primary)
           .darken(0.2)
           .saturate(1.5)
           .hex()
       : primary};
-    transform: ${animate ? "translate3d(0, -3px, 0)" : ""};
-    box-shadow: ${animate ? shadows.default : ""};
+    transform: ${!disableAnimation ? "translate3d(0, -3px, 0)" : ""};
+    box-shadow: ${!disableAnimation ? shadows.default : ""};
   }
 
   &:focus {
@@ -58,7 +58,7 @@ const ButtonStyle = ({
   }
 
   &:active {
-    transform: ${animate ? "translate3d(0, 1px, 0)" : ""};
+    transform: ${!disableAnimation ? "translate3d(0, 1px, 0)" : ""};
   }
 `;
 
@@ -71,17 +71,7 @@ const disabledStyle = css`
   cursor: none;
 `;
 
-const activeStyle = ({ colors, variant }) => {
-  const variantColor = colors[variant];
-  return css`
-    background: ${chroma(variantColor)
-      .darken(0.5)
-      .saturate(1.2)
-      .hex()};
-  `;
-};
-
-const VariantStyle = ({ colors, variant, transformColors }) => {
+const VariantStyle = ({ colors, variant, disableColorTransforms }) => {
   const variantColor = colors[variant];
   const hoverColor =
     variant === "gray"
@@ -98,7 +88,7 @@ const VariantStyle = ({ colors, variant, transformColors }) => {
       : colors.background};
 
     &:hover {
-      background: ${transformColors ? hoverColor : variantColor};
+      background: ${disableColorTransforms ? hoverColor : variantColor};
     }
 
     &:focus {
@@ -129,12 +119,16 @@ const composeStyles = ({
   variant,
   size,
   disabled,
-  active,
-  transformColors,
-  animate
+  disableColorTransforms,
+  disableAnimation
 }) => {
   const cssStyles = [
-    ButtonStyle({ theme, themeColors, transformColors, animate })
+    ButtonStyle({
+      theme,
+      themeColors,
+      disableColorTransforms,
+      disableAnimation
+    })
   ];
   const sizeCases = {
     small: () => cssStyles.push(SmallButtonStyle(theme)),
@@ -148,10 +142,9 @@ const composeStyles = ({
   variant &&
     variant !== "primary" &&
     cssStyles.push(
-      VariantStyle({ colors: themeColors, variant, transformColors })
+      VariantStyle({ colors: themeColors, variant, disableColorTransforms })
     );
   disabled && cssStyles.push(disabledStyle);
-  active && cssStyles.push(activeStyle({ colors: themeColors, variant }));
 
   return cssStyles;
 };
@@ -165,9 +158,8 @@ function Button({
   mode,
   disabled,
   theme,
-  active,
-  transformColors,
-  animate,
+  disableColorTransforms,
+  disableAnimation,
   ...props
 }) {
   const [mergedTheme, setMergedTheme] = useState(theme);
@@ -209,9 +201,8 @@ function Button({
     variant,
     size,
     disabled,
-    active,
-    transformColors,
-    animate
+    disableColorTransforms,
+    disableAnimation
   });
   const type = Element === "button" && !props.type ? "button" : null;
 
@@ -237,9 +228,8 @@ Button.defaultProps = {
   children: null,
   theme: defaultTheme,
   disabled: false,
-  active: false,
-  transformColors: false,
-  animate: true,
+  disableColorTransforms: false,
+  disableAnimation: false,
   onClick: () => {},
   mode: "light",
   variant: "primary",
@@ -263,9 +253,8 @@ Button.propTypes = {
   ]),
   size: PropTypes.oneOf(["large", "medium", "small"]),
   mode: PropTypes.oneOf(["light", "dark"]),
-  active: PropTypes.bool,
-  transformColors: PropTypes.bool,
-  animate: PropTypes.bool
+  disableColorTransforms: PropTypes.bool,
+  disableAnimation: PropTypes.bool
 };
 
 export default Button;

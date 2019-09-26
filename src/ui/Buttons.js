@@ -105,9 +105,6 @@ function Buttons({ mode, setMode }) {
         </div>
         <section css={buttonWrapperStyle}>
           <Button mode={mode}>Primary Button</Button>
-          <Button mode={mode} active>
-            Primary Button (Active)
-          </Button>
           <Button mode={mode} variant="secondary">
             Secondary Button
           </Button>
